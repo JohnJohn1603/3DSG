@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "mapping_id": "hm3d_00802_object_category_mapping_v1",
+  "scene_id": "00802-wcojb4TFT35",
+  "status_policy": "Only confirmed rows with reviewer provenance enter class-aware metrics. Initial proposals are provisional and evaluator-only.",
+  "categories": {
+    "armchair": {"detector_class": "chair", "status": "provisional", "provenance": "lexical proposal; requires human review"},
+    "bed": {"detector_class": "bed", "status": "provisional", "provenance": "lexical proposal; requires human review"},
+    "bicycle": {"detector_class": "bicycle", "status": "provisional", "provenance": "lexical proposal; requires human review"},
+    "book": {"detector_class": "book", "status": "provisional", "provenance": "lexical proposal; requires human review"},
+    "bottle": {"detector_class": "bottle", "status": "provisional", "provenance": "lexical proposal; requires human review"},
+    "bus": {"detector_class": "bus", "status": "provisional", "provenance": "lexical proposal; requires human review"},
+    "cabinet": {"detector_class": null, "status": "unmapped", "provenance": "no one-to-one detector equivalent established"},
+    "car": {"detector_class": "car", "status": "provisional", "provenance": "lexical proposal; requires human review"},
+    "cat": {"detector_class": "cat", "status": "provisional", "provenance": "lexical proposal; requires human review"},
+    "chair": {"detector_class": "chair", "status": "provisional", "provenance": "lexical proposal; requires human review"},
+    "couch": {"detector_class": "sofa", "status": "provisional", "provenance": "lexical proposal; requires human review"},
+    "dog": {"detector_class": "dog", "status": "provisional", "provenance": "lexical proposal; requires human review"},
+    "dining table": {"detector_class": "dining_table", "status": "provisional", "provenance": "lexical proposal; requires human review"},
+    "door": {"detector_class": null, "status": "unsupported", "provenance": "architectural class, outside object detector vocabulary"},
+    "door frame": {"detector_class": null, "status": "unsupported", "provenance": "architectural class, outside object detector vocabulary"},
+    "floor": {"detector_class": null, "status": "unsupported", "provenance": "surface class, outside object detector vocabulary"},
+    "potted plant": {"detector_class": "potted_plant", "status": "provisional", "provenance": "lexical proposal; requires human review"},
+    "sofa": {"detector_class": "sofa", "status": "provisional", "provenance": "lexical proposal; requires human review"},
+    "table": {"detector_class": null, "status": "unmapped", "provenance": "generic table is not equivalent to dining_table without review"},
+    "tv": {"detector_class": "tv", "status": "provisional", "provenance": "lexical proposal; requires human review"},
+    "wall": {"detector_class": null, "status": "unsupported", "provenance": "architectural class, outside object detector vocabulary"},
+    "window": {"detector_class": null, "status": "unsupported", "provenance": "architectural class, outside object detector vocabulary"}
+  },
+  "unlisted_category_status": "unmapped",
+  "review_note": "Set status=confirmed only after human review and replace provenance with reviewer, date, and decision record. Do not edit HM3D labels to fit predictions."
+}

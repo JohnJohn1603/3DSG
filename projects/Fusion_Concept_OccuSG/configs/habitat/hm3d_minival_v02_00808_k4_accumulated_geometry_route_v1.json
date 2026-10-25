@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "dataset_type": "hm3d",
+  "dataset_version": "v0.2",
+  "split": "minival",
+  "scene_id": "00808-y9hTuugGdiq",
+  "scene_provenance": "Matterport HM3D v0.2 minival; pre-existing local assets, baseline input-only",
+  "scene_license_note": "Academic non-commercial use only; follow Matterport HM3D EULA for derived/published data",
+  "scene_file": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d/minival/00808-y9hTuugGdiq/y9hTuugGdiq.basis.glb",
+  "scene_dataset_config": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d/minival/hm3d_annotated_minival_basis.scene_dataset_config.json",
+  "navmesh_file": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d/minival/00808-y9hTuugGdiq/y9hTuugGdiq.basis.navmesh",
+  "sequence_id": "hm3d-v02-00808-k4-accumulated-geometry-v1",
+  "frame_id_prefix": "hm3d-00808-k4-ag-v1",
+  "resolution_px": [
+    640,
+    480
+  ],
+  "horizontal_fov_deg": 90.0,
+  "sensor_position_habitat": [
+    0.0,
+    1.5,
+    0.0
+  ],
+  "sensor_orientation_habitat_rad": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "calibration_id": "habitat-rgbd-stage-v1-640x480",
+  "min_depth_m": 0.1,
+  "max_depth_m": 10.0,
+  "simulation_step_s": 0.1,
+  "gpu_device_id": -1,
+  "require_navigable": true,
+  "route_slice_habitat_y_m": -2.7386093,
+  "route_policy": "7 frames: three architecture-preview-selected spatial views of the open living/seating/table area, kitchen detour, then reverse revisits through the same validated viewpoints; repeats are temporal evidence only, not independent views",
+  "route_selection_provenance": {
+    "source": "existing architecture-only RGB preview and already validated navmesh positions/edges; no detector, P3, semantic IDs/categories, room labels, GT or predictor scores",
+    "reviewed_rgb_preview": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_integration_20261005/candidate_previews_final/00808-y9hTuugGdiq/contact_sheet.png",
+    "selected_architectural_scope": "open living/seating/table area with adjacent dining/kitchen visible; kitchen cabinet detour",
+    "route_frames": [
+      "view_A_seating_table",
+      "view_B_cross_angle",
+      "view_C_opposite_cross_angle",
+      "detour_kitchen",
+      "revisit_C_after_detour",
+      "revisit_B_after_detour",
+      "revisit_A_after_detour"
+    ],
+    "exact_revisit_policy": "repeated positions/yaws are temporal re-observations only; do not count as new independent views"
+  },
+  "route": [
+    {
+      "label": "view_A_seating_table",
+      "position_habitat": [
+        9.062847,
+        -2.738609,
+        2.955713
+      ],
+      "yaw_rad": 0.0
+    },
+    {
+      "label": "view_B_cross_angle",
+      "position_habitat": [
+        7.338223,
+        -2.738609,
+        4.118603
+      ],
+      "yaw_rad": 0.0
+    },
+    {
+      "label": "view_C_opposite_cross_angle",
+      "position_habitat": [
+        5.619532,
+        -2.738609,
+        2.952104
+      ],
+      "yaw_rad": 0.0
+    },
+    {
+      "label": "detour_kitchen",
+      "position_habitat": [
+        3.411918,
+        -2.738609,
+        3.762519
+      ],
+      "yaw_rad": 1.5707963267948966
+    },
+    {
+      "label": "revisit_C_after_detour",
+      "position_habitat": [
+        5.619532,
+        -2.738609,
+        2.952104
+      ],
+      "yaw_rad": 0.0
+    },
+    {
+      "label": "revisit_B_after_detour",
+      "position_habitat": [
+        7.338223,
+        -2.738609,
+        4.118603
+      ],
+      "yaw_rad": 0.0
+    },
+    {
+      "label": "revisit_A_after_detour",
+      "position_habitat": [
+        9.062847,
+        -2.738609,
+        2.955713
+      ],
+      "yaw_rad": 0.0
+    }
+  ],
+  "semantic_evaluator_only": {
+    "enabled": true,
+    "semantic_mesh": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d/minival/00808-y9hTuugGdiq/y9hTuugGdiq.semantic.glb",
+    "semantic_descriptor": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d/minival/00808-y9hTuugGdiq/y9hTuugGdiq.semantic.txt",
+    "allowed_for_predictor": false,
+    "room_polygon_ground_truth_assumed": false,
+    "render_policy": "separate post-capture evaluator render at saved poses; must pass RGB/depth/pose/descriptor alignment gates before scoring"
+  },
+  "predictor": {
+    "pipeline_config": "configs/reference_code_mp3d.yaml",
+    "detector_config": "configs/perception/yolo11n_seg_replica_cad_dev.json",
+    "semantic_rules": "configs/semantics/region_object_room_rules_replica_cad_v1.json",
+    "semantic_gt_input": false,
+    "room_gt_input": false,
+    "navmesh_input": false,
+    "association_profiles": {
+      "source": "default/reference mode; preserved unchanged",
+      "geometry_only_dedup_v2": "experimental comparison mode; existing frozen policy",
+      "accumulated_surface_support_v1": "offline causal candidate applied after geometry-only-dedup-v2 dedup; not M9-integrated",
+      "geometry_appearance": "excluded from this comparison"
+    },
+    "u4_ov": "diagnostics-only; frozen model/vocabulary/prompts/thresholds; no room-score input"
+  },
+  "ablation_role": "same-scene new-route development sequence for causal association evaluation; not an unseen-scene test; proposed only, not captured or predictor-locked"
+}

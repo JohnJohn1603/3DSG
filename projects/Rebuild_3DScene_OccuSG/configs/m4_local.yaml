@@ -1,0 +1,16 @@
+# Local technical test profile only. Values match OccuSG ROS runtime YAML;
+# loading this does not imply permission to cloud-host or redistribute DuDe/FIST.
+dude:
+  worker_binary: build/native-m4-dude/occusg_dude_worker
+  protocol_version: 1
+  decomp_threshold_m: 1.5
+  safety_distance_m: 0.5
+  timeout_s: 30.0
+  frame_id: world
+  source_commit: 2bca2fa06af87fd9dd0542957039be8f580f0dca
+  fist_archive_sha256: 84875da959aae5a1abdddc993075d0f91d4afdbdda1a29dd856f77254a63c684
+
+objects:
+  association:
+    same_class_radius_m: 0.75
+    same_pose_suppression_cap_m: 0.15

@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "profile_id": "replica_cad_yolo11n_seg_dev_v2",
+  "model": {
+    "family": "Ultralytics YOLO11-seg",
+    "variant": "yolo11n-seg",
+    "task": "instance_segmentation",
+    "weights": "artifacts/models/ultralytics/yolo11n-seg.onnx",
+    "weights_sha256": "0bc32bc92e985b881141ef9bd2216e2a746f70519d0d24da9fc85decc4428cf4",
+    "source_url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n-seg.onnx",
+    "source_release": "Ultralytics assets v8.3.0",
+    "license": "AGPL-3.0 for Ultralytics YOLO11; local experiment only; distribution/use rights require separate review"
+  },
+  "runtime": {
+    "backend": "onnxruntime",
+    "device": "cpu",
+    "onnxruntime_version": "1.24.4",
+    "input_size": [640, 640],
+    "inference_cadence": "every_captured_frame",
+    "cache_authoritative": true
+  },
+  "preprocessing": {
+    "color_order": "RGB",
+    "normalization": "float32_0_1",
+    "resize": "letterbox_640x640_stride32",
+    "mask_return_space": "original_rgb_pixels",
+    "mask_threshold": 0.5,
+    "confidence_threshold": 0.25,
+    "nms_iou_threshold": 0.45
+  },
+  "vocabulary": {
+    "source": "COCO-80 class names bundled with this profile",
+    "canonical_map": {
+      "couch": "sofa",
+      "dining table": "dining_table",
+      "potted plant": "potted_plant",
+      "tv": "tv"
+    },
+    "room_relevant_classes": [
+      "bed", "sofa", "chair", "dining_table", "toilet", "sink",
+      "refrigerator", "oven", "microwave", "potted_plant", "tv"
+    ],
+    "unsupported_room_classes": ["kitchen", "bathroom", "bedroom", "living_room"]
+  },
+  "geometry": {
+    "depth_units": "m",
+    "depth_representation": "axial",
+    "min_depth_m": 0.10,
+    "max_depth_m": 10.0,
+    "cluster_algorithm": "source Euclidean clustering semantics",
+    "cluster_eps_m": 0.02,
+    "cluster_min_points": 100,
+    "cluster_max_points": 2500000,
+    "cluster_selection": "largest_cluster",
+    "center_method": "visible_mask_depth_cluster_aabb_center",
+    "world_extents_method": "transform_cluster_aabb_corners"
+  },
+  "association": {
+    "policy": "reference/code M6",
+    "same_class_radius_m": 0.50,
+    "same_pose_suppression_cap_m": 0.10,
+    "first_observation_geometry": true,
+    "no_fusion": true
+  },
+  "provenance": {
+    "source_profile": "reference/code",
+    "semantic_gt_to_builder": false,
+    "room_gt_to_builder": false,
+    "navmesh_to_builder": false,
+    "development_scene": "apt_0",
+    "holdout_scenes": ["apt_1", "apt_2"]
+  }
+}

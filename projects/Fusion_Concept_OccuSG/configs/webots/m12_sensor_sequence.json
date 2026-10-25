@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "world_id": "m12_single_wall_box_markers",
+  "sequence_id": "m12-sensor-sequence-v1",
+  "output_dir": "artifacts/m12_webots_sensor_sequence",
+  "coordinate_system": "ENU",
+  "canonical_origin_coincident": true,
+  "world_to_canonical_matrix": [
+    [1.0, 0.0, 0.0, 0.0],
+    [0.0, 1.0, 0.0, 0.0],
+    [0.0, 0.0, 1.0, 0.0],
+    [0.0, 0.0, 0.0, 1.0]
+  ],
+  "route_type": "supervisor_ground_truth_waypoints_no_dynamics",
+  "route": [
+    {"translation": [0.0, 0.0, 0.0], "yaw_rad": 1.5707963267948966, "label": "start"},
+    {"translation": [0.10, 0.0, 0.0], "yaw_rad": 1.5207963267948966, "label": "middle"},
+    {"translation": [0.20, 0.05, 0.0], "yaw_rad": 1.4707963267948966, "label": "middle_rotated"},
+    {"translation": [0.25, 0.10, 0.0], "yaw_rad": 1.5707963267948966, "label": "return"}
+  ],
+  "fixture_geometry": {
+    "wall_aabb_world": {"min": [3.0, -2.5, 0.0], "max": [3.1, 2.5, 3.0]},
+    "box_aabb_world": {"min": [1.35, -1.05, 0.0], "max": [1.75, -0.55, 1.0]},
+    "markers": [
+      {"id": "image_left", "center_world": [2.97, 0.45, 1.55], "size_xyz": [0.04, 0.16, 0.16]},
+      {"id": "image_right", "center_world": [2.97, -0.45, 1.55], "size_xyz": [0.04, 0.16, 0.16]},
+      {"id": "image_top", "center_world": [2.97, 0.0, 1.75], "size_xyz": [0.04, 0.16, 0.16]},
+      {"id": "image_bottom", "center_world": [2.97, 0.0, 0.55], "size_xyz": [0.04, 0.16, 0.16]}
+    ],
+    "expected_wall_center_hit_world": [3.0, 0.0, 1.0],
+    "geometry_tolerance_m": 0.02,
+    "require_four_off_axis_markers": true
+  }
+}

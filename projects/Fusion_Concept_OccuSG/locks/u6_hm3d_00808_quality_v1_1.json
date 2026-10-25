@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "lock_id": "u6_hm3d_00808_quality_v1_1",
+  "status": "locked_before_capture_p2_p3_predictor",
+  "created_at_local": "2026-10-10",
+  "scene_independence": "no predictor outcomes from this scene reviewed before lock; architectural preview was viewed for route selection; not blind to humans",
+  "route_config": {
+    "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/configs/habitat/hm3d_minival_v02_00808_u6_quality_v1_640.json",
+    "sha256": "3fa31ad438a1004492fdfe35faf68e9d1336f7718b45fdceca9fde6c1155097d",
+    "bytes": 4790
+  },
+  "protocol": {
+    "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/docs/U6_HM3D_00808_PROTOCOL_v1.1.vi.md",
+    "sha256": "f29c95f3e2b26a4e04384b6e3770fbc6a7fa8a69e50fb731aed18968481bec09",
+    "bytes": 10041
+  },
+  "route_validation": {
+    "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/audits/u6_hm3d_00808_v1/route_validation.json",
+    "sha256": "98851eb79a007c682c432c8aba3c805fe25af686ca4b0b28109a91217899ee92",
+    "bytes": 5463
+  },
+  "rgb_route_preview": {
+    "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/audits/u6_hm3d_00808_v1/route_rgb_preview.png",
+    "sha256": "e41a0de4146101dc3c27811fa239150100bf3ede39eea1ce3af60786ac512494",
+    "bytes": 687233
+  },
+  "assets": {
+    "basis_scene": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d/minival/00808-y9hTuugGdiq/y9hTuugGdiq.basis.glb",
+      "sha256": "67a188a10c8d664b454e20fbf631613500b982ec742a211e0c577cab6aeaf418",
+      "bytes": 43907600
+    },
+    "navmesh": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d/minival/00808-y9hTuugGdiq/y9hTuugGdiq.basis.navmesh",
+      "sha256": "c3993658f67b723e6e27a1442178f6cd9bbad050e078c8175770c459abc0067e",
+      "bytes": 53484
+    },
+    "semantic_mesh": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d/minival/00808-y9hTuugGdiq/y9hTuugGdiq.semantic.glb",
+      "sha256": "cc56e2105391ecf18f12ff52200f45dd92996bf03bbaeb7d074fb9f04ebfc481",
+      "bytes": 64820660
+    },
+    "semantic_descriptor": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d/minival/00808-y9hTuugGdiq/y9hTuugGdiq.semantic.txt",
+      "sha256": "42b90fee3b97d2e5f91988d52bf60b9809a72babb04126ef0d3b347dc70d9d52",
+      "bytes": 20055
+    }
+  },
+  "predictor_locks": {
+    "pipeline_config": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/configs/reference_code_mp3d.yaml",
+      "sha256": "210124b16fd3651c06fd548a1704f27595f61761dd1bfb4db4099e51895d1523",
+      "bytes": 1918
+    },
+    "detector_config": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/configs/perception/yolo11n_seg_replica_cad_dev.json",
+      "sha256": "ec64d9e8c508d54b313abf8495b15631fa95e047e894131db5c5fec7c2dfd0b3",
+      "bytes": 2493
+    },
+    "detector_weights": {
+      "bytes": 11763717,
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/models/ultralytics/yolo11n-seg.onnx",
+      "sha256": "0bc32bc92e985b881141ef9bd2216e2a746f70519d0d24da9fc85decc4428cf4"
+    },
+    "p3_profile": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/configs/perception/yolo11n_seg_replica_cad_dev.json",
+      "sha256": "ec64d9e8c508d54b313abf8495b15631fa95e047e894131db5c5fec7c2dfd0b3",
+      "bytes": 2493
+    },
+    "u4ov_config": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/audits/u4_ov/u4_ov_config.locked.json",
+      "sha256": "e5d265700c355e623f5ceefefef483ea0c10ae1995991eb1a1dd133ea1afb98e",
+      "bytes": 2306
+    },
+    "u4ov_vocabulary": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/audits/u4_ov/vocabulary_v1.json",
+      "sha256": "879ed505b4a433ce23dfef2b3b6e9071238a1593b4f7f0eb281324286c977427",
+      "bytes": 6845
+    },
+    "u4ov_checkpoint": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/models/openclip/vit-b-32-openai-a6f597a30f7b82c51704746581f9a4e41421e878/open_clip_model.safetensors",
+      "sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+      "bytes": 605143284
+    },
+    "u4ov_text_cache": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/audits/u4_ov/text_cache/text_features__23ae1da7b7f41d89608e.npz",
+      "sha256": "d432d5614570afac59d53d40a75955d05c0c0736bbd799056e3599cb4ed4efd2",
+      "bytes": 1001330
+    },
+    "u3_geometry_assignment_config_sha256": "e6f4718bb2b347200ec1635f39fe88c4bb52f3055a5edaaa1bfafc5b229bcde4"
+  },
+  "evaluator_locks": {
+    "evaluation_profile": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/configs/evaluation/hm3d_00808_scene_eval_v1_1.json",
+      "sha256": "692043f35f88064f25c3efb290a6fd0d751465d3e47b313a55b5890f04d8c7ea",
+      "bytes": 3050
+    },
+    "category_mapping_all_unmapped": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/configs/evaluation/hm3d_00808_object_category_mapping_v1_1.json",
+      "sha256": "8b9b1de3be18ca031fd1e8dd000f4a9a49f7a7549a6b9fde90d85c90d29d0597",
+      "bytes": 17698
+    },
+    "object_gt_evaluator_code": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/evaluate_hm3d_object_gt.py",
+      "sha256": "2ff3771f3437f63101028a5118b88358153470335a87a75aac7ea1c143c7ec14",
+      "bytes": 75915
+    }
+  },
+  "sensor": {
+    "resolution_px": [
+      640,
+      480
+    ],
+    "hfov_deg": 90.0,
+    "fx_px": 320.0,
+    "fy_px": 320.0,
+    "principal_point_px": [
+      319.5,
+      239.5
+    ],
+    "min_depth_m": 0.1,
+    "max_depth_m": 10.0,
+    "simulation_step_s": 0.1,
+    "frame_count": 5,
+    "hard_cap_frames": 48
+  },
+  "protocol_fixed": {
+    "p2_mask_iou": 0.5,
+    "min_visible_gt_pixels": 32,
+    "cross_frame_pair_scope": true,
+    "same_frame_pairs": "excluded from pairwise continuity; same-frame duplicate/collision diagnostics separate",
+    "defer_or_unmatched_same_identity_pair": "FN and separately counted",
+    "diagnostic_B_excluded_from_primary_A": true,
+    "literal_label_normalization": "lowercase + trim + spaces_to_underscores; no synonyms or hierarchy",
+    "room_accuracy": "unavailable without independent room GT"
+  },
+  "stage_policy": {
+    "order": "capture -> evaluator semantic alignment gate -> P2/P3 -> offline U3/U4-OV",
+    "native_graph_replay": "not included in this budgeted quality pilot",
+    "geometry_appearance": "not included in primary comparison"
+  },
+  "estimated_budget_minutes": {
+    "capture": 1,
+    "p2": 1,
+    "p3_fallback": 6,
+    "u2": 1,
+    "u4_ov": 1,
+    "u3_offline": 1,
+    "semantic_render_evaluator": 2,
+    "evaluation_export": 3,
+    "total": 15,
+    "confidence": "medium; P3 variability depends on point density; do not tune profile if slow"
+  },
+  "dense_00802_status": "pending; explicitly deferred and not a blocker for U6 quality evaluation"
+}

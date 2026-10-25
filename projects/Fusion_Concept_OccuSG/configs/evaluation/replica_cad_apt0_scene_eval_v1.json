@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "profile_id": "replica_cad_apt0_scene_eval_v1",
+  "protocol_id": "habitat_scene_eval_v1",
+  "habitat_sim_version": "0.3.3",
+  "workflow_mode": "gt_evaluation",
+  "gt_scope": "partial: confirmed room boundaries and object visible-mask observations; functional labels, doorway adjacency and object-room assignment are not confirmed",
+  "dataset": {
+    "type": "replica_cad",
+    "version": "v1.6",
+    "scene_id": "apt_0",
+    "floor_id": "floor_0",
+    "scene_dataset_config": "artifacts/habitat_data/versioned_data/replica_cad_dataset/replicaCAD.scene_dataset_config.json",
+    "scene_instance": "artifacts/habitat_data/versioned_data/replica_cad_dataset/configs/scenes/apt_0.scene_instance.json",
+    "navmesh_file": "artifacts/habitat_data/versioned_data/replica_cad_dataset/navmeshes/apt_0.navmesh"
+  },
+  "route_config": "configs/habitat/m12_replica_cad_apt0_perception_dev_long_route.json",
+  "sensor": {
+    "resolution_px": [
+      320,
+      240
+    ],
+    "horizontal_fov_deg": 90,
+    "depth_units": "m",
+    "depth_representation": "axial",
+    "profile_id": "habitat-rgbd-stage-v1"
+  },
+  "pipeline_config": "configs/reference_code_mp3d.yaml",
+  "perception": {
+    "detector_profile": "configs/perception/yolo11n_seg_replica_cad_dev.json",
+    "weights": "artifacts/models/ultralytics/yolo11n-seg.onnx"
+  },
+  "semantic_rules": "configs/semantics/region_object_room_rules_replica_cad_v1.json",
+  "ground_truth": {
+    "mode": "partial_gt_evaluation",
+    "room_polygons": "evaluation/gt/apt_0/versions/apt0_room_gt_user_confirmed_20261004_normalized_v1/room_polygons_normalized.geojson",
+    "room_boundary_status": "human_verified_spatial_partition_normalized_overlap_ownership",
+    "floor_id": "floor_0",
+    "roi_policy": "union of the four confirmed room polygons; predictions outside this GT ROI are not scored",
+    "object_instance_manifest": "evaluation/gt/apt_0/manifest.json",
+    "function_labels": "uncertain for all four rooms; semantic accuracy unavailable",
+    "doorways_adjacency": "evaluation/gt/apt_0/doorways_and_adjacency.json (not_annotated; adjacency unavailable)",
+    "object_room_assignments": "not independently annotated; membership accuracy unavailable"
+  },
+  "route_pose_source": "fixed Habitat GT observation poses; not physical robot locomotion or SLAM",
+  "output_policy": "unique RUN_ID; no overwrite; evaluation outputs separate from dataset assets"
+}

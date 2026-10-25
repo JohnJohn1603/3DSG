@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "scenes": [
+    {
+      "alias": "hm3d_00802",
+      "evaluation_profile": "configs/evaluation/hm3d_00802_scene_eval_v1.json",
+      "routes": {
+        "smoke": "configs/habitat/hm3d_minival_v02_00802_smoke.json",
+        "main": "configs/habitat/hm3d_minival_v02_00802_main_route.json",
+        "main_320": "configs/habitat/hm3d_minival_v02_00802_main_320_route.json",
+        "main_600": "configs/habitat/hm3d_minival_v02_00802_main_600_route.json",
+        "main_dense": "configs/habitat/hm3d_minival_v02_00802_main_dense_route.json"
+      },
+      "default_route": "main"
+    },
+    {
+      "alias": "replica_apt0",
+      "evaluation_profile": "configs/evaluation/replica_cad_apt0_scene_eval_v1.json",
+      "routes": {
+        "dev_long": "configs/habitat/m12_replica_cad_apt0_perception_dev_long_route.json",
+        "dev": "configs/habitat/m12_replica_cad_apt0_perception_dev_route.json",
+        "reobserve": "configs/habitat/m12_replica_cad_apt0_perception_reobserve_route.json",
+        "hires": "configs/habitat/m12_replica_cad_apt0_perception_dev_hires_route.json"
+      },
+      "default_route": "dev_long"
+    }
+  ]
+}

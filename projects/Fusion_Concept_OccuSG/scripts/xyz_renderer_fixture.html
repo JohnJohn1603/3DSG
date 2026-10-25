@@ -1,0 +1,23 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Synthetic XYZ renderer fixture</title>
+<style>
+body{margin:0;font:14px system-ui,sans-serif;background:#f1f5f9;color:#172033}header{padding:12px 18px;background:#0f2742;color:#fff}main{padding:12px;display:grid;grid-template-columns:minmax(320px,1fr) 280px;gap:12px}.view{height:min(72vh,720px);min-height:420px;position:relative;background:#fff;border:1px solid #94a3b8}canvas{width:100%;height:100%;display:block;touch-action:none}.overlay{position:absolute;left:8px;top:8px;background:#ffffffdc;padding:6px;pointer-events:none}button{padding:8px}@media(max-width:800px){main{grid-template-columns:1fr}}
+</style>
+<header><b>SYNTHETIC XYZ RENDERER FIXTURE — not a mapping run, not D1 output</b><div>Known points: +X=(1,0,0), +Y=(0,1,0), +Z=(0,0,1), metres.</div></header>
+<main><section><div class="view"><canvas id="xyzCanvas" aria-label="Synthetic XYZ fixture point cloud"></canvas><div id="xyzOverlay" class="overlay">fixture loading</div></div><p id="xyzStatus"></p><button id="fit">Fit fixture</button><button id="reset">Reset camera</button><button id="panXYZ" aria-pressed="false">Pan mode: OFF</button></section><section><h2>Fixture picker</h2><p id="picked">Click a colored point to see the fixture object ID and lineage.</p><ul><li>origin · grey</li><li>axis_x · red · (1,0,0)</li><li>axis_y · green · (0,1,0)</li><li>axis_z · blue · (0,0,1)</li></ul><p>There are no room volumes, object predictions, or measured quality results on this page.</p></section></main>
+<script src="./xyz_renderer.js"></script>
+<script>
+const pose=[[1,0,0,0],[0,0,1,-2],[0,-1,0,1],[0,0,0,1]];
+const rows=[
+  {hypothesis_id:'origin',points:[[0,0,0]],colors:[[145,145,145]],sampled_points:1,source_points:1},
+  {hypothesis_id:'axis_x',points:[[1,0,0]],colors:[[240,35,25]],sampled_points:1,source_points:1},
+  {hypothesis_id:'axis_y',points:[[0,1,0]],colors:[[20,180,55]],sampled_points:1,source_points:1},
+  {hypothesis_id:'axis_z',points:[[0,0,1]],colors:[[30,80,235]],sampled_points:1,source_points:1},
+];
+let selected=null;
+const viewer=window.createXyzViewer(document.getElementById('xyzCanvas'),{onPick:id=>{selected=id;document.getElementById('picked').textContent=`picked ${id} · revision fixture-1 · lineage synthetic:${id}`;viewer.update({revision:'fixture-1',frameId:'synthetic-frame-0',stage:'synthetic_fixture',geometry:{objects:rows},snapshot:{objects:rows.map(x=>({hypothesis_id:x.hypothesis_id}))},cameraPose:pose,trajectory:[{frameId:'synthetic-frame-0',pose}],selectedObject:selected,graph:{}})}});
+function show(){viewer.update({revision:'fixture-1',frameId:'synthetic-frame-0',stage:'synthetic_fixture',geometry:{objects:rows},snapshot:{objects:rows.map(x=>({hypothesis_id:x.hypothesis_id}))},cameraPose:pose,trajectory:[{frameId:'synthetic-frame-0',pose}],selectedObject:selected,graph:{},membershipStatus:'unavailable_fixture',membershipReason:'synthetic_only',roomSemanticsStatus:'unavailable_fixture'});}
+document.getElementById('fit').onclick=()=>viewer.fit();document.getElementById('reset').onclick=()=>viewer.reset();show();
+</script>

@@ -1,0 +1,32 @@
+{
+  "provenance": {
+    "source_commit": "14b8cb9e6534ba21e84f624c94d20960f6613f3c",
+    "source_algorithm": "MapConverter::updateMap + HeightRangeMap + Map2D",
+    "reference_scope": "source-derived fixture semantics; not full pipeline equivalence"
+  },
+  "resolution_m": 1.0,
+  "min_free_height_m": 0.3,
+  "minimum_occupancy": 5,
+  "bounds_xy": [0.0, 8.0, 0.0, 5.0],
+  "revision": 7,
+  "leaves": [
+    {"center": [1.5, 2.5, 0.15], "size": 0.3, "occupied": false},
+    {"center": [2.5, 2.5, 0.15], "size": 0.2979, "occupied": false},
+    {"center": [3.5, 2.5, 0.15], "size": 0.3, "occupied": false},
+    {"center": [3.5, 2.5, 1.0], "size": 0.4, "occupied": false},
+    {"center": [4.5, 2.5, 0.15], "size": 0.3, "occupied": false},
+    {"center": [4.5, 2.5, 0.55], "size": 0.5, "occupied": true},
+    {"center": [5.5, 2.5, 0.15], "size": 0.3, "occupied": false},
+    {"center": [6.5, 2.5, 0.2], "size": 0.5, "occupied": true}
+  ],
+  "expected_values": [
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [-1, 0, -1, 0, 0, 0, 100, -1, -1],
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1]
+  ],
+  "expected_z_floor": [null, -0.001000006, null, -0.001000006, -0.001000006, -0.001000006, null, null, null],
+  "expected_z_ceiling": [null, 0.301000006, null, 1.201000003, 0.301000006, 0.301000006, null, null, null]
+}

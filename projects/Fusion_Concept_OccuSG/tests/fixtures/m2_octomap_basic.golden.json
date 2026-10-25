@@ -1,0 +1,46 @@
+{
+  "provenance": {
+    "source_commit": "7bb98eaa4235f9ca37bc388e242fce902209fc4e",
+    "source_algorithm": "pinned OctomapServer::insertScan clipped branch",
+    "octomap_version": "1.9.7+dfsg-3.1build3",
+    "reference_harness": "native/occupancy/reference_insert_scan.cpp"
+  },
+  "resolution": 1.0,
+  "updates": [
+    {
+      "revision": 1,
+      "free_keys": [[32768, 32768, 32768], [32768, 32769, 32768], [32769, 32768, 32768]],
+      "occupied_keys": [[32768, 32770, 32768], [32770, 32768, 32768]],
+      "observations": [
+        {"key": [32768, 32768, 32768], "occupied": false, "log_odds": -0.405465, "probability": 0.4},
+        {"key": [32768, 32769, 32768], "occupied": false, "log_odds": -0.405465, "probability": 0.4},
+        {"key": [32768, 32770, 32768], "occupied": true, "log_odds": 0.847298, "probability": 0.7},
+        {"key": [32769, 32768, 32768], "occupied": false, "log_odds": -0.405465, "probability": 0.4},
+        {"key": [32770, 32768, 32768], "occupied": true, "log_odds": 0.847298, "probability": 0.7}
+      ]
+    },
+    {
+      "revision": 2,
+      "free_keys": [
+        [32768, 32768, 32768], [32768, 32769, 32768], [32768, 32770, 32768],
+        [32768, 32771, 32768], [32768, 32772, 32768], [32768, 32773, 32768],
+        [32769, 32768, 32768], [32770, 32768, 32768], [32771, 32768, 32768],
+        [32772, 32768, 32768], [32773, 32768, 32768]
+      ],
+      "occupied_keys": [],
+      "observations": [
+        {"key": [32768, 32768, 32768], "occupied": false, "log_odds": -0.810930, "probability": 0.307692},
+        {"key": [32768, 32769, 32768], "occupied": false, "log_odds": -0.810930, "probability": 0.307692},
+        {"key": [32768, 32770, 32768], "occupied": true, "log_odds": 0.441833, "probability": 0.608696},
+        {"key": [32768, 32771, 32768], "occupied": false, "log_odds": -0.405465, "probability": 0.4},
+        {"key": [32768, 32772, 32768], "occupied": false, "log_odds": -0.405465, "probability": 0.4},
+        {"key": [32768, 32773, 32768], "occupied": false, "log_odds": -0.405465, "probability": 0.4},
+        {"key": [32769, 32768, 32768], "occupied": false, "log_odds": -0.810930, "probability": 0.307692},
+        {"key": [32770, 32768, 32768], "occupied": true, "log_odds": 0.441833, "probability": 0.608696},
+        {"key": [32771, 32768, 32768], "occupied": false, "log_odds": -0.405465, "probability": 0.4},
+        {"key": [32772, 32768, 32768], "occupied": false, "log_odds": -0.405465, "probability": 0.4},
+        {"key": [32773, 32768, 32768], "occupied": false, "log_odds": -0.405465, "probability": 0.4}
+      ]
+    }
+  ]
+}

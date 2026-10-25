@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "dataset_type": "hm3d",
+  "dataset_version": "v0.2",
+  "split": "minival",
+  "scene_id": null,
+  "scene_provenance": "Matterport HM3D minival v0.2; fill after inventory and visual review",
+  "scene_license_note": "Academic non-commercial use only; include Matterport EULA link with publications containing or derived from this data",
+  "scene_dataset_config": "artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d/hm3d_annotated_basis.scene_dataset_config.json",
+  "navmesh_file": null,
+  "sequence_id": null,
+  "frame_id_prefix": "hm3d-minival-v02",
+  "resolution_px": [160, 120],
+  "horizontal_fov_deg": 90.0,
+  "sensor_position_habitat": [0.0, 1.5, 0.0],
+  "sensor_orientation_habitat_rad": [0.0, 0.0, 0.0],
+  "calibration_id": "habitat-rgbd-stage-v1",
+  "min_depth_m": 0.1,
+  "max_depth_m": 10.0,
+  "simulation_step_s": 0.1,
+  "gpu_device_id": -1,
+  "require_navigable": true,
+  "route_policy": "fixed GT observation poses selected only after RGB/top-down architectural review; navmesh is route support only",
+  "route": [],
+  "semantic_evaluator_only": {
+    "enabled": false,
+    "semantic_annotations_root": "artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d",
+    "allowed_for_predictor": false,
+    "room_polygon_ground_truth_assumed": false
+  },
+  "output_template": "artifacts/runs/hm3d_minival_v0.2/<scene_id>/",
+  "predictor": {
+    "pipeline_config": "configs/reference_code_mp3d.yaml",
+    "detector_config": "configs/perception/yolo11n_seg_replica_cad_dev.json",
+    "semantic_rules": "configs/semantics/region_object_room_rules_replica_cad_v1.json",
+    "baseline_lock": "artifacts/runs/hm3d_integration_20261005/baseline_lock.json",
+    "semantic_gt_input": false,
+    "navmesh_input": false
+  },
+  "autonomous_navigation_value_map_slam": false
+}

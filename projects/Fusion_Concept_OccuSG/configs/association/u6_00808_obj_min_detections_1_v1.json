@@ -1,0 +1,25 @@
+{
+  "schema": "conceptgraphs-hybrid-filter-ablation/v1",
+  "experiment_id": "u6_00808_obj_min_detections_1_v1",
+  "purpose": "Development-only final admission/filter ablation. Preserve the pinned ConceptGraphs mapper and change only the final obj_min_detections filter from 3 to 1.",
+  "baseline_run_id": "hybrid_u6_00808_seed20261014_v3",
+  "base_effective_config_sha256": "da81d98372e81d037b03f13ca94e721be42bf4eaf6843deff68d5ff1c5a60a24",
+  "seed": 20261014,
+  "input_hashes": {
+    "capture_manifest_sha256": "ed2c843d85414c50475f6b66e34c122b4b7afe7b2d24014d434b3f97bbf473ab",
+    "p2_index_sha256": "cea87bae5289f4cc21938abf9dcf8c0bcabbf4612d087fcb1b475a146de81dc3",
+    "p3_manifest_sha256": "17749b9ddcac6e38785885a77a6ad6381aadfbb0a03b09693cbb7631917ff06b",
+    "text_features_manifest_sha256": "34ebcbccf764a644c06356ce21dc7824232c27059c427fd422a436c6881deb84"
+  },
+  "overrides": {
+    "obj_min_detections": 1
+  },
+  "non_overrides": [
+    "association and frame ordering",
+    "geometry processing and denoise",
+    "obj_min_points",
+    "visual/text/spatial thresholds",
+    "reference postprocessing order",
+    "room snapshot, semantic policy, seed, perception cache"
+  ]
+}

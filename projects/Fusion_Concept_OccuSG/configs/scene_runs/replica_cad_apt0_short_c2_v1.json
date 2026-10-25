@@ -1,0 +1,49 @@
+{
+  "schema": "scene-graph-c2-fresh-replica-route/v1",
+  "dataset": {
+    "type": "replica_cad",
+    "version": "v1.6",
+    "scene_id": "apt_0",
+    "sequence_id": "replica-cad-apt0-instance-route-01",
+    "scene_instance": "artifacts/habitat_data/versioned_data/replica_cad_dataset/configs/scenes/apt_0.scene_instance.json",
+    "scene_dataset_config": "artifacts/habitat_data/versioned_data/replica_cad_dataset/replicaCAD.scene_dataset_config.json",
+    "navmesh_file": "artifacts/habitat_data/versioned_data/replica_cad_dataset/navmeshes/apt_0.navmesh",
+    "provenance": "Habitat-Sim ReplicaCAD dataset v1.6 local development scene",
+    "license_note": "CC BY 4.0; local experiment"
+  },
+  "route_config": "configs/habitat/m12_replica_cad_apt0_instance_route.json",
+  "perception": {
+    "detector_profile": "configs/perception/yolo11n_seg_replica_cad_dev.json",
+    "names": "configs/perception/coco.names",
+    "p3_profile": "configs/perception/yolo11n_seg_replica_cad_dev.json",
+    "pipeline_config": "configs/reference_code_mp3d.yaml"
+  },
+  "models": {
+    "yolo_weights_external_resource": "yolo_onnx",
+    "openclip_checkpoint": "artifacts/models/openclip/vit-b-32-openai-a6f597a30f7b82c51704746581f9a4e41421e878/open_clip_model.safetensors",
+    "openclip_checkpoint_metadata": "artifacts/models/openclip/vit-b-32-openai-a6f597a30f7b82c51704746581f9a4e41421e878/checkpoint_metadata.json",
+    "image_feature_provenance_report": "artifacts/room_belief/dense_00802_hybrid_sidecars_20261015/image_features/feature_extraction_report.json"
+  },
+  "interpreters": {
+    "habitat": "/home/kiettran05/miniconda3/envs/habitat/bin/python",
+    "perception": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/.venv-perception/bin/python",
+    "p3": ".venv-cg-cpu/bin/python",
+    "features": ".venv-appearance/bin/python",
+    "mapping": ".venv-cg-cpu/bin/python"
+  },
+  "mapping": {
+    "seed": 20261014,
+    "reference_commit": "93277a02bd89171f8121e84203121cf7af9ebb5d",
+    "membership_policy": "unavailable_elevation_scope",
+    "room_semantics_status": "unavailable_membership_scope",
+    "resolution_policy": "reuse route's 160x120 RGB-D and 90 degree HFOV",
+    "object_filter": "ConceptGraphs reference min_detections=3"
+  },
+  "resource_policy": {
+    "download_models": false,
+    "install_dependencies": false,
+    "use_gpu": false,
+    "minimum_available_ram_bytes": 3221225472,
+    "minimum_free_disk_bytes": 8589934592
+  }
+}

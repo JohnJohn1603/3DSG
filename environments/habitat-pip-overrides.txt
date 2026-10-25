@@ -1,0 +1,2 @@
+# Conda package is authoritative for Habitat; actual pip override:
+Pillow==10.4.0

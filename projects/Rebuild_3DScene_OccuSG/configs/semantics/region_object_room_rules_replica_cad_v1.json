@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "profile_id": "replica_cad_region_object_room_rules_v1",
+  "status_values": ["unknown", "predicted", "ambiguous", "stale"],
+  "score_kind": "uncalibrated_additive_evidence",
+  "minimum_support_classes": 2,
+  "minimum_top_score": 2.0,
+  "minimum_margin": 1.0,
+  "count_cap_per_class": 2,
+  "labels": {
+    "living_room": {"sofa": 3.0, "tv": 2.0, "chair": 1.0, "potted_plant": 0.5},
+    "dining_room": {"dining_table": 3.0, "chair": 1.0},
+    "kitchen": {"refrigerator": 3.0, "oven": 3.0, "microwave": 2.0, "sink": 2.0, "dining_table": 0.5},
+    "bathroom": {"toilet": 3.0, "sink": 2.0},
+    "bedroom": {"bed": 4.0, "chair": 0.5}
+  },
+  "class_aliases": {
+    "dining table": "dining_table",
+    "potted plant": "potted_plant"
+  },
+  "detector_vocabulary_observed": [
+    "bench", "bicycle", "book", "bottle", "chair", "dining_table",
+    "microwave", "potted_plant", "refrigerator", "sofa", "tv", "vase"
+  ],
+  "provenance": {
+    "starting_profile": "configs/semantics/room_rules_replica_cad_dev.json",
+    "weights_and_thresholds_changed": false,
+    "room_gt_used_for_inference": false,
+    "scene_asset_names_used_for_inference": false,
+    "navmesh_used_for_inference": false,
+    "detector_vocabulary_source": "locked apt_0 detection_2d_index.json",
+    "class_alias_policy": "canonicalize observed raw class spellings only; no semantic class remapping"
+  }
+}

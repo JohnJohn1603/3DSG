@@ -1,0 +1,183 @@
+{
+  "calibration_id": "habitat-rgbd-stage-v1-640x480",
+  "capture_profile": {
+    "calibration_id": "habitat-rgbd-stage-v1-640x480",
+    "intrinsics_adapter": "adapters.habitat.frames.habitat_camera_intrinsics",
+    "policy": "native sensor capture; retain route HFOV, sensor extrinsics, depth range/convention and all detector preprocessing",
+    "profile_id": "native_640x480_v1",
+    "profile_path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/configs/habitat/capture_profiles/native_640x480_v1.json",
+    "profile_sha256": "4398cef0fe227be54993298e2c5f76d3a70bd4acb35eb79f26db398d85797de1",
+    "resolution_px": [
+      640,
+      480
+    ],
+    "schema": "habitat-capture-profile/v1"
+  },
+  "dataset_id": "hm3d_minival_v0.2",
+  "dataset_version": "v0.2",
+  "horizontal_fov_deg": 90.0,
+  "max_depth_m": 10.0,
+  "min_depth_m": 0.1,
+  "navmesh_file": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d/minival/00802-wcojb4TFT35/wcojb4TFT35.basis.navmesh",
+  "navmesh_sha256": "ae5ddd8ca77480eea3c401059844ae1ccc42d9cce75770a25b0d79b02d077232",
+  "policy": {
+    "agent_footprint": {
+      "clearance_margin_m": 0.0,
+      "height_m": 1.5,
+      "radius_m": 0.1,
+      "validation_source": "serialized Habitat navmesh agent_radius/agent_height"
+    },
+    "angular_speed_deg_per_s": 30.0,
+    "camera_pacing": {
+      "mode": "monotonic_sim_time",
+      "overrun_policy": "record_and_continue_no_catchup",
+      "real_time_factor": 1.0,
+      "schema": "camera-pacing-policy/v1",
+      "target_camera_fps": 30.0
+    },
+    "keyframes": {
+      "include_first_valid_frame": true,
+      "min_interval_s": 0.5,
+      "min_translation_m": 0.4,
+      "min_yaw_deg": 20.0,
+      "policy": "pose_delta_or_v1"
+    },
+    "linear_speed_mps": 0.2,
+    "mapper_enabled": false,
+    "policy_id": "smooth_route_t1_paced_rtf1_v3",
+    "predictor_inputs": [],
+    "preview": {
+      "jpeg_quality": 85,
+      "write_rgb_every_camera_frame": true,
+      "write_rgbd_for_candidate_keyframes": true
+    },
+    "queue": {
+      "in_flight_capacity": 1,
+      "pending_capacity": 1,
+      "pending_policy": "latest_wins_with_supersede_event"
+    },
+    "room_semantics_enabled": false,
+    "route_follow": {
+      "endpoint_tolerance_m": 0.05,
+      "max_camera_frames": 600,
+      "max_sim_time_s": 60.0,
+      "path_sample_step_m": 0.04,
+      "position_tolerance_m": 0.025,
+      "vertical_navmesh_tolerance_m": 0.05,
+      "yaw_tolerance_deg": 1.5
+    },
+    "schema": "smooth-route-t1-policy/v3",
+    "simulator_seed": 0,
+    "simulator_step_s": 0.03333333333333333,
+    "status": "development_unvalidated"
+  },
+  "policy_path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/configs/habitat/smooth_route_t1_paced_v3.json",
+  "policy_sha256": "eeb75a270529da9651f7d93187729ee4a94a3fb1db534c208c8b510c3bee44fe",
+  "resolution_px": [
+    640,
+    480
+  ],
+  "route_id": "t1_1_turn_continue",
+  "route_points": [
+    {
+      "label": "t1_1_start_move",
+      "position_habitat": [
+        1.05,
+        0.124,
+        -4.586
+      ],
+      "source_index": 0,
+      "yaw_rad": 1.5707963267948966
+    },
+    {
+      "label": "t1_1_turn_waypoint",
+      "position_habitat": [
+        0.65,
+        0.124,
+        -4.586
+      ],
+      "source_index": 1,
+      "yaw_rad": 3.141592653589793
+    },
+    {
+      "label": "t1_1_continue_end",
+      "position_habitat": [
+        0.65,
+        0.124,
+        -4.7
+      ],
+      "source_index": 2,
+      "yaw_rad": 3.141592653589793
+    }
+  ],
+  "run_id": "smooth_t1_1_hm3d00802_paced_rtf1_20261019_v1",
+  "scene_asset": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d/minival/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+  "scene_asset_sha256": "075e243b372458df4055a55e27c93885ba44ae8c36b4bc4446e0393c60c14540",
+  "scene_dataset_config": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d/minival/hm3d_annotated_minival_basis.scene_dataset_config.json",
+  "scene_dataset_config_sha256": "549f8b4527a93f117ed4d814468f71e8c290dd799af1212d1290f4148f34c294",
+  "scene_id": "00802-wcojb4TFT35",
+  "schema": "habitat-smooth-route-effective/v1",
+  "seed": 0,
+  "selected_route_indices": [
+    0,
+    2
+  ],
+  "sensor_contract": {
+    "calibration_id": "habitat-rgbd-stage-v1-640x480",
+    "capture_kind": "native_habitat_sensor",
+    "capture_profile_id": "native_640x480_v1",
+    "capture_profile_sha256": "4398cef0fe227be54993298e2c5f76d3a70bd4acb35eb79f26db398d85797de1",
+    "depth_range_m": [
+      0.1,
+      10.0
+    ],
+    "depth_representation": "axial",
+    "depth_units": "m",
+    "horizontal_fov_deg": 90.0,
+    "intrinsics": {
+      "cx": 319.5,
+      "cy": 239.5,
+      "fx": 320.00000000000006,
+      "fy": 320.0,
+      "pixel_center": "(W-1)/2,(H-1)/2"
+    },
+    "intrinsics_adapter": "adapters.habitat.frames.habitat_camera_intrinsics",
+    "resolution_px": [
+      640,
+      480
+    ],
+    "rgb_channel_order": "RGB",
+    "schema": "habitat-rgbd-sensor-contract/v1",
+    "sensor_orientation_habitat_rad": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "sensor_position_habitat": [
+      0.0,
+      1.5,
+      0.0
+    ]
+  },
+  "sensor_contract_sha256": "e1cbfd1e630ac86ed7f71bfe231fba192baa1117ae981df97e35219a1b57a7cb",
+  "sensor_orientation_habitat_rad": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "sensor_position_habitat": [
+    0.0,
+    1.5,
+    0.0
+  ],
+  "sequence_id": "hm3d-v02-00802-t1-1-turn-continue-paced-rtf1-v1",
+  "source_route_path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/configs/habitat/hm3d_minival_v02_00802_t1_1_turn_continue_route.json",
+  "source_route_sha256": "f76c124bc80b7a9a895666a7802b00abd48ef5ba20a2d692d6e02703abbd20a0",
+  "source_sequence_id": "hm3d-v02-00802-t1-1-turn-continue-v1",
+  "stage_semantics": {
+    "camera_pacing": "configured 30 target camera FPS at 1.0 simulation-to-wall real-time factor; monotonic wait only between continuing simulation steps; no terminal wait; overruns recorded without catch-up",
+    "camera_stream": "actual Habitat sensor render after each simulator action",
+    "detector_encoder_mapper_room_backend": "not run",
+    "keyframes": "pose-delta raw RGB-D candidates only; mapper_processed=false"
+  }
+}

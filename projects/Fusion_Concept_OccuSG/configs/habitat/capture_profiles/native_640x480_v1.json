@@ -1,0 +1,8 @@
+{
+  "schema": "habitat-capture-profile/v1",
+  "profile_id": "native_640x480_v1",
+  "resolution_px": [640, 480],
+  "calibration_id": "habitat-rgbd-stage-v1-640x480",
+  "intrinsics_adapter": "adapters.habitat.frames.habitat_camera_intrinsics",
+  "policy": "native sensor capture; retain route HFOV, sensor extrinsics, depth range/convention and all detector preprocessing"
+}

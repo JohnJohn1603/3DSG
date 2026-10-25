@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "experiment": "Q3 raw detector class soft reranking",
+  "status": "locked_before_scoring",
+  "backend_base": "K4 current (geometry plus accumulated-surface fallback)",
+  "base_rationale": "K4 is the existing development control that preserved the reviewed Case A continuity; Q2 changed no assignments and is reference-only.",
+  "candidate_policy": "rerank only K4-eligible track candidates; do not change eligibility, gates, thresholds, dedup, surface support/fallback, assignment cardinality, or defer policy",
+  "raw_class_evidence": {
+    "prior_track_distribution": "confidence-weighted histogram from canonical observations assigned to the track before the current frame; one contribution per assigned observation",
+    "observation_reliability": "raw detector confidence clipped to [0,1]",
+    "agreement": "prior weight for observation raw class divided by total prior class weight",
+    "soft_delta": "lambda * current_confidence * (2 * agreement - 1)",
+    "rerank_score": "K4 candidate score + soft_delta",
+    "missing_class_or_empty_prior": "delta=0",
+    "update_timing": "snapshot prior class histograms before scoring a frame; score all observations against that snapshot; update only after the full frame is assigned",
+    "aliases": "no additional vote for aliases",
+    "deferred": "no vote is added for deferred observations",
+    "created_or_matched": "canonical observation contributes after assignment for subsequent frames",
+    "semantic_labels": "no graph semantic label updates"
+  },
+  "parameter_search": {
+    "only_parameter": "lambda",
+    "values": [0.05, 0.15, 0.30],
+    "selection_cache": "00802 29-frame development cache",
+    "selection_rule": "Select the lambda with the highest evaluator-ID pairwise F1 among the three; ties choose the smaller lambda. Human-reviewed scores are reported separately and cannot be overridden by the evaluator metric.",
+    "rejection_rule": "Reject if evaluator-ID false-merge tracks increase over K4, or if human-reviewed pairwise F1 decreases; if no candidate meets both constraints, keep K4.",
+    "test_status": "all supplied caches are development; no holdout claim"
+  },
+  "controls": ["source", "geometry-only-dedup-v2", "K4-current"],
+  "excluded": ["appearance", "GT", "human identity", "room labels", "Q2 representation", "graph semantic label updates"],
+  "known_limit": "Reranking cannot recover a match that K4 made ineligible or deferred before candidate selection; Case B is not expected to be repaired by this policy."
+}

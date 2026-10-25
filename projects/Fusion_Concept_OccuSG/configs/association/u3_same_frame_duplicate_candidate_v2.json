@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "profile_id": "u3_same_frame_duplicate_candidate_v2",
+  "status": "development_locked_before_paired_evaluation",
+  "scope": "same-frame suppression/canonicalization before geometry-only association; no cross-track merge or retirement",
+  "uses_gt_or_room_labels": false,
+  "raw_observations_preserved": true,
+  "semantic_votes_for_aliases": 0,
+  "baseline_reference_lock": "artifacts/audits/u3_causal_prefix/association_config.locked.json",
+  "baseline_reference_lock_sha256": "f0296efcd5e943d006b436e91a4ad4217b43604fd34fa60e2a386c079d67bf0c",
+  "baseline_config": {
+    "existing_mask_dedup_iou_min": 0.98,
+    "source_manager": {
+      "same_class_radius_m": 0.75,
+      "same_pose_suppression_cap_m": 0.15
+    },
+    "geometry_only": {
+      "candidate_center_radius_m": 0.75,
+      "appearance_iou_min": 0.01,
+      "geometry_only_iou_min": 0.05,
+      "ambiguity_margin": 0.05
+    }
+  },
+  "candidate": {
+    "duplicate_evidence": {
+      "mask_iou_min_or_containment_min": 0.8,
+      "mask_containment_min": 0.95,
+      "valid_depth_pixels_min_each": 100,
+      "valid_depth_fraction_min_each": 0.5,
+      "cluster_points_min_each": 100,
+      "center_distance_m_max": 0.1,
+      "aabb_iou_3d_min": 0.75,
+      "extent_consistency_min": 0.8,
+      "same_layer_required": true,
+      "raw_class_gate": false,
+      "p3_geometry_required": true
+    },
+    "canonical_selection": {
+      "order": [
+        "cluster_points_desc",
+        "valid_depth_pixels_desc",
+        "detector_score_desc",
+        "mask_area_desc",
+        "detection_id_asc"
+      ],
+      "ambiguity_policy": "suppress only when exactly one already-selected canonical observation passes all duplicate gates; otherwise preserve observation and mark ambiguous"
+    },
+    "rationale": {
+      "mask_threshold": "accept substantial overlap or near-containment, while requiring independent 3D agreement",
+      "geometry_threshold": "require near-coincident 3D bounds and center to reject depth-separated image overlap and small objects inside large masks",
+      "support_threshold": "require meaningful valid depth and accepted cluster support on both masks",
+      "canonical_order": "prefer the observation with strongest P3 support; deterministic tie-breaks do not use class, identity, or GT"
+    },
+    "containment_guard": {
+      "enabled": true,
+      "max_larger_to_smaller_mask_area_ratio": 1.5,
+      "applies_when": "mask_iou < duplicate_evidence.mask_iou_min_or_containment_min AND mask_containment_min_area >= duplicate_evidence.mask_containment_min",
+      "over_limit_decision": "ambiguous_keep_both_no_alias",
+      "missing_depth_or_point_support_decision": "ambiguous_keep_both_no_alias",
+      "missing_or_incompatible_geometry_decision": "ambiguous_keep_both_no_alias",
+      "below_limit_with_existing_gates_pass": "canonicalize_as_v1",
+      "same_object_inference_from_area_ratio": false,
+      "uses_gt_room_or_class": false,
+      "additional_pointset_reconstruction": false,
+      "rationale": "Containment with >50% area expansion has a credible mixed-mask failure mode; preserve both without asserting different identity. This is a conservative ambiguity cap, not an identity classifier."
+    }
+  },
+  "non_goals": [
+    "semantic classifier tuning",
+    "general cross-track merge or retirement",
+    "graph/M9 integration",
+    "room scores",
+    "change source association",
+    "change geometry-only cross-frame thresholds",
+    "change model, vocabulary, room rules, or M9 integration"
+  ]
+}

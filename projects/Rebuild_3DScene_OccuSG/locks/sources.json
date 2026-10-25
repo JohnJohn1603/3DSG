@@ -1,0 +1,482 @@
+{
+  "schema_version": 1,
+  "baseline": {
+    "name": "OccuSG",
+    "path": "ref_OccuSG/OccuSG",
+    "commit": "2bca2fa06af87fd9dd0542957039be8f580f0dca",
+    "license": "MIT",
+    "role": "M0-M1 reference source; no source files copied into the standalone package"
+  },
+  "submodules": [
+    {
+      "name": "Map-Conversion-3D-Voxel-Map-to-2D-Occupancy-Map",
+      "path": "src/mapconversion",
+      "commit": "14b8cb9e6534ba21e84f624c94d20960f6613f3c",
+      "checkout": "../../../Documents/Codex/2026-09-22/c-c/research/occusg_phase1/upstream/mapconversion",
+      "role": "M3 C++ reference backend; Python port retained for debug"
+    },
+    {
+      "name": "octomap_mapping",
+      "path": "src/octomap_mapping",
+      "commit": "7bb98eaa4235f9ca37bc388e242fce902209fc4e",
+      "role": "M2 occupancy reference; not built in M0-M1"
+    },
+    {
+      "name": "YOLOs-CPP",
+      "path": "src/semantic_perception/third_party/YOLOs-CPP",
+      "commit": "c790c8e315c40d3110a6602c2c41576b8e5770fc",
+      "role": "optional perception reference; excluded from M0-M1"
+    }
+  ],
+  "duDe": {
+    "role": "M4 local technical worker; pinned Incremental DuDe source reused without replacing its algorithm",
+    "license_status": "duDe_package_license_todo; mathtool_license_file_referenced_but_not_present; fist_notice_limited_noncommercial_internal_academic_use; modification_or_redistribution_requires_prior_written_consent; cloud_scope_unresolved; no_permission_inferred",
+    "reference_path": "src/incremental_dude_ros2/incremental_dude_ros2",
+    "baseline_commit": "2bca2fa06af87fd9dd0542957039be8f580f0dca",
+    "package_path": "src/incremental_dude_ros2/incremental_dude_ros2",
+    "fist_archive": "Third_Party/dude_final/FIST/libFIST.linux64.a",
+    "fist_archive_sha256": "84875da959aae5a1abdddc993075d0f91d4afdbdda1a29dd856f77254a63c684",
+    "worker": "native/dude/occusg_dude_worker; local-only, no ROS runtime, no cloud/distribution",
+    "parameters": {
+      "decomp_threshold_m": 1.5,
+      "safety_distance_m": 0.5,
+      "provenance": "pinned ROS runtime YAML config/inc_dude_params.yaml"
+    },
+    "patch_ledger": [
+      "native/dude/preprocessing.cpp ports exact mapCallback find_image_bounding_Rect and clean_image2 OpenCV operations into adapter; baseline unchanged",
+      "native/dude/include/m4_non_ros_logging.hpp replaces logging only for generated build copies of wrapper.cpp and inc_decomp.cpp and shadows third-party logger include",
+      "native/dude/worker.cpp adds line-delimited protocol and calls pinned Incremental_Decomposer and are_contours_connected",
+      "native/dude_reference/source_reference.cpp and separate CMake target directly call pinned Incremental_Decomposer/active adjacency; independent of worker parser/output serialization",
+      "src/standalone_sg/regions/dude_client.py separates request/accepted observation revisions; backend rejected status returns stale M5 snapshot without guard/tracker update; success/fallback and source reuse remain candidate updates",
+      "native/dude/worker.cpp exposes opt-in exact preprocessed mask diagnostics; DuDe algorithm parameters and pinned source are unchanged",
+      "native/dude/source_reference.cpp adds persistent demo_sequence and doorway_sequence direct-source modes; each keeps one Incremental_Decomposer alive and independently preprocesses/maps output",
+      "tests/test_m4_source_parity.py compares live worker and live direct-source branch/status/masks/world geometry/area/adjacency; fresh-final and successful hidden-room doorway fixtures"
+    ],
+    "incremental_validation": {
+      "scope": "local synthetic fixtures; not full OccuSG pipeline parity",
+      "backend_rejection_policy": "no fresh RegionObservation; no M5 guard evaluation/commit or tracker update; return last M5-published snapshot stale with prior provenance; no native rollback claimed",
+      "candidate_status_policy": "success and fallback statuses enter M5 guard; source-accepted reuse branch is candidate update; M5 guard rejection preserves its own stale snapshot",
+      "source_oracle": "one persistent Incremental_Decomposer per multi-revision sequence; independent preprocessing and contour/world-output path",
+      "demo_rejection_sequence": [
+        "accept_empty_free_space (M5 guard rejects initial empty candidate)",
+        "accept_incremental (M5 accepts revision 2)",
+        "reject_expanded_empty_preserve_previous (request 3, accepted observation remains revision 2)",
+        "reject_expanded_empty_preserve_previous (request 4, accepted observation remains revision 2)",
+        "accept_reuse_adjusted_no_differential (M5 accepts revision 5 after rejection)"
+      ],
+      "successful_doorway_sequence": "accept_incremental -> accept_incremental; region count 1 -> 2; symmetric raw adjacency 0<->1",
+      "kernel_or_default_modified": false,
+      "pytest": {
+        "m4_tests_collected_and_passed": 15,
+        "full_suite_passed": 109,
+        "skipped": 0,
+        "commands": [
+          "PYTHONPATH=src:tests pytest -q tests/test_m4*.py",
+          "PYTHONPATH=src:tests pytest -q"
+        ],
+        "scenario_note": "fixture/revision scenarios within loops are not separate pytest tests"
+      },
+      "artifacts": "artifacts/m4_local_demo/; includes demo grids, masks, PNGs, summary.json, and doorway_geometry sequence grids/masks/summary.json"
+    }
+  },
+  "native_dependencies": {
+    "octomap": {
+      "package": "liboctomap-dev",
+      "version": "1.9.7+dfsg-3.1build3",
+      "distribution": "Ubuntu Noble amd64",
+      "license": "New BSD",
+      "sha256": "30ad34832b79858cc3c007dae68d71ebf768e4c7893d4942bd6be2bac1dce8a9",
+      "installation": "local prefix under build/deps/octomap-prefix; not system-installed"
+    }
+  },
+  "m4_toolchain_probe": {
+    "scope": "independent CGAL/GMP/MPFR executable only; no DuDe or FIST build/link/run",
+    "repository": "Ubuntu 24.04 Noble official archive.ubuntu.com, amd64; exact package hashes verified against configured APT Packages metadata",
+    "prefix": "build/deps/m4-prefix/usr (extracted .deb payloads; no dpkg/apt installation)",
+    "packages": [
+      {
+        "package": "libcgal-dev",
+        "version": "5.6-1build3",
+        "sha256": "4ad9d51506d42089b3cf14adfb8b9d9d79a9d32fc08f649feaf4b95f6e28cfb0",
+        "license": "CGAL per-file GPL-3-or-later or LGPL-3-or-later; this probe exercises the 2D Triangulations and 2D Triangulation Data Structure packages, identified as GPL in CGAL 5.6 package docs",
+        "archive": "pool/universe/c/cgal/libcgal-dev_5.6-1build3_amd64.deb"
+      },
+      {
+        "package": "libgmp-dev",
+        "version": "2:6.3.0+dfsg-2ubuntu6.1",
+        "sha256": "a9847b5ecfff791a46cb198f29a06d9d23a20afdfdd434812f2b44ccfb61d46a",
+        "license": "GMP dual-licensed GPL-2-or-later or LGPL-3-or-later",
+        "archive": "pool/main/g/gmp/libgmp-dev_6.3.0+dfsg-2ubuntu6.1_amd64.deb"
+      },
+      {
+        "package": "libgmp10",
+        "version": "2:6.3.0+dfsg-2ubuntu6.1",
+        "sha256": "285f8a505dfa8e1b33f357a9d8d3477ad35bf18c0b34771a6df4c25923f3ae0d",
+        "license": "GMP dual-licensed GPL-2-or-later or LGPL-3-or-later",
+        "archive": "pool/main/g/gmp/libgmp10_6.3.0+dfsg-2ubuntu6.1_amd64.deb"
+      },
+      {
+        "package": "libmpfr-dev",
+        "version": "4.2.1-1build1.1",
+        "sha256": "362fcdeb7dff545af83e65a3a972519185efd4a231c23e13d519cf97a5c8e3e4",
+        "license": "LGPL-3-or-later",
+        "archive": "pool/main/m/mpfr4/libmpfr-dev_4.2.1-1build1.1_amd64.deb"
+      },
+      {
+        "package": "libmpfr6",
+        "version": "4.2.1-1build1.1",
+        "sha256": "aebc1c8b69a1f98bb43dfc268daecd181116dbf40b13ee4e822eb4bdd52b493a",
+        "license": "LGPL-3-or-later",
+        "archive": "pool/main/m/mpfr4/libmpfr6_4.2.1-1build1.1_amd64.deb"
+      }
+    ],
+    "system_build_dependency": "libboost-dev and libboost-system-dev 1.83.0.1ubuntu2 were already installed system-wide and used by CMake; this task installed no system packages",
+    "result": "standalone probe executable built and run; CTest 1/1 passed; not evidence that DuDe builds or that M4 is accepted"
+  },
+  "m6_object_association": {
+    "baseline_commit": "2bca2fa06af87fd9dd0542957039be8f580f0dca",
+    "source_path": "src/scene_graph_ros/scene_graph_ros/managers/object_manager.py",
+    "source_symbols": [
+      "ObjectNodeManager._detection_label_and_score",
+      "ObjectNodeManager._get_normalized_class_name",
+      "ObjectNodeManager._find_or_add",
+      "ObjectNodeManager._process_single_detection"
+    ],
+    "same_class_radius_m": 0.75,
+    "same_pose_suppression_cap_m": 0.15,
+    "semantics": "nearest normalized exact class first; else nearest same-pose suppression within min(radius, cap), both tie-break object ID; update last_seen/provenance only, preserve first-observation geometry/class/score",
+    "provider_boundary": "Detection3D center is already canonical world; DetectionBatch detections=None means absent, empty tuple means present frame with no detections",
+    "gt_instance_ids_used": false,
+    "not_in_scope": [
+      "heavy detector",
+      "multi-view fusion",
+      "centroid/score update",
+      "room anchoring",
+      "SceneGraphBuilder"
+    ],
+    "pytest": {
+      "focused_m6_and_config_passed": 20,
+      "full_suite_passed": 143,
+      "skipped": 0,
+      "test_module": "tests/test_m6_object_association.py",
+      "config_module": "tests/test_config.py",
+      "commands": [
+        "python3 -m pytest -q tests/test_m6_object_association.py tests/test_config.py",
+        "python3 -m pytest -q"
+      ]
+    },
+    "batch_atomicity": {
+      "policy": "prevalidate every detection world frame before any sequential association mutation",
+      "regressions": "invalid second detection after first would create a node, and after first would match an existing node; snapshot/provenance/last_seen/ID allocator remain unchanged; next valid batch reuses expected ID",
+      "scope": "API contract hardening; pinned matching algorithm unchanged"
+    }
+  },
+  "m7_navigation": {
+    "baseline_commit": "2bca2fa06af87fd9dd0542957039be8f580f0dca",
+    "source_paths": [
+      "src/scene_graph_ros/scene_graph_ros/managers/free_space_manager.py",
+      "src/scene_graph_ros/config/scene_graph_pipeline_params_mp3d.yaml",
+      "src/scene_graph_ros/config/scene_graph_pipeline_params.tbot3.yaml"
+    ],
+    "profile": "benchmark runtime YAML values: fs_cell_stride_cells=15, fs_min_free_cell_count=25, fs_navigation_connectivity=8; generic class defaults are 10/50/8",
+    "semantics": "world-aligned floor(cell_center/(stride*resolution)); count values == 0; create at >=25; representative free cell closest to block centroid with (row,col) tie-break; BFS through union of two blocks only; 8-neighbour; directed reciprocal NAVIGABLE_PATH edges",
+    "lifecycle": "same geometry retains nodes below threshold; origin/resolution change triggers full rescan and prunes nodes below threshold or outside current free blocks; surviving block IDs are stable world keys",
+    "scope": "structural cell connectivity only, not robot-footprint passability",
+    "m3_integration": "synthetic leaves projected by FreeSpaceGrid2D project_leaves Python debug port, then consumed by M7; not native C++ M3 parity",
+    "pytest": {
+      "test_module": "tests/test_m7_navigation.py",
+      "focused_passed": 10,
+      "full_suite_pending": false,
+      "full_suite_passed": 195,
+      "skipped": 0,
+      "commands": [
+        "python3 -m pytest -q tests/test_m7_navigation.py",
+        "python3 -m pytest -q"
+      ],
+      "native_m2_m3_smoke": "passed; OctoMapWorker integrate -> cpp_mapconverter full_refresh -> M7 graph invariants"
+    },
+    "resolution_change_tolerance_m": {
+      "value": 0.0001,
+      "comparison": "abs(previous_resolution - resolution) > tolerance",
+      "source_symbol": "FreeSpaceNodeManager.process_occupancy_grid_update",
+      "baseline_commit": "2bca2fa06af87fd9dd0542957039be8f580f0dca"
+    }
+  },
+  "m8_rooms": {
+    "baseline_commit": "2bca2fa06af87fd9dd0542957039be8f580f0dca",
+    "source_paths": [
+      "src/scene_graph_ros/scene_graph_ros/managers/region_manager.py",
+      "src/scene_graph_ros/scene_graph_ros/managers/room_manager.py",
+      "src/scene_graph_ros/scene_graph_ros/scene_graph_region.py"
+    ],
+    "source_symbols": [
+      "RegionManager.gather_region_member_ids",
+      "RegionManager._resolve_tracker_region_for_node",
+      "RegionManager._find_tracker_region_for_navigation_node",
+      "RoomManager.create_room_from_region",
+      "RoomManager.associate_room_with_tracker_region",
+      "RoomManager.sync_room_membership_from_region",
+      "RoomManager.relink_rooms_to_replacement_regions",
+      "RoomManager.prune_rooms_without_valid_anchors",
+      "RoomManager.rebuild_room_adjacency_from_dude_regions_and_navigation"
+    ],
+    "contracts": {
+      "direct_member_kinds": [
+        "agent",
+        "object",
+        "navigation"
+      ],
+      "promotion": "current geometric region requires at least one meaningful direct member",
+      "boundary_epsilon_m": 0.15,
+      "maintenance_hz": 0.5,
+      "relink_min_old_overlap_ratio": 0.65,
+      "relink_min_member_support_ratio": 0.5,
+      "relink_min_score_margin": 0.15,
+      "adjacency": "current region adjacency intersected with cross-region M7 navigation bridge; both regions must have RoomNodes"
+    },
+    "lifecycle": "stale snapshot skips relink/prune; accepted current snapshot relinks before pruning; retained but not current track does not protect missing anchor; expired track IDs are explicit",
+    "geometry_scope": "dependency-free simple-ring operations; holes supported by contract but M4 currently supplies only outer rings; self-intersection repair parity with upstream Shapely is not claimed",
+    "pytest": {
+      "module": "tests/test_m8_rooms.py",
+      "focused_passed": 9,
+      "full_suite_pending": false,
+      "full_suite_passed": 195,
+      "skipped": 0,
+      "commands": [
+        "python3 -m pytest -q tests/test_m8_rooms.py",
+        "python3 -m pytest -q"
+      ]
+    },
+    "m7_to_m8_contract": {
+      "public_bounds_order": "(min_x,min_y,max_x,max_y), same as Polygon2D.bounds",
+      "adapter": "room_entity_from_nav_node preserves NavNode.node_id, geometric block center, and footprint",
+      "real_navnode_regressions": "0.75m block area 0.5625m2; negative/asymmetric world keys; candidate overlap choice; bridge-based room adjacency",
+      "m4_m5_m8_integration": "actual pinned local DuDe worker + M5 doorway sequence; synthetic agent/object/nav entities explicitly marked; stale rejection preserves rooms and IDs",
+      "pytest_module": "tests/test_m7_m8_contract.py; tests/test_m4_m5_m8_integration.py",
+      "scope": "module-boundary integration fixtures; not Habitat/Webots end-to-end; no complex-contour source parity claim",
+      "bounds_validation": "finite numeric exact 4-tuple, min_x < max_x and min_y < max_y; reject degeneracy"
+    },
+    "orchestration_maintenance": {
+      "api": "RoomAnchoringManager.update(..., maintenance=False) skips only relink/prune; membership resolution and promotion still run",
+      "cadence": "SceneGraphBuilder gates maintenance through maintenance_due at configured 0.5 Hz; records pending accepted-snapshot work",
+      "flush": "terminal flush runs pending maintenance once, applies one atomic GraphPatch, returns real deltas, then closes sequence"
+    }
+  },
+  "m9_pipeline": {
+    "status": "local ROS-free builder implemented; integration/contract milestone passed current fixtures, not full-system acceptance",
+    "files": [
+      "src/standalone_sg/pipeline/contracts.py",
+      "src/standalone_sg/pipeline/scheduler.py",
+      "src/standalone_sg/pipeline/stages.py",
+      "src/standalone_sg/pipeline/builder.py",
+      "src/standalone_sg/pipeline/__init__.py",
+      "src/standalone_sg/serialization/json_graph.py",
+      "src/standalone_sg/visualization/plots.py",
+      "scripts/export_m10_demo.py"
+    ],
+    "public_api": "standalone_sg.SceneGraphBuilder, FramePacket, GraphPatch, GraphDelta, SceneGraphSnapshot",
+    "semantics": "single writer; strict packet mode contracts; monotone frame index/nondecreasing timestamps; consecutive revision GraphPatch; immutable graph snapshots and deltas; M6 absent-vs-empty; M7 structural nav only; M8 stale regions preserve anchors; terminal flush; M7 navigation edges reconciled by relation snapshot; room stale observation provenance preserved; NavNode first_seen stable; lifecycle closed after flush; post-stage exceptions poison builder with replay_required",
+    "stage_boundary": "mapping and region stages constructor-injected; DudeM5RegionStage wraps actual pinned worker+M5 processor; no ROS/simulator dependency",
+    "transaction_limit": "candidate snapshot, GraphPatch, GraphDelta and scheduler cursor are prepared before public graph/scheduler commit; delta-construction exceptions preserve last committed snapshot/revision/cursor; already-mutated M4/M5/M6/M7/M8 backend state is not rolled back and poisons builder for replay",
+    "metadata_policy": "FramePacket.source_metadata and GraphNode.attributes accept only finite JSON-native values and string keys; reject unsupported types before stages; serializer rejects non-string keys, sets and nonfinite floats",
+    "replay": "canonical graph and event hashes exclude wall-clock timestamps/environment metadata; repeated fixture sequence hashes match",
+    "pytest": {
+      "test_module": "tests/test_m9_builder.py",
+      "focused_passed": 25,
+      "full_suite_passed": 195,
+      "skipped": 0,
+      "commands": [
+        "python3 -m pytest -q tests/test_m9_builder.py",
+        "python3 -m pytest -q"
+      ],
+      "full_suite_elapsed_s": 32.69,
+      "scope_cases": [
+        "bridge removed and restored while both M7 nodes remain; GraphDelta edge diffs verified",
+        "room stale preserves last_seen and observation timestamp/revision while packet processing time advances",
+        "NavNode stable first_seen and current observation time",
+        "immediate membership separated from 0.5 Hz relink/prune cadence; flush applies deferred prune and returns removed node delta",
+        "flush ends sequence and timestamp cannot move backwards",
+        "mutation-then-downstream-error preserves committed snapshot and requires replay; pre-stage validation does not poison"
+      ]
+    },
+    "scope": "one synthetic offline four-layer integration; direct M4→M5→M8 doorway integration uses synthetic entities; no Habitat/Webots, cloud, whole-pipeline source parity or M11 acceptance",
+    "failure_policy": "pre-stage packet/scheduler validation errors do not poison; exception after a potentially mutating stage preserves last committed graph and poisons this instance; update/flush rejected until close; instantiate new builder and replay"
+  },
+  "m10_exports": {
+    "status": "local deterministic serializer/trajectory/visualization implementation; M10 fixtures pass, not simulator end-to-end",
+    "files": [
+      "src/standalone_sg/serialization/json_graph.py",
+      "src/standalone_sg/visualization/plots.py",
+      "scripts/export_m10_demo.py",
+      "tests/test_m10_serialization.py"
+    ],
+    "schema_version": 1,
+    "migration": "v0 snapshot envelope only; fills config_hash=legacy-v0 and empty stale_flags",
+    "metadata_policy": "canonical finite JSON; string object keys only; reject NaN/Inf, unsupported objects and sets; large integers preserved",
+    "atomic_write": "same-directory temporary file, flush/fsync, os.replace",
+    "trajectory": "only committed agent GraphNodes with explicit pose_W; no inferred/fabricated poses",
+    "visualization": "Matplotlib Agg; world XY geometry and trajectories; typed graph nodes at physical world positions; stale rooms explicitly marked; no force-layout substitution",
+    "demo": "artifacts/m10_demo; deterministic synthetic/cached doorway fixture; 3 accepted poses; 22 nodes; 107 edges; revision 4; replay deltas equal final snapshot; not native backend checkpoint",
+    "outputs": ["snapshot.json", "delta_log.json", "trajectory.csv", "trajectory.json", "trajectory_rooms.png", "scene_graph.png", "manifest.json"],
+    "pytest": {
+      "test_module": "tests/test_m10_serialization.py",
+      "focused_passed": 15,
+      "full_suite_passed": 195,
+      "skipped": 0,
+      "full_suite_elapsed_s": 32.69,
+      "commands": [
+        "python3 scripts/export_m10_demo.py --output artifacts/m10_demo",
+        "PYTHONPATH=src python3 -m pytest -q tests/test_m10_serialization.py tests/test_m11_native_smoke.py",
+        "PYTHONPATH=src python3 -m pytest -q"
+      ]
+    },
+    "scope": "synthetic/cached local fixture plus separate native point-cloud preparation smoke; not RGB-D/Habitat/Webots end-to-end, no M11/Kaggle or M12/Webots",
+    "images_manual_inspection": true,
+    "native_backend_checkpoint": false
+  },
+  "m11_native_smoke": {
+    "status": "local native point-cloud preparation smoke; not M11/Kaggle acceptance",
+    "files": [
+      "src/standalone_sg/mapping/native_pipeline.py",
+      "scripts/run_native_pipeline_smoke.py",
+      "tests/test_m11_native_smoke.py",
+      "docs/M11_STATUS.vi.md"
+    ],
+    "input_mode": "pointcloud",
+    "rgbd_end_to_end": false,
+    "gt_regions_in_builder": false,
+    "native_backends": {
+      "m2": "build/native-m3/occupancy/standalone_sg_octomap_fixture_runner",
+      "m3": "pinned C++ MapConverter",
+      "m4": "build/native-m4-dude/occusg_dude_worker"
+    },
+    "result": {
+      "frames": 2,
+      "m4_statuses": ["success", "success"],
+      "final_revision": 3,
+      "final_nodes": 7,
+      "final_edges": 13,
+      "agent_poses": 2,
+      "native_regions": 1,
+      "delta_replay_equal": true,
+      "fixture_generation_runtime_ms": 1.53,
+      "update_flush_close_runtime_ms": 162.31,
+      "sampled_child_rss_max_kib": 16556,
+      "python_process_ru_maxrss_kib": 143520,
+      "no_return_rays": 675,
+      "occupied_keys": 0
+    },
+    "artifacts": "artifacts/m11_native_smoke/",
+    "pytest": {
+      "full_suite_passed": 195,
+      "skipped": 0,
+      "full_suite_elapsed_s": 32.69
+    },
+    "cloud_upload": false,
+    "license_gate": "M4 distribution/cloud rights unresolved; local-only",
+    "scope": "deterministic canonical point-cloud smoke through native M2/M3, pinned DuDe/M5, M6-M10; not RGB-D, simulator, Kaggle or full M11 benchmark"
+  },
+  "m11_rgbd_synthetic_smoke": {
+    "status": "synthetic depth-channel local smoke; RGB omitted; not simulator capture or M11 acceptance",
+    "files": [
+      "src/standalone_sg/mapping/native_pipeline.py",
+      "scripts/run_native_rgbd_smoke.py",
+      "tests/test_m11_rgbd_smoke.py",
+      "docs/M11_STATUS.vi.md"
+    ],
+    "m1_kernel": "standalone_sg.geometry.backproject_depth and decode_depth_to_meters",
+    "fixture": {
+      "scene": "room shell, floor, ceiling and box obstacle",
+      "frames": 2,
+      "camera_moves_and_rotates": true,
+      "base_poses_W": [[0.55, 0.0, 0.0], [1.1, 0.18, 0.0]],
+      "yaw_rad": [0.0, 0.14],
+      "raw_depth": "uint16 mm decoded to metric axial depth",
+      "rgb_present": false,
+      "gt_regions_in_builder": false
+    },
+    "result": {
+      "depth_pixels_each": 3072,
+      "finite_pixels_each": 3048,
+      "valid_mask_pixels_each": 3040,
+      "m1_hits_each": 3017,
+      "m2_no_return_rays": 0,
+      "m2_free_keys_each": [113097, 79343],
+      "m2_occupied_keys_each": [2754, 2534],
+      "m3_modes": ["full_refresh", "partial_update"],
+      "m4_branches": ["accept_incremental", "accept_reuse_adjusted_no_differential"],
+      "m4_status": ["success", "success"],
+      "m4_accepted": [true, true],
+      "m4_stale": [false, false],
+      "regions_each": [1, 1],
+      "final_rooms": 1,
+      "revision": 3,
+      "nodes": 28,
+      "edges": 156,
+      "agent_poses": 2,
+      "trajectory_displacement_m": 0.5787,
+      "delta_replay_equal": true,
+      "dangling_or_self_edges": false,
+      "startup_runtime_ms": 13.22,
+      "fixture_generation_runtime_ms": 197.39,
+      "update_flush_close_runtime_ms": 2977.67,
+      "export_render_reload_runtime_ms": 1555.80,
+      "sampled_child_rss_max_kib": 32656,
+      "python_process_ru_maxrss_kib": 195896
+    },
+    "artifacts": "artifacts/m11_rgbd_synthetic_smoke/",
+    "pytest": {
+      "focused_module_passed": 1,
+      "focused_pair_passed": 2,
+      "full_suite_passed": 195,
+      "skipped": 0,
+      "full_suite_elapsed_s": 32.69
+    },
+    "cloud_upload": false,
+    "license_gate": "M4 distribution/cloud rights unresolved; local-only",
+    "scope": "synthetic depth-channel path through M1-M10; not RGB capture, simulator, Kaggle or full M11 benchmark",
+    "two_room_sequence": {
+      "status": "synthetic scripted native local integration; not M11 acceptance",
+      "frames": 44,
+      "m4_status_counts": {"success": 43, "rejected": 1},
+      "m4_branch_counts": {"accept_incremental": 21, "accept_reuse_adjusted_no_differential": 22, "reject_expanded_empty_preserve_previous": 1},
+      "m5_accepted": 43,
+      "m5_stale": 1,
+      "region_ids_observed": [1, 2],
+      "max_current_regions": 2,
+      "final_regions": [1],
+      "final_rooms": [1],
+      "room_2_promoted_then_pruned": true,
+      "snapshot_sha256": "9e9b99a4a3c8c28aaf36dd132994e11cbd949358f98f99e620fd4df4aeaae316",
+      "delta_log_sha256": "fea6fff3f5e83ba951db992f7ef7714eaf9efb8819df924eea2ffdef5b5f640f",
+      "byte_identical_rerun": true,
+      "artifacts": "artifacts/m11_two_room_rgbd_sequence/",
+      "layer_diagnosis": {
+        "runner": "scripts/diagnose_two_room_sequence.py",
+        "artifacts": "artifacts/m11_two_room_diagnostics/",
+        "m2_snapshot_storage": "gzip-compressed JSON; decompressed payload verified byte-for-byte before dropping uncompressed copies",
+        "config": "configs/m4_local.yaml",
+        "m4_worker_sha256": "74cd4b92d88963e3128feee8f26718017508fd0ff72e8bb0e85b86659ffdb3fc",
+        "m2_m3_worker_sha256": "6dfe4c1146eae3cf85a231f1760f1af42eccdc2dd7efb9d2da7f8070ec07e22c",
+        "reference_config_changed": false,
+        "baseline_sequence_artifacts_changed": false,
+        "frames_replayed": 44,
+        "checkpoints": [13, 16, 22, 34, 43],
+        "final_partial_grid": {"revision": 44, "shape_yx": [81, 177], "resolution_m": 0.05, "origin_xy": [0.0, -2.000000000000001], "fresh_m4_regions": 1},
+        "same_tree_full_refresh": {"different_m3_cells_vs_partial": 301, "m3_occupied_cells": 260, "fresh_m4_regions": 1},
+        "ideal_geometry_only_control": {"same_shape_resolution_origin": true, "fresh_m4_regions": 2, "used_by_exploration_pipeline": false},
+        "stateful_fresh_first_geometry_divergence_frame": 1,
+        "frame_12_comparison_note": "sequential backend rejected/preserved previous while fresh accepted a new candidate; not equivalent branches",
+        "focused_pytest_passed": 10,
+        "full_suite_rerun": false,
+        "duDe_kernel_or_reference_config_changed": false,
+        "cloud_upload": false,
+        "interpretation": "first observed structural loss is between M2 occupancy and M3 projected grid; exact coverage/projection/callback cause remains unresolved; neither partial nor full-refresh actual grid yields two regions"
+      },
+      "full_suite": {"passed": 197, "skipped": 0, "elapsed_s": 108.42},
+      "cloud_upload": false,
+      "license_gate": "M4 cloud/distribution rights unresolved; local-only"
+    }
+  }
+
+}

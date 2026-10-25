@@ -1,0 +1,165 @@
+{
+  "calibration_id": "habitat-rgbd-stage-v1",
+  "gpu_device_id": -1,
+  "horizontal_fov_deg": 90.0,
+  "max_depth_m": 10.0,
+  "min_depth_m": 0.1,
+  "navmesh_file": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/replica_cad_dataset/navmeshes/apt_4.navmesh",
+  "require_navigable": true,
+  "resolution_px": [
+    160,
+    120
+  ],
+  "route": [
+    {
+      "label": "start_face_route",
+      "position_habitat": [
+        -0.978658,
+        0.119373,
+        -0.748488
+      ],
+      "yaw_rad": -2.814178
+    },
+    {
+      "label": "start_revisit_turn",
+      "position_habitat": [
+        -0.978658,
+        0.119373,
+        -0.748488
+      ],
+      "yaw_rad": -1.243382
+    },
+    {
+      "label": "route_20pct",
+      "position_habitat": [
+        -0.529184,
+        0.119373,
+        0.574902
+      ],
+      "yaw_rad": -2.814178
+    },
+    {
+      "label": "route_40pct",
+      "position_habitat": [
+        -0.07971,
+        0.119373,
+        1.898293
+      ],
+      "yaw_rad": -2.814178
+    },
+    {
+      "label": "route_60pct",
+      "position_habitat": [
+        0.369764,
+        0.119373,
+        3.221683
+      ],
+      "yaw_rad": -2.814178
+    },
+    {
+      "label": "route_60pct_revisit_turn",
+      "position_habitat": [
+        0.369764,
+        0.119373,
+        3.221683
+      ],
+      "yaw_rad": -1.243382
+    },
+    {
+      "label": "route_80pct",
+      "position_habitat": [
+        0.710318,
+        0.119373,
+        4.567658
+      ],
+      "yaw_rad": -3.060096
+    },
+    {
+      "label": "route_end",
+      "position_habitat": [
+        0.824094,
+        0.119373,
+        5.960657
+      ],
+      "yaw_rad": -3.060096
+    },
+    {
+      "label": "route_end_revisit_turn",
+      "position_habitat": [
+        0.824094,
+        0.119373,
+        5.960657
+      ],
+      "yaw_rad": -1.4893
+    },
+    {
+      "label": "return_80pct",
+      "position_habitat": [
+        0.710318,
+        0.119373,
+        4.567658
+      ],
+      "yaw_rad": 0.081496
+    },
+    {
+      "label": "return_40pct",
+      "position_habitat": [
+        -0.07971,
+        0.119373,
+        1.898293
+      ],
+      "yaw_rad": 0.327414
+    },
+    {
+      "label": "return_start",
+      "position_habitat": [
+        -0.978658,
+        0.119373,
+        -0.748488
+      ],
+      "yaw_rad": 0.327414
+    }
+  ],
+  "route_generation": {
+    "geodesic_distance_m": 6.9882,
+    "goal_position_habitat": [
+      0.824094,
+      0.119373,
+      5.960657
+    ],
+    "method": "seeded random navmesh sampling + shortest path; candidate selection nearest 7 m geodesic",
+    "navmesh_sha256": "03125c02eb0530728e58c59f0fa9e60e28b16d20f0d143903fca9328cbee3d8c",
+    "sample_count": 72,
+    "scene_sha256": "183af36d808447ffaaa25137ebe3db7960ad0734c390bd4eebeab6f0ce6ddf6a",
+    "seed": 20261018,
+    "selection_inputs": [
+      "scene navmesh geometry"
+    ],
+    "semantic_or_predictor_inputs": false,
+    "start_position_habitat": [
+      -0.978658,
+      0.119373,
+      -0.748488
+    ],
+    "valid_candidate_count": 208
+  },
+  "route_policy": "fixed short route selected only from navmesh free-space connectivity; includes same-position yaw revisits; no GT semantic or predictor input",
+  "scene_dataset_config": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/replica_cad_dataset/replicaCAD.scene_dataset_config.json",
+  "scene_id": "apt_4",
+  "scene_instance": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/replica_cad_dataset/configs/scenes/apt_4.scene_instance.json",
+  "scene_license_note": "ReplicaCAD dataset CC BY 4.0; local experiment only",
+  "scene_provenance": "Habitat-Sim ReplicaCAD dataset v1.6 local scene instance",
+  "schema_version": 1,
+  "sensor_orientation_habitat_rad": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "sensor_position_habitat": [
+    0.0,
+    1.5,
+    0.0
+  ],
+  "sequence_id": "replica-cad-apt4-navmesh-route-v1",
+  "simulation_step_s": 0.1
+}

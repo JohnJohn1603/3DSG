@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "status": "approved_fp16_runtime_plan_pending_kaggle_execution",
+  "model": {
+    "repo_id": "Qwen/Qwen3-4B-Base",
+    "immutable_revision": "906bfd4b4dc7f14ee4320094d8b41684abff8539",
+    "license_reported_by_upstream": "apache-2.0",
+    "parameter_count_reported_by_upstream": "4.0B",
+    "upstream_tensor_type_reported_by_upstream": "BF16",
+    "estimated_weight_storage_fp16_or_bf16_bytes": 8000000000,
+    "expected_upstream_sha256_manifest": null,
+    "official_sources": [
+      "https://huggingface.co/Qwen/Qwen3-4B-Base",
+      "https://huggingface.co/Qwen/Qwen3-4B-Base/blob/906bfd4b4dc7f14ee4320094d8b41684abff8539/config.json",
+      "https://huggingface.co/docs/transformers/v4.51.3/en/model_doc/qwen3"
+    ],
+    "provenance_note": "Revision is pinned for source provenance. No upstream checksum was recorded in this lock; any SHA-256 computed after a future download is a local integrity value, not an upstream-authenticity check.",
+    "downloaded_or_cached_here": false
+  },
+  "direct_python_dependencies_candidate": {
+    "transformers": "4.51.3",
+    "tokenizers": "0.21.1",
+    "safetensors": "0.5.3",
+    "huggingface_hub": "0.30.2"
+  },
+  "runtime_dependencies_not_installed_by_notebook": {
+    "torch": "must be supplied by the selected Kaggle kernel and recorded by probe",
+    "numpy": "must be supplied by the selected Kaggle kernel and recorded by probe",
+    "python": "must be supplied by the selected Kaggle kernel and recorded by probe"
+  },
+  "dependency_notes": [
+    "Transformers 4.51.3 has official Qwen3 model documentation; the Qwen model card warns that Transformers below 4.51.0 cannot resolve model_type qwen3.",
+    "This is a direct-dependency candidate pin, not a fully resolved Kaggle environment lock. Python, PyTorch, NumPy, and transitive compatibility remain environment-supplied and must pass the notebook's version/import/pip-check gates.",
+    "PyTorch is supplied by the Kaggle runtime and is not installed or pinned by this notebook. The notebook must report its exact runtime version before any opt-in dependency install.",
+    "Accelerate is omitted because the candidate load path places the full, non-quantized model on one selected GPU and does not use device_map sharding. No offload is planned."
+  ],
+  "execution_contract": {
+    "model_load": "explicit opt-in only; pinned revision; local_files_only unless download permission is separately granted",
+    "dtype": "upstream checkpoint BF16; approved runtime adaptation casts loaded weights to FP16 on Tesla T4",
+    "quantization": "none",
+    "device": "one Tesla T4 only, selected GPU index 0; no automatic device_map or multi-GPU spread",
+    "score_math": "FP32 log-softmax and score accumulation",
+    "model_download_in_this_task": true,
+    "inference_in_this_task": true,
+    "repeatability_tolerance": {"absolute_logprob": 0.002, "relative_logprob": 0.0001, "purpose": "same-process numerical repeatability check, not a quality threshold"},
+    "resource_gates": {"minimum_free_vram_bytes": 12884901888, "minimum_free_disk_bytes": 10737418240}
+  }
+}

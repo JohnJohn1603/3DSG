@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "status": "local_hybrid_mapping_smoke_and_five_frame_pilot_passed",
+  "purpose": "Local CPU-only cached-perception ConceptGraphs mapping experiment on U6 HM3D 00808; not a full ConceptGraphs-Detect run and not reference parity.",
+  "reference": {
+    "repository": "ref_ConceptGraph/concept-graphs",
+    "commit": "93277a02bd89171f8121e84203121cf7af9ebb5d",
+    "worktree_policy": "read-only; no patch applied"
+  },
+  "input_recipe": {
+    "rgbd_pose_intrinsics": "artifacts/runs/u6_hm3d_00808_quality_v1_20261010/capture",
+    "mask_provider": "cached YOLO11n-seg P2 masks",
+    "visual_features": "cached OpenCLIP ViT-B-32, OpenAI, 512-D L2-normalized",
+    "reference_mismatch": "ConceptGraphs-Detect specifies RAM + GroundingDINO + SAM ViT-H + OpenCLIP ViT-H-14/laion2b_s32b_b79k. The cached masks and embeddings are different; reference mapping thresholds are unvalidated for these cached encoders.",
+    "mapping_config": "locks/integration_v2/conceptgraphs_detect_preflight_proposal.json: mapping_recipe; spatial_sim_type=overlap"
+  },
+  "environment_candidate_not_verified": {
+    "python": "3.10",
+    "torch": "2.0.1 CPU",
+    "torchvision": "0.15.2 CPU",
+    "pytorch3d": {
+      "version": "0.7.4",
+      "source": "https://github.com/facebookresearch/pytorch3d",
+      "revision": "v0.7.4 commit 297020a4b1d7492190cb4a909cafbd2c81a12cb5",
+      "build": "CPU native extension built from official tag source with MAX_JOBS=1, FORCE_CUDA=0, CUDA_HOME unset",
+      "official_binary_check": "Official PyPI 0.7.4 files list macOS wheels, not a Linux CPU wheel; official install guide documents source installation. No official prebuilt Linux CPU artifact matching this locked path was identified.",
+      "status": "built_and_box3d_overlap_cpu_smoke_passed",
+      "build_log": "artifacts/conceptgraphs_cpu_hybrid_00808_preflight/pytorch3d_cpu_build_retry3.log",
+      "build_duration": "16m59s",
+      "build_log_sha256": "9706449c6ea4544cd5cd6481da4ec047f865220d3ed0aeb15d42a245ce6631ab"
+    },
+    "open3d": "0.17.0",
+    "faiss-cpu": "1.7.4",
+    "hydra-core": "1.3.2",
+    "omegaconf": "2.3.0",
+    "gradslam": {
+      "source": "https://github.com/gradslam/gradslam",
+      "commit": "59ca872e3d265ad09f63c4793d011fad67064452",
+      "status": "not installed; selected mapping import uses a bridge that AST-loads the exact pinned from_intrinsics_matrix function only"
+    },
+    "opencv-python": "4.8.0.76",
+    "numpy": "1.24.3",
+    "scipy": "1.10.1"
+  },
+  "dependency_call_path": {
+    "active_for_selected_mapping": [
+      "PyTorch: tensor similarity, feature fusion, score aggregation",
+      "Open3D: point-cloud and oriented-box containers, cloud fusion/postprocessing",
+      "FAISS CPU: IndexFlatL2 nearest-neighbor support in compute_overlap_matrix_2set",
+      "PyTorch3D box3d_overlap: accurate oriented-box IoU gate inside compute_overlap_matrix_2set"
+    ],
+    "eager_imports_candidate_for_lazy_boundary_only": [
+      "GradSLAM: conceptgraph.dataset.datasets_common eagerly imports dataset/SLAM classes, while this mapping path needs from_intrinsics_matrix; exact scalar extraction can be compared against the pinned helper before using a wrapper",
+      "Matplotlib: slam_classes imports it for optional color_by_instance display behavior; mapping path does not call that method",
+      "OpenCV: imported by utils; determine exact selected-call uses before excluding"
+    ],
+    "not_in_mapping_scope": ["GroundingDINO", "SAM", "RAM", "OpenCLIP model loader", "chamferdist reference evaluation"]
+  },
+  "verification": {
+    "environment_created": true,
+    "environment_path": ".venv-cg-cpu",
+    "python": "3.10.21",
+    "effective_packages": {
+      "torch": "2.0.1+cpu",
+      "torchvision": "0.15.2+cpu",
+      "pytorch3d": "0.7.4 CPU source build",
+      "open3d": "0.17.0",
+      "faiss-cpu": "1.7.4",
+      "numpy": "1.24.3",
+      "scipy": "1.10.1",
+      "hydra-core": "1.3.2",
+      "omegaconf": "2.3.0",
+      "opencv-python": "4.8.0.76",
+      "matplotlib": "3.7.2",
+      "pip": "23.0.1",
+      "setuptools": "79.0.1 (build used 68.2.2)",
+      "wheel": "0.41.2"
+    },
+    "dependencies_installed": true,
+    "native_extensions_built": true,
+    "pip_check": "pass: No broken requirements found",
+    "box3d_overlap_cpu_smoke": {"status":"pass","boxes":"unit cubes offset 0.5 m","intersection_volume_m3":0.5,"iou":0.33333337,"cuda_available":false},
+    "conceptgraphs_mapping_core_import": "pass with a runtime bridge that AST-loads only the exact pinned reference from_intrinsics_matrix helper; reference checkout unchanged",
+    "model_downloaded": false,
+    "text_feature_sidecar": {
+      "path": "artifacts/conceptgraphs_cpu_hybrid_00808/text_features_v1",
+      "manifest_sha256": "34ebcbccf764a644c06356ce21dc7824232c27059c427fd422a436c6881deb84",
+      "checkpoint_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+      "observations": 18,
+      "unique_cached_detector_raw_class_texts": 6,
+      "embedding_dimension": 512,
+      "device": "CPU",
+      "runtime_s": 7.371,
+      "peak_rss_mib": 1486.78,
+      "model_downloaded": false
+    },
+    "reference_mapping_smoke": {
+      "status": "pass",
+      "command": "MPLCONFIGDIR=/tmp/cg-mpl .venv-cg-cpu/bin/python scripts/run_conceptgraphs_cached_hybrid.py --cache artifacts/runs/u6_hm3d_00808_quality_v1_20261010 --text-features artifacts/conceptgraphs_cpu_hybrid_00808/text_features_v1 --output artifacts/conceptgraphs_cpu_hybrid_00808/smoke_f0_v2 --frames 1",
+      "frames": 1,
+      "observations": 2,
+      "objects_before_reference_filter": 2,
+      "objects_after_reference_min_detections_filter": 0,
+      "runtime_s": 4.828,
+      "peak_rss_mib": 451.18
+    },
+    "pilot": {
+      "status": "pass",
+      "path": "artifacts/conceptgraphs_cpu_hybrid_00808/pilot_f0_f4_v5",
+      "frames": 5,
+      "observations": 18,
+      "reference_detections_mapped": 18,
+      "foreground_objects_before_postprocess": 9,
+      "objects_after_reference_filter": 2,
+      "objects_after_text_gated_reference_merge": 2,
+      "runtime_s": 6.002,
+      "mapping_runtime_s": 1.095,
+      "peak_rss_mib": 479.46,
+      "thresholds_validated_for_hybrid_encoders": false
+    },
+    "unified_graph_export_import": {
+      "status": "pass",
+      "path": "artifacts/unified_graphs/unified_cg_hybrid_00808_v3",
+      "objects": 2,
+      "room_membership_assigned_ambiguous_unassigned": [1, 1, 0],
+      "room_geometry_adjacency_unchanged": true,
+      "semantic_room_scoring_changed": false,
+      "source_run_id": null,
+      "linkage": "scene_sequence_only; cache capture and OccuSG replay are distinct runs"
+    },
+    "targeted_tests": "14 passed: test_conceptgraphs_output_contract.py, test_unified_scene_graph.py, test_conceptgraphs_adapter.py",
+    "compatibility_claim": "Hybrid cached-perception + pinned ConceptGraphs mapping core ran locally on CPU; not full ConceptGraphs-Detect, not reference parity, and mapping thresholds are unvalidated for YOLO11n-seg + ViT-B-32."
+  },
+  "stop_condition": "No more dependency or model work is needed for this local hybrid pilot. Do not claim detector/encoder/reference parity or threshold suitability; preserve source/default and room semantic behavior."
+}

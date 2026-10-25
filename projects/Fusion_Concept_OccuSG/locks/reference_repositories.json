@@ -1,0 +1,16 @@
+{
+  "OccuSG": {
+    "path": "ref_OccuSG/OccuSG",
+    "commit": "2bca2fa06af87fd9dd0542957039be8f580f0dca",
+    "origin": "https://github.com/crcz25/OccuSG.git",
+    "clean": true,
+    "submodules_initialized": false
+  },
+  "ConceptGraphs": {
+    "path": "ref_ConceptGraph/concept-graphs",
+    "commit": "93277a02bd89171f8121e84203121cf7af9ebb5d",
+    "origin": "https://github.com/concept-graphs/concept-graphs.git",
+    "clean": true,
+    "submodules_initialized": false
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "status": "inventory_only_not_bound_to_launcher",
+  "policy": "External resources are input-only by convention, not filesystem-enforced. U0 must audit writers and lock hashes before running. Never install into baseline environments.",
+  "baseline_root": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG",
+  "interpreters": {
+    "perception_replay": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/.venv-perception/bin/python",
+    "habitat_capture": "/home/kiettran05/miniconda3/envs/habitat/bin/python"
+  },
+  "assets": {
+    "habitat_data_root": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data",
+    "yolo_onnx": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/models/ultralytics/yolo11n-seg.onnx",
+    "yolo_onnx_expected_sha256": "0bc32bc92e985b881141ef9bd2216e2a746f70519d0d24da9fc85decc4428cf4",
+    "native_m2_m3": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/build/native-m3/occupancy/standalone_sg_octomap_fixture_runner",
+    "native_dude": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/build/native-m4-dude/occusg_dude_worker",
+    "native_dependency_prefixes": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/build/deps",
+    "mapconversion_source": "/home/kiettran05/Documents/Codex/2026-09-22/c-c/research/occusg_phase1/upstream/mapconversion",
+    "mapconversion_expected_commit": "14b8cb9e6534ba21e84f624c94d20960f6613f3c"
+  },
+  "development_inputs_not_copied": {
+    "hm3d_dense": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_00802_20261006T163140.468551Z_e4a058",
+    "hm3d_320": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_00802_20261006T091921.402660Z_0220b9",
+    "hm3d_smoke": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_00802_20261005T155214.379554Z_657f1e"
+  },
+  "evaluator_only_not_predictor": {
+    "apt0_gt_root": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/evaluation/gt/apt_0",
+    "apt0_normalized_spatial_gt": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/evaluation/gt/apt_0/versions/apt0_room_gt_user_confirmed_20261004_normalized_v1/room_polygons_normalized.geojson",
+    "gt_cache_existing": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/gt_cache",
+    "write_new_evaluations_or_gt_cache_under_new_root_only": true
+  },
+  "new_weights_or_installs_authorized_by_this_inventory": false,
+  "new_output_root": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts"
+}

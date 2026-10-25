@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "source": "third_party/mapconversion",
+  "commit": "14b8cb9e6534ba21e84f624c94d20960f6613f3c",
+  "files": {
+    "LICENSE": "0711666dfbe5026dfb14645020cf0e560ddae4e37f0e6f4d0a12fcd7e551e8b9",
+    "README.md": "5b0872420c979026361ed694c7f205145a5f667d898c167ed4262cb934e42eea",
+    "mapconversion/CMakeLists.txt": "b51c6c3b70c3685cf7a9e43cc97bd26e41b3c57e6c091f97b3593808eedee755",
+    "mapconversion/include/HeightRangeMap.hh": "3fcb4fa812c293425e9fbd64482a750e9b0f25ea9e0bf0615abe19197fcb4851",
+    "mapconversion/include/Map2D.hh": "716a9a3a51d62b0fb9849ecdf4f29afa41f26c436f2235499354be0ef835d2d6",
+    "mapconversion/include/MapConverter.hh": "20192484ded7928bf5f938e2977b7ea439094e10374a88122e25fa4f5f77d889",
+    "mapconversion/include/datatypes.hh": "4acd122f9eb765c97db5d07c7e41caf5cf09677afd08df3f06708cba509ff916",
+    "mapconversion/launch/map_conversion.launch.py": "18db30d9f72528b86f4d2cf0c08cd751c1b8f3003efa6e91d0c151361cda915e",
+    "mapconversion/launch/path_conversion.launch.py": "f8ce0a2ff48b798a6c12be5c34fcbc18092150ded08ac60a0630b3b74f3ef085",
+    "mapconversion/package.xml": "8dd26a7eb489dabe00a1a37e9b25f59810b0d1f08d31111b87511fa35424924f",
+    "mapconversion/src/MapConverter.cpp": "3998afced1f1f61241efd2a7bba62d1571a94394709b167a83fb3f1ccf986418",
+    "mapconversion/src/map_conversion_oct_node.cpp": "0de68863fe81b1c3585cefe2f9c1eef1360c7a9fd267e7f15735ba78195e2b9a",
+    "mapconversion/src/path_converter_node.cpp": "4d933352131ef06d59d1d6197a25b2c7ac980caad8cfb48dc050333c48de9ae3",
+    "mapconversion_msgs/CMakeLists.txt": "8bd1b694f0f931435813d862817a8405912bab013ba18a212a050bd2837a2b02",
+    "mapconversion_msgs/msg/HeightMap.msg": "53f6fe22aba2f074dd33bdbe8e64dc1d204ea2658a9695db794e8bfd7c75fe48",
+    "mapconversion_msgs/msg/SlopeMap.msg": "09008e034bc94e859e8aadf9cc436ecf8b1696973d4d3f8ebc7a13d486195aec",
+    "mapconversion_msgs/package.xml": "bab37cf2f17a1248a994429c2a58f57db837105d705097dd2ebd06118d3564ce"
+  }
+}

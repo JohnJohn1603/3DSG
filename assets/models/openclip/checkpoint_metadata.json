@@ -1,0 +1,11 @@
+{
+  "download_method": "single resolve URL for pinned file; no repository snapshot download",
+  "downloaded_utc": "2026-10-07T15:33:13Z",
+  "etag": "\"4bf58da5aef166635862f87a1d2bbacd26b7add3448f773610d166b83b879101\"",
+  "filename": "open_clip_model.safetensors",
+  "repository": "timm/vit_base_patch32_clip_224.openai",
+  "revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+  "sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+  "size_bytes": 605143284,
+  "source_url": "https://huggingface.co/timm/vit_base_patch32_clip_224.openai/resolve/a6f597a30f7b82c51704746581f9a4e41421e878/open_clip_model.safetensors"
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "policy_id": "room_belief_relabel_v1_proposed",
+  "approval_status": "proposed_unapproved",
+  "minimum_supported_categories": 2,
+  "minimum_top_belief": 0.6,
+  "minimum_margin": 0.2,
+  "relabel_margin": 0.15,
+  "relabel_evidence_revisions": 2,
+  "membership": {
+    "policy": "greedy_voxel_support_v1",
+    "voxel_size_m": 0.025,
+    "voxel_grid_origin_xyz_m": [0.0, 0.0, 0.0],
+    "voxel_size_note": "Development measurement only: reuse ConceptGraphs effective downsample_voxel_size=0.025 m and the existing surface_support.voxel_representatives floor(xyz / size) world-origin convention. This does not change the cloud, object geometry, or room geometry."
+  },
+  "notes": [
+    "Belief values are normalized uncalibrated scores, not probabilities of correctness.",
+    "Initial label/relabel thresholds are proposals only and have not been evaluated.",
+    "A relabel persistence step counts changed category-presence evidence revisions, not repeated inference calls."
+  ]
+}

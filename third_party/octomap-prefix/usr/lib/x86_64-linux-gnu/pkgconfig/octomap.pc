@@ -1,0 +1,10 @@
+prefix=/usr
+libdir=/usr/lib/x86_64-linux-gnu
+includedir=/usr/include
+
+Name: octomap
+Description: octomap
+Requires: 
+Version: 1.9.7
+Libs: -L${libdir}  -loctomap -loctomath
+Cflags: -I${includedir} 

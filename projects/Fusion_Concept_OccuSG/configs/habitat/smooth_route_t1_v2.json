@@ -1,0 +1,44 @@
+{
+  "schema": "smooth-route-t1-policy/v2",
+  "policy_id": "smooth_route_t1_v2",
+  "status": "development_unvalidated",
+  "simulator_seed": 0,
+  "simulator_step_s": 0.1,
+  "linear_speed_mps": 0.2,
+  "angular_speed_deg_per_s": 30.0,
+  "agent_footprint": {
+    "radius_m": 0.1,
+    "height_m": 1.5,
+    "clearance_margin_m": 0.0,
+    "validation_source": "serialized Habitat navmesh agent_radius/agent_height"
+  },
+  "route_follow": {
+    "path_sample_step_m": 0.04,
+    "position_tolerance_m": 0.025,
+    "yaw_tolerance_deg": 1.5,
+    "endpoint_tolerance_m": 0.05,
+    "vertical_navmesh_tolerance_m": 0.05,
+    "max_sim_time_s": 60.0,
+    "max_camera_frames": 600
+  },
+  "keyframes": {
+    "policy": "pose_delta_or_v1",
+    "min_translation_m": 0.4,
+    "min_yaw_deg": 20.0,
+    "min_interval_s": 0.5,
+    "include_first_valid_frame": true
+  },
+  "queue": {
+    "in_flight_capacity": 1,
+    "pending_capacity": 1,
+    "pending_policy": "latest_wins_with_supersede_event"
+  },
+  "preview": {
+    "jpeg_quality": 85,
+    "write_rgb_every_camera_frame": true,
+    "write_rgbd_for_candidate_keyframes": true
+  },
+  "predictor_inputs": [],
+  "mapper_enabled": false,
+  "room_semantics_enabled": false
+}

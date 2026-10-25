@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "scene_id": "frl_apartment_stage",
+  "scene_provenance": "Official Habitat-Sim ReplicaCAD_dataset v1.6, tag v1.6; stage-only calibration scene",
+  "scene_license_note": "See artifacts/habitat_data/versioned_data/replica_cad_dataset/LICENSE.txt; local experiment only",
+  "navmesh_file": "artifacts/habitat_data/versioned_data/replica_cad_dataset/navmeshes_default/apt_0.navmesh",
+  "sequence_id": "replica-cad-stage-route-01",
+  "resolution_px": [160, 120],
+  "horizontal_fov_deg": 90.0,
+  "sensor_position_habitat": [0.0, 1.50, 0.0],
+  "sensor_orientation_habitat_rad": [0.0, 0.0, 0.0],
+  "calibration_id": "habitat-rgbd-stage-v1",
+  "min_depth_m": 0.10,
+  "max_depth_m": 10.0,
+  "simulation_step_s": 0.10,
+  "gpu_device_id": -1,
+  "require_navigable": true,
+  "route": [
+    {"position_habitat": [4.267078, 0.119373, -3.464135], "yaw_rad": 2.36, "label": "start"},
+    {"position_habitat": [-0.874830, 0.119373, -1.956006], "yaw_rad": 2.36, "label": "turn_1"},
+    {"position_habitat": [1.390080, 0.119373, 4.491616], "yaw_rad": 0.00, "label": "far_side"},
+    {"position_habitat": [0.534994, 0.119373, 2.034169], "yaw_rad": 0.00, "label": "return_view"},
+    {"position_habitat": [-1.141248, 0.119373, 3.623031], "yaw_rad": 0.00, "label": "corner"},
+    {"position_habitat": [4.267078, 0.119373, -3.464135], "yaw_rad": 2.36, "label": "end"}
+  ]
+}

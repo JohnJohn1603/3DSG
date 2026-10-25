@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "profile_id": "object_geometry_voxel_v2",
+  "voxel_size_m": 0.02,
+  "voxel_key_rule": "floor(world_xyz / voxel_size_m), including negative coordinates",
+  "voxel_statistics": "sum_xyz, sum_rgb_u8, point_count; representative is per-voxel arithmetic mean",
+  "admission": "assigned non-alias observations only; deferred observations excluded; raw evidence remains append-only",
+  "same_observation_idempotency": "same ID and same payload hash is a no-op; same ID in another object or with a different payload is an error",
+  "causal_order": "new observations for an object have nondecreasing timestamps; stale exact-payload replay is a no-op",
+  "pose_metric": "unique_sensor_pose_count; fingerprint is full T_W_Copt rounded to 6 decimal places; this is pose uniqueness only, not independent-view evidence",
+  "geometry_repeat_policy": "each distinct assigned observation contributes its selected points once, even when the pose repeats",
+  "resource_policy": {
+    "max_voxels_per_object": 2000000,
+    "overflow": "fail the run before silently dropping evidence"
+  },
+  "feedback_to_association": false,
+  "denoise_or_cross_track_merge": false,
+  "appearance_state": "off",
+  "semantic_state": "off"
+}

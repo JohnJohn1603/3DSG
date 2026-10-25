@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "ontology_id": "residential_room_function_v1",
+  "approval_status": "scope_from_approved_plan_prompt_wording_proposed",
+  "rooms": [
+    {"id": "bedroom", "display_name": "bedroom", "prompt_completion": " bedroom", "definition": "A room primarily used for sleeping or overnight rest."},
+    {"id": "living_room", "display_name": "living room", "prompt_completion": " living room", "definition": "A shared room primarily used for common activities, receiving guests, or relaxation."},
+    {"id": "dining_room", "display_name": "dining room", "prompt_completion": " dining room", "definition": "A room primarily used for meals."},
+    {"id": "kitchen", "display_name": "kitchen", "prompt_completion": " kitchen", "definition": "A room primarily used to prepare or cook food."},
+    {"id": "bathroom", "display_name": "bathroom", "prompt_completion": " bathroom", "definition": "A room primarily used for personal washing, bathing, or toilet use."},
+    {"id": "office", "display_name": "office", "prompt_completion": " office", "definition": "A room primarily used for desk-based work or study."},
+    {"id": "storage_room", "display_name": "storage room", "prompt_completion": " storage room", "definition": "A room primarily used to store belongings."},
+    {"id": "circulation_space", "display_name": "circulation space", "prompt_completion": " circulation space", "definition": "A room or area primarily used to move between other spaces."}
+  ],
+  "unknown_states": ["unknown", "ambiguous", "stale"],
+  "notes": [
+    "Ontology IDs and scope follow ROOM_BELIEF_V1_IMPLEMENTATION_PLAN.vi.md.",
+    "Prompt completions are a versioned wording proposal and have not been evaluated or approved as calibrated prompts.",
+    "Unknown/ambiguous/stale are output states, not additional LM softmax classes.",
+    "No room ground truth, scene annotation, or detector output is bundled in this file."
+  ]
+}

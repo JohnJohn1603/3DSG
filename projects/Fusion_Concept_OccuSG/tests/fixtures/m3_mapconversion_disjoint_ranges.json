@@ -1,0 +1,17 @@
+{
+  "provenance": {
+    "source_commit": "14b8cb9e6534ba21e84f624c94d20960f6613f3c",
+    "algorithm": "MapConverter::updateMap + HeightRangeMap::getOccupation",
+    "purpose": "Verify descending interval order, low-range selection, heights and neighbour occupation"
+  },
+  "resolution_m": 1.0,
+  "min_free_height_m": 0.3,
+  "minimum_occupancy": 5,
+  "bounds_xy": [0.0, 8.0, 0.0, 7.0],
+  "revision": 8,
+  "leaves": [
+    {"center": [4.5, 3.5, 0.2], "size": 0.4, "occupied": false},
+    {"center": [4.5, 3.5, 1.2], "size": 0.4, "occupied": false},
+    {"center": [5.5, 3.5, 0.2], "size": 0.4, "occupied": true}
+  ]
+}

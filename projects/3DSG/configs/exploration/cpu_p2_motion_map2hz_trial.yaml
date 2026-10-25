@@ -1,0 +1,62 @@
+schema: frontier-cpu-profile/v1
+mode: frontier_live
+runtime:
+  exploration_wall_budget_s: 600
+  shutdown_timeout_s: 30
+  pose_source: simulator
+  floor_mode: observed_single_level
+  semantics_policy: verified_only
+  # Must resolve against the loaded simulator/navmesh geometry contract.
+  geometry_contract: required
+camera:
+  width: 640
+  height: 480
+  target_fps: 25
+  fallback_target_fps: 20
+navigation:
+  grid_resolution_m: 0.05
+  # Controlled backpressure experiment: only this cadence differs from
+  # cpu_p2_motion.yaml. Safety freshness remains 1 s.
+  map_update_hz: 2
+  async_mapping: true
+  planner_hz: 0.5
+  async_planning: true
+  control_hz: 25
+  # Stride 4 made async NavMap integration ~0.74 s median under llvmpipe,
+  # causing the 1 s navigation freshness gate to stop most commands. Stride 8
+  # reduces per-frame ray work; coverage/frontiers must be revalidated.
+  depth_stride: 8
+  nominal_speed_mps: 0.30
+  max_speed_mps: 0.35
+  max_yaw_degps: 120
+  acceleration_mps2: 0.30
+  yaw_acceleration_degps2: 180
+  # Half-cell margin: navmesh radius is 0.10 m, grid resolution is 0.05 m.
+  inflation_margin_m: 0.025
+  depth_stale_s: 0.3
+  nav_stale_s: 1.0
+  goal_hold_s: 3
+  goal_switch_improvement: 0.20
+  min_frontier_length_m: 0.20
+  min_viewpoint_offset_m: 0.30
+  max_viewpoint_offset_m: 0.60
+  lookahead_m: 0.40
+  stop_distance_m: 0.25
+  initial_scan_yaw_deg: 360
+  initial_scan_rate_degps: 60
+  collision_recovery_yaw_deg: 20
+keyframes:
+  min_translation_m: 0.25
+  min_yaw_deg: 20
+  max_pending: 2
+  max_protected_pending: 1
+  raw_pending_byte_cap_mib: 32
+  graph_age_slowdown_s: 20
+resources:
+  target_process_tree_rss_gib: 6
+  warning_mem_available_gib: 2
+  stop_mem_available_gib: 1
+  stop_mem_grace_s: 3
+  sample_period_s: 1
+  raw_keyframe_disk_cap_gib: 2
+  run_disk_cap_gib: 8

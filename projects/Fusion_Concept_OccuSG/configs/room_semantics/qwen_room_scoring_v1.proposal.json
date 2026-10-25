@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "scoring_contract_id": "qwen3_4b_base_room_a_table_v1_proposed",
+  "approval_status": "proposed_unverified",
+  "model": {
+    "repo_id": "Qwen/Qwen3-4B-Base",
+    "revision": "906bfd4b4dc7f14ee4320094d8b41684abff8539",
+    "trust_remote_code": false,
+    "expected_architecture": "Qwen3ForCausalLM",
+    "upstream_weight_dtype": "bfloat16",
+    "runtime_dtype": "fp16_approved_for_kaggle_t4",
+    "quantization": "none",
+    "weights_downloaded": false
+  },
+  "prompt": {
+    "prefix_template": "Observed object: {canonical_object_name}.\\nRoom type:",
+    "completion_source": "configs/room_semantics/ontology_v1.json:rooms[].prompt_completion",
+    "neutral_prefix": "Observed object: object.\\nRoom type:",
+    "completion_boundary": "tokenize full string and prefix without special tokens; require prefix token IDs to be an exact prefix of full IDs",
+    "bos_policy": "omitted_v1",
+    "eos_policy": "not_scored_v1"
+  },
+  "score": {
+    "main_reduction": "mean_log_probability",
+    "ablation_reduction": "sum_log_probability",
+    "neutral_subtraction": "score(category_prefix, room_completion) - score(neutral_prefix, room_completion)",
+    "temperature": 1.0,
+    "room_prior": "uniform_over_ontology_v1",
+    "epsilon": 1e-8,
+    "output_A": "log((softmax(room_scores / temperature) + epsilon) / (normalized_reference_prior + epsilon))",
+    "calibration_claim": "none; normalized scores and A rows are uncalibrated compatibility scores, not probabilities of room correctness"
+  },
+  "runtime_validation": {
+    "upstream_weight_dtype": "bfloat16",
+    "runtime_weight_dtype": "float16",
+    "selected_gpu": 0,
+    "single_gpu_only": true,
+    "log_softmax_and_accumulation_dtype": "float32",
+    "repeatability_tolerance": {"absolute_logprob": 0.002, "relative_logprob": 0.0001},
+    "repeatability_tolerance_semantics": "same-process numeric repeatability gate, not a quality threshold"
+  },
+  "ablation_matrix": [
+    {"reduction": "mean", "neutral_subtraction": false},
+    {"reduction": "mean", "neutral_subtraction": true},
+    {"reduction": "sum", "neutral_subtraction": false},
+    {"reduction": "sum", "neutral_subtraction": true}
+  ],
+  "selection_rule": "No room ground-truth population is currently attached to this contract; generate and preserve all four score variants, do not select/promote a winning variant from synthetic tests or object labels.",
+  "limitations": [
+    "This is a Qwen compatibility table, not a room classifier validated on this project.",
+    "Ontology prompt wording and the room-relevant detector category subset remain development inputs.",
+    "No model execution, download, Kaggle verification, or A-table generation has occurred."
+  ]
+}

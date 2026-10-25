@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "created_at_local": "2026-10-10",
+  "lock_status": "read_only_cache_audit_and_budget_only",
+  "dense_cache": {
+    "status": "compatible_cached_inputs_integrity_verified_read_only",
+    "root": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_00802_20261006T163140.468551Z_e4a058",
+    "scene_id": "00802-wcojb4TFT35",
+    "sequence_id": "hm3d-v02-00802-main-dense-route-01",
+    "resolution_px": [
+      600,
+      340
+    ],
+    "horizontal_fov_deg": 90.0,
+    "frames": 280,
+    "capture_manifest": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_00802_20261006T163140.468551Z_e4a058/capture/capture_manifest.json",
+      "sha256": "f2eba637f2d9bc53f06cb21d7a059e9dd675faba0f470a9bc6047131b9ca6149",
+      "bytes": 45301,
+      "exists": true
+    },
+    "p2_index": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_00802_20261006T163140.468551Z_e4a058/detection_2d/detection_2d_index.json",
+      "sha256": "b4c3f615d0180f7b9a50cae0b6e4b7d623328ab007ee92cc6cf9685690b51949",
+      "bytes": 958091,
+      "exists": true
+    },
+    "p3_manifest": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_00802_20261006T163140.468551Z_e4a058/detection_3d/detection_3d_manifest.json",
+      "sha256": "af04d84ab4c2a88e8005307c413f34988bf739da5213d3ceec3472961e03de49",
+      "bytes": 1523,
+      "exists": true
+    },
+    "p3_jsonl": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_00802_20261006T163140.468551Z_e4a058/detection_3d/detection_3d.jsonl",
+      "sha256": "1a57ff1a6d90b7792ce9ef80d709623174bed404d8e4ffa0a955ae9a8e8f4d57",
+      "bytes": 960672,
+      "exists": true
+    },
+    "p2_detections": 738,
+    "mask_integrity": {
+      "expected": 738,
+      "missing": 0,
+      "sha256_mismatch": 0
+    },
+    "p3": {
+      "accepted": 713,
+      "rejected": 25,
+      "eps_m": 0.02,
+      "min_points": 100,
+      "stride": 1,
+      "present_batch_count": 230,
+      "profile_sha256": "ec64d9e8c508d54b313abf8495b15631fa95e047e894131db5c5fec7c2dfd0b3"
+    },
+    "accepted_cluster_points": {
+      "sum": 2988009,
+      "mean": 4190.76,
+      "median": 2951,
+      "p95": 11462,
+      "max": 33963
+    },
+    "old_native_replay": {
+      "manifest": {
+        "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_00802_20261006T163140.468551Z_e4a058/replay/manifest.json",
+        "sha256": "bff411f86bebe1bd10595c93115cc6b5832f414ab859850542a6fd9810ebac71",
+        "bytes": 4983,
+        "exists": true
+      },
+      "runtime_ms": 3304268.073059,
+      "peak_rss_kib": 1307136,
+      "fresh_replay_equal": true,
+      "snapshot_reload_equal": true,
+      "delta_replay_equal": true
+    },
+    "replay_cost_estimate": {
+      "source_min": 55,
+      "source_max": 60,
+      "geometry_only_min": 55,
+      "geometry_only_max": 65,
+      "paired_total_min": 110,
+      "paired_total_max": 125,
+      "units": "minutes",
+      "confidence": "medium-low",
+      "basis": "same dense 600x340 cache previous native replay was 55.07 min and passes fresh/reload/delta; 29-frame 160x120 paired runs source 129.9 s vs geometry 144.8 s (1.114x), but 713 accepted P3 observations may increase geometry association cost; range deliberately conservative; includes fresh-process deterministic verification per profile",
+      "approval_required": true,
+      "not_run": true
+    },
+    "interpretation": "Input-only cache audit; no capture, YOLO/P2, P3, OpenCLIP, or native replay executed in this turn. Cached P3 accepted/rejected totals from manifest; mask checksums verified by reading P2 masks."
+  }
+}

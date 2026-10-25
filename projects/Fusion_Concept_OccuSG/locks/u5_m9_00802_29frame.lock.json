@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "status": "locked_read_only_input",
+  "purpose": "U5 M9 experimental integration replay; frozen 29-frame HM3D 00802 capture and cached P2/P3 inputs",
+  "baseline_root": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG",
+  "source_run": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_integration_20261005/00802/main",
+  "scene_id": "00802-wcojb4TFT35",
+  "frame_count": 29,
+  "inputs": {
+    "capture_manifest": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_integration_20261005/00802/main/capture/capture_manifest.json",
+      "sha256": "c0569e7a08d364de363469c452022dba9dcecdf338a2320cfb91e4e31d442373",
+      "bytes": 6576
+    },
+    "p2_index": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_integration_20261005/00802/main/detection_2d/detection_2d_index.json",
+      "sha256": "0eec535338d9273b0dc21c14cbd0f30a3666363870a3f7a620dbfb3198452240",
+      "bytes": 44710
+    },
+    "p3_cache": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_integration_20261005/00802/main/detection_3d/detection_3d.jsonl",
+      "sha256": "94f2e6f05519f0380dcc5f2b40403b1763b96744b1afe1e205f022480d083187",
+      "bytes": 30432
+    },
+    "p3_manifest": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_integration_20261005/00802/main/detection_3d/detection_3d_manifest.json",
+      "sha256": "299c92519a71f5831a3a29d49ed1969d2b661b8fc3b1bf90e34ec1afa5e3f1a8",
+      "bytes": 1509
+    },
+    "route_config": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/habitat/hm3d_minival_v02_00802_main_route.json",
+      "sha256": "3ea1a21f6870e1ef292ec2774efa551b9ede6128b72438d20c2b5568db46b691",
+      "bytes": 5743
+    },
+    "integration_status_report": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_integration_20261005/status_report.vi.md",
+      "sha256": "b85879c175b4e19dd9bcb95e7309d48c9cf8c177551105209e7c6f99ebf9f923",
+      "bytes": 6521
+    },
+    "baseline_lock": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_integration_20261005/baseline_lock.json",
+      "sha256": "77905f7c3cb63b53535c50310d6efe2cb0b3dbf49c963932915db3ba1bd7d1f8",
+      "bytes": 2851
+    }
+  },
+  "upstream_replay_scope": "existing read-only cache only; no capture, detector, P2, P3, semantic GT, or room GT rerun/input",
+  "output_policy": "all U5 replay output is written to Fusion_Concept_OccuSG/artifacts/runs"
+}

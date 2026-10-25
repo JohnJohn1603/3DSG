@@ -1,0 +1,87 @@
+{
+  "agent": {
+    "navmesh_baked_height_m": 1.5,
+    "navmesh_baked_radius_m": 0.1,
+    "sensor_orientation_habitat_rad": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "sensor_position_habitat_m": [
+      0.0,
+      1.5,
+      0.0
+    ]
+  },
+  "camera": {
+    "calibration_id": "habitat-rgbd-hm3d-00808-native-smoke-v1",
+    "depth_max_m": 10.0,
+    "depth_min_m": 0.1,
+    "height": 480,
+    "horizontal_fov_deg": 90.0,
+    "width": 640
+  },
+  "floor_z_calibration": {
+    "coordinate_frame": "canonical_world_z_up",
+    "measured_floor_world_z_m": -2.803,
+    "measurement_run_id": "native-live-hm3d-00808-smoke-60s-20261023-a",
+    "method": "median of stable lower-image depth plane estimates across 24 initial-scan yaw frames; q10-by-row remained approximately -2.80 to -2.81 m",
+    "route_slice_habitat_y_m": -2.7386093,
+    "scope": "validated only near the configured spawn; recheck on other floors",
+    "source_route_config": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/configs/habitat/hm3d_minival_v02_00808_k4_accumulated_geometry_route_v1.json",
+    "spawn_elevation_candidate_world_z_m": -2.738609
+  },
+  "floor_z_m": -2.803,
+  "navigation_depth": {
+    "depth_max_m": 4.0,
+    "depth_min_m": 0.1,
+    "enabled": true,
+    "height": 120,
+    "orientation_habitat_rad": [
+      -0.8726646259971648,
+      0.0,
+      0.0
+    ],
+    "sensor_position_habitat_m": [
+      0.0,
+      0.6,
+      0.0
+    ],
+    "update_period_frames": 1,
+    "width": 160
+  },
+  "navmesh_file": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d/minival/00808-y9hTuugGdiq/y9hTuugGdiq.basis.navmesh",
+  "navmesh_sha256": "c3993658f67b723e6e27a1442178f6cd9bbad050e078c8175770c459abc0067e",
+  "provenance": {
+    "semantic_ground_truth_used_for_policy": false,
+    "source_effective_config": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/configs/habitat/hm3d_minival_v02_00808_k4_accumulated_geometry_route_v1.json",
+    "source_effective_config_kind": "existing HM3D 00808 route config; first validated route pose used only as spawn",
+    "source_effective_config_sha256": "80843ef4025aa573a51c381bc0f54bbb2dacd163647b9e6a422691a243e40978",
+    "spawn_only": true,
+    "spawn_source_route_index": 0,
+    "measurement_run_id": "p2-nav-only-step20mm-120s-20261023-a"
+  },
+  "scene_asset": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d/minival/00808-y9hTuugGdiq/y9hTuugGdiq.basis.glb",
+  "scene_asset_sha256": "67a188a10c8d664b454e20fbf631613500b982ec742a211e0c577cab6aeaf418",
+  "scene_dataset_config": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d/minival/hm3d_annotated_minival_basis.scene_dataset_config.json",
+  "scene_dataset_config_sha256": "549f8b4527a93f117ed4d814468f71e8c290dd799af1212d1290f4148f34c294",
+  "scene_id": "00808-y9hTuugGdiq",
+  "schema": "frontier-habitat-scene/v1",
+  "seed": 1,
+  "simulation": {
+    "allow_sliding": false,
+    "enable_physics": false,
+    "gpu_device_id": -1,
+    "move_increment_m": 0.02,
+    "step_s": 0.04,
+    "turn_increment_deg": 6.0
+  },
+  "spawn": {
+    "position_habitat_m": [
+      9.062847,
+      -2.738609,
+      2.955713
+    ],
+    "yaw_habitat_rad": 0.0
+  }
+}

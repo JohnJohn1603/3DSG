@@ -1,0 +1,21 @@
+# Captured installed distribution versions; local URLs/editable installs sanitized.
+# PyTorch3D is installed from bundled third_party/pytorch3d-v0.7.4 by setup_environments.py.
+coloredlogs==15.0.1
+contourpy==1.4.0
+cycler==0.12.1
+flatbuffers==25.12.19
+fonttools==4.66.1
+humanfriendly==10.0
+kiwisolver==1.5.1
+matplotlib==3.9.1
+mpmath==1.3.0
+numpy==2.5.3
+onnxruntime==1.24.4
+packaging==26.3
+pillow==10.2.0
+protobuf==7.36.2
+pyparsing==3.3.3
+python-dateutil==2.9.0.post0
+PyYAML==6.0.1
+six==1.17.0
+sympy==1.14.0

@@ -1,0 +1,480 @@
+{
+  "schema_version": 1,
+  "mapping_id": "hm3d_00808_object_category_mapping_v1_1",
+  "scene_id": "00808-y9hTuugGdiq",
+  "status_policy": "No category mapping is confirmed in this lock. Only literal exact canonical-label comparisons are permitted; all synonym/parent-child relations remain unmapped until user review.",
+  "normalization": {
+    "lowercase": true,
+    "trim_whitespace": true,
+    "spaces_to_underscores": true,
+    "semantic_mapping": false
+  },
+  "categories": {
+    "amplifier": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "banister": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "bath": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "bath cabinet": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "bathroom cabinet": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "bathroom counter": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "bathtub": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "bathtub platform": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "bed": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "bin": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "blinds": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "bottle": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "box": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "broom": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "cabinet": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "ceiling": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "ceiling fan": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "chair": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "chest of drawers": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "closet mirror wall": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "coffee maker": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "coffee table": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "cosmetics": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "curtain": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "curtain rod": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "cushion": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "device": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "dishwasher": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "door": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "door frame": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "dvd player": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "fan": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "fire extinguisher": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "fire screen": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "fireplace": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "floor": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "flower vase": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "freezer": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "glass": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "hanger": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "hook": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "ice maker": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "jar": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "kettle": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "kitchen cabinet": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "kitchen counter": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "knife": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "knife holder": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "ladder": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "lamp": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "light fixture": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "microwave": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "mirror": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "nightstand": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "ornament": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "oven": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "painting": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "paper towel": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "picture": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "pillar": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "pillow": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "plant": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "refrigerator": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "refrigerator cabinet": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "remote control": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "rug": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "shelf": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "shelving": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "shower cabin": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "shower dial": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "shower floor": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "shower knob": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "shower rod": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "shower seat": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "shower stall": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "showerhead": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "sideboard": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "sign": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "sink": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "smoke detector": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "soap bottle": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "soap dispenser": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "sofa": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "stairs": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "statue": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "step": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "stereo": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "stool": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "stovetop": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "surface": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "surfboard": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "table": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "table tennis table": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "tap": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "telephone": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "thermostat": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "toaster": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "toilet": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "toilet brush": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "toilet paper": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "towel": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "towel bar": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "towel ring": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "tv": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "umbrella": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "unknown": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "utensil": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "vacuum cleaner": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "vase": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "ventilation": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "ventilation hood": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "wall": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "washer-dryer": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "whine shelf": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "window": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    },
+    "window frame": {
+      "status": "unmapped",
+      "provenance": "HM3D descriptor string; no user-confirmed predictor-vocabulary mapping"
+    }
+  },
+  "unlisted_category_status": "unmapped",
+  "review_note": "Evaluator-only. Do not pass categories or IDs to predictor. A literal exact-label diagnostic is not a confirmed synonym/taxonomy mapping."
+}

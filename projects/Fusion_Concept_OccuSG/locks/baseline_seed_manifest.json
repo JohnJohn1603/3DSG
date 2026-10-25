@@ -1,0 +1,1722 @@
+{
+  "schema_version": 1,
+  "baseline_root": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG",
+  "seed_root": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG",
+  "status": "source_seed_only_not_fusion_implementation",
+  "root_git_available": false,
+  "files": [
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/__init__.py",
+      "destination": "src/standalone_sg/__init__.py",
+      "sha256": "9fd5673e164aef707c6d7fac96cbbdbf07ea9ae4bbf1f58284efd9aa769fb446",
+      "bytes": 549
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/adapters/__init__.py",
+      "destination": "src/standalone_sg/adapters/__init__.py",
+      "sha256": "05a8f84d0262bf51ba01b5422fa133ba575619db716207c4fc845fa22163f511",
+      "bytes": 43
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/adapters/semantic/__init__.py",
+      "destination": "src/standalone_sg/adapters/semantic/__init__.py",
+      "sha256": "40024c6c822073417a0504e6f44fa37286f62a25c5c468e9c52c7a9d580c24a4",
+      "bytes": 206
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/adapters/semantic/base.py",
+      "destination": "src/standalone_sg/adapters/semantic/base.py",
+      "sha256": "a14375ef4635959509b3632a653fb2206538faaf270f0cd6c5ee703a4c191cb3",
+      "bytes": 446
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/adapters/semantic/cached.py",
+      "destination": "src/standalone_sg/adapters/semantic/cached.py",
+      "sha256": "2327742577d821cee60fa962b63d4a66f569b3e609fa3b6e3be78d92dc9bbfa6",
+      "bytes": 2200
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/config/__init__.py",
+      "destination": "src/standalone_sg/config/__init__.py",
+      "sha256": "7e059c170b207722c8b07831017ba16143672200904765e0feaa6cde90a51e7a",
+      "bytes": 460
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/config/schema.py",
+      "destination": "src/standalone_sg/config/schema.py",
+      "sha256": "2688cff63eb7c5972f51530162e21ae482daf7854f4b532cd584e61403929252",
+      "bytes": 30980
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/contracts/__init__.py",
+      "destination": "src/standalone_sg/contracts/__init__.py",
+      "sha256": "ae4b546d8b7b77d4e918255043b26a14b62b1322f88238d2c52589def394b7e1",
+      "bytes": 642
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/contracts/errors.py",
+      "destination": "src/standalone_sg/contracts/errors.py",
+      "sha256": "3e890c18c944ca0cd7378fd76475503da6c938a61159914e67f3495ba2bbfca3",
+      "bytes": 105
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/contracts/frames.py",
+      "destination": "src/standalone_sg/contracts/frames.py",
+      "sha256": "61dbfaffe8ac14f06a5b75a83c2e7ee31ffb1cbe1330ec407aa56bf83a012f01",
+      "bytes": 7156
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/contracts/objects.py",
+      "destination": "src/standalone_sg/contracts/objects.py",
+      "sha256": "421c2f25b31845cd544ec33a50b02e54bdcb77cd6a70ecea063fbe360b3b6de2",
+      "bytes": 5391
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/contracts/regions.py",
+      "destination": "src/standalone_sg/contracts/regions.py",
+      "sha256": "243d43c415de7f03b59ea603961ec41000391685dd7f27cedb082e35deb1337c",
+      "bytes": 6410
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/geometry/__init__.py",
+      "destination": "src/standalone_sg/geometry/__init__.py",
+      "sha256": "6cbbd602946d5a676d41067624843d7480f8e244f76657b955f370219a3a5e73",
+      "bytes": 583
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/geometry/backproject.py",
+      "destination": "src/standalone_sg/geometry/backproject.py",
+      "sha256": "a6aa41dc45bcfaf15a862870e128bb212a98ee9322a98e35e63387f8ec123a60",
+      "bytes": 4892
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/geometry/grid.py",
+      "destination": "src/standalone_sg/geometry/grid.py",
+      "sha256": "f064d42b4e2f54550a0155eaf623032c51c16c401c05adfa8ff7d4887da2ef4c",
+      "bytes": 1249
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/geometry/simulator_frames.py",
+      "destination": "src/standalone_sg/geometry/simulator_frames.py",
+      "sha256": "b11371d703e16afba66919efe1907417f4c243f73db2c77b5304acf9a0afaabf",
+      "bytes": 1625
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/geometry/transforms.py",
+      "destination": "src/standalone_sg/geometry/transforms.py",
+      "sha256": "4478fa7e545eb6188eb27409d43c0a650570b930d93cf0d5962acc4e54c26c0c",
+      "bytes": 1314
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/mapping/__init__.py",
+      "destination": "src/standalone_sg/mapping/__init__.py",
+      "sha256": "04b3bebdb5c097718e46ed495fe4477efdcd4761512167daea6a87b77f9f779e",
+      "bytes": 421
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/mapping/grid_artifacts.py",
+      "destination": "src/standalone_sg/mapping/grid_artifacts.py",
+      "sha256": "720e0eeca2f981f302309aaf1938f1df825336c5018bc96a2a403e2f033f6a06",
+      "bytes": 8923
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/mapping/native.py",
+      "destination": "src/standalone_sg/mapping/native.py",
+      "sha256": "645a1cf2c366b5839852acd07e061d007a1ec619a4ca00ced8e1e973a190b533",
+      "bytes": 18557
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/mapping/native_pipeline.py",
+      "destination": "src/standalone_sg/mapping/native_pipeline.py",
+      "sha256": "dd499e8acb378436c4ac4b843e7b3a4ac9e9b965eecfaac2d461c0f0038af9f8",
+      "bytes": 8613
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/mapping/projection.py",
+      "destination": "src/standalone_sg/mapping/projection.py",
+      "sha256": "399f9b7443b89efae1a1e80409515e4863b73b8fc7395eb42a0364c37235abd6",
+      "bytes": 13780
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/navigation/__init__.py",
+      "destination": "src/standalone_sg/navigation/__init__.py",
+      "sha256": "ee7c2aaa2da90691799fe0e3524f57b3afb86b3e93217eecc70dbdb72bdcaa07",
+      "bytes": 196
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/navigation/blocks.py",
+      "destination": "src/standalone_sg/navigation/blocks.py",
+      "sha256": "60968f203ddcf20ca18fd27fda125b0743e1e94cb845a53b3b7fb538780960cb",
+      "bytes": 7804
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/objects/__init__.py",
+      "destination": "src/standalone_sg/objects/__init__.py",
+      "sha256": "b91abd64c9c2603154e04955d8b775ac3fc1189651bac577badee50d9eea4c01",
+      "bytes": 323
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/objects/association.py",
+      "destination": "src/standalone_sg/objects/association.py",
+      "sha256": "b35677a8f4bee2014336e5c6dc91e7313fd2dba45348b0f733a685abcfe39f89",
+      "bytes": 7913
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/pipeline/__init__.py",
+      "destination": "src/standalone_sg/pipeline/__init__.py",
+      "sha256": "9ced63f88f55711d6edf0734bcdecf605d973d239b395d418d7a476e6d9828d5",
+      "bytes": 427
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/pipeline/builder.py",
+      "destination": "src/standalone_sg/pipeline/builder.py",
+      "sha256": "47accc1b059b41c6cfc931070fc7be5ecb239a4d351d55c341f97280130a5014",
+      "bytes": 30084
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/pipeline/contracts.py",
+      "destination": "src/standalone_sg/pipeline/contracts.py",
+      "sha256": "f6c83376e2f6abc677694d828ef3a443e66ada510f5e4a2ca8c9b37daf6df8d1",
+      "bytes": 8595
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/pipeline/scheduler.py",
+      "destination": "src/standalone_sg/pipeline/scheduler.py",
+      "sha256": "24849d21a9f101d9d2c0aedf53ea1f5737060c8f11d61e71655a4467d46b0ebb",
+      "bytes": 2031
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/pipeline/stages.py",
+      "destination": "src/standalone_sg/pipeline/stages.py",
+      "sha256": "522222ea4a4dc367f5f2f538fcabe4732966934b9b621c9f963e8f88df2f1c63",
+      "bytes": 1677
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/regions/__init__.py",
+      "destination": "src/standalone_sg/regions/__init__.py",
+      "sha256": "9fc484388c43f1493579571b65c7da026f2fcfd2ade0858a1f78fb0b68bbfb01",
+      "bytes": 267
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/regions/dude_client.py",
+      "destination": "src/standalone_sg/regions/dude_client.py",
+      "sha256": "ef668a755ca112f86a609c56ba45171f6f2ca2ada1d683677d9d6bf265180a7b",
+      "bytes": 16380
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/regions/guard.py",
+      "destination": "src/standalone_sg/regions/guard.py",
+      "sha256": "be156c82e6a1ae2859736602b0b4416d331669a5593c3346754c116009caa6aa",
+      "bytes": 4957
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/regions/pipeline.py",
+      "destination": "src/standalone_sg/regions/pipeline.py",
+      "sha256": "145652b2a99d3211e411820517faa7a475330fa0c9f60cc8d178a06e35e446a7",
+      "bytes": 3114
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/regions/tracker.py",
+      "destination": "src/standalone_sg/regions/tracker.py",
+      "sha256": "ce5a0f602c277ac8234ab7cb0af0099ec7994bdd90eae3011a8bc4b1e814c015",
+      "bytes": 8575
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/rooms/__init__.py",
+      "destination": "src/standalone_sg/rooms/__init__.py",
+      "sha256": "447088bae431e765f381dca4990a7961841eea184b3a427383e0ca62569ec2cb",
+      "bytes": 409
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/rooms/anchoring.py",
+      "destination": "src/standalone_sg/rooms/anchoring.py",
+      "sha256": "08d4c45d9bf3163c1721ade7885a2c001bca1bb6ca79e2545194b838107e6f57",
+      "bytes": 8205
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/rooms/geometry.py",
+      "destination": "src/standalone_sg/rooms/geometry.py",
+      "sha256": "9dc57f7e390151a44a8161ffbd74a071ba369e429a6ed4b9722d6e45649791da",
+      "bytes": 4827
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/rooms/membership.py",
+      "destination": "src/standalone_sg/rooms/membership.py",
+      "sha256": "2c2ac4e67a538cc0f07d4226813c97f4c583f7699f61d540f21cb42856f7b76d",
+      "bytes": 6212
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/rooms/relink.py",
+      "destination": "src/standalone_sg/rooms/relink.py",
+      "sha256": "a51f18209bc59e99a183ff094e8e2427784e071e0c2864ce9199fb6beca896c0",
+      "bytes": 2050
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/semantics/__init__.py",
+      "destination": "src/standalone_sg/semantics/__init__.py",
+      "sha256": "3ceec7fdc866a15fbc51e5070d353bec1ec23b4480785cec8a2dec21ad9866d0",
+      "bytes": 439
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/semantics/adapters.py",
+      "destination": "src/standalone_sg/semantics/adapters.py",
+      "sha256": "a9a0598687c4149a69db59dae7cd362a4a013ebc266395cea621d06b9d812194",
+      "bytes": 8259
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/semantics/evidence.py",
+      "destination": "src/standalone_sg/semantics/evidence.py",
+      "sha256": "3b9e66c0a97e238366652ffa96bea5ee63236b3ccd31cbb00471f5da18d4e966",
+      "bytes": 12981
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/semantics/room_labeler.py",
+      "destination": "src/standalone_sg/semantics/room_labeler.py",
+      "sha256": "4f1397cb522101e98d0abcc2f2719f7cb28480857e667d90d24e2f0f76794fc1",
+      "bytes": 13832
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/serialization/__init__.py",
+      "destination": "src/standalone_sg/serialization/__init__.py",
+      "sha256": "1b84c4ae3da9f3616f006fbef977e1b6d317fa623dc2d713781d3e08d169e5cd",
+      "bytes": 682
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/serialization/json_graph.py",
+      "destination": "src/standalone_sg/serialization/json_graph.py",
+      "sha256": "77ef62bf0da272a2afeee4ae9f5c61dfb7f4f05c69d243f8fa139ab67065a2fe",
+      "bytes": 20635
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/visualization/__init__.py",
+      "destination": "src/standalone_sg/visualization/__init__.py",
+      "sha256": "01a41625156aade996a7898f21bf478c86202c197536e36f4fd73d78a74f7412",
+      "bytes": 401
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/visualization/live_overlay.py",
+      "destination": "src/standalone_sg/visualization/live_overlay.py",
+      "sha256": "0ac2dbef96c34f6d95fd932d07241d98a233d3a6c33e99c0c7926aecc39c53b8",
+      "bytes": 13585
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg/visualization/plots.py",
+      "destination": "src/standalone_sg/visualization/plots.py",
+      "sha256": "89f68169fa2332cb821a48b29af54014d6258dd1eaac01b352694c333b110131",
+      "bytes": 16806
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg.egg-info/PKG-INFO",
+      "destination": "src/standalone_sg.egg-info/PKG-INFO",
+      "sha256": "939a916cda2087e142052eec8e3e5e2eabba4229a2b3970cb00732bd7c00353c",
+      "bytes": 173
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg.egg-info/SOURCES.txt",
+      "destination": "src/standalone_sg.egg-info/SOURCES.txt",
+      "sha256": "cea1750093488f3bb258b0f2a4d3b07af014f6bb7ca32f1c1cc5fe70053feaf6",
+      "bytes": 687
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg.egg-info/dependency_links.txt",
+      "destination": "src/standalone_sg.egg-info/dependency_links.txt",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "bytes": 1
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg.egg-info/requires.txt",
+      "destination": "src/standalone_sg.egg-info/requires.txt",
+      "sha256": "fe40b6468bb42f38b712e9dfc17ae52e9cff257c1ef8fd150cc0fc6106602798",
+      "bytes": 45
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/src/standalone_sg.egg-info/top_level.txt",
+      "destination": "src/standalone_sg.egg-info/top_level.txt",
+      "sha256": "f1e31be4c68e71fb164ed2144e1d391c5decf2962037914d25f511f0dcb185e6",
+      "bytes": 14
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/analyze_complete_apartment_grid_trace.py",
+      "destination": "scripts/analyze_complete_apartment_grid_trace.py",
+      "sha256": "5158b0a1be04f309ca496bc6852bf23c5ffbf1f676c482ab44956e9601d76eca",
+      "bytes": 5200
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/audit_habitat_graph_quality.py",
+      "destination": "scripts/audit_habitat_graph_quality.py",
+      "sha256": "172c1147fa2970235aa0fa758b9d64222a410c19fcc4788e03e5e4d1c5942a1c",
+      "bytes": 13680
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/audit_hm3d_minival.py",
+      "destination": "scripts/audit_hm3d_minival.py",
+      "sha256": "4ec96eda4f192985b168bfba13dc2984f5b3a1726a82ccadea95d478958dd4dd",
+      "bytes": 9945
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/audit_membership_events.py",
+      "destination": "scripts/audit_membership_events.py",
+      "sha256": "f63e3448a332ea4b391809a5755a5b15d57f6eae88267ba6bd1156edfab6a9de",
+      "bytes": 21821
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/build_apt0_room_review_context.py",
+      "destination": "scripts/build_apt0_room_review_context.py",
+      "sha256": "c18593650942d9f83a8a316c69fea7db9ab9586013a8efa360dba9e55b3672bb",
+      "bytes": 9144
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/capture_habitat_replica.py",
+      "destination": "scripts/capture_habitat_replica.py",
+      "sha256": "f3f8efcad4d5bf1f78eaa446203108b7ae0b9fc6be120c179be893132823e7b0",
+      "bytes": 12889
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/compare_complete_apartment_profiles.py",
+      "destination": "scripts/compare_complete_apartment_profiles.py",
+      "sha256": "86c7e821d2c747bc8fa27486ca5c286e9a33358fbe4d85d4b7785676343c0af4",
+      "bytes": 4924
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/compare_complete_apartment_repeatability.py",
+      "destination": "scripts/compare_complete_apartment_repeatability.py",
+      "sha256": "468e50279622c7440ef8dbcab2c279f5b98c15ce5bc5aa13ad4e310ca14657d3",
+      "bytes": 11898
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/compare_habitat_evaluations.py",
+      "destination": "scripts/compare_habitat_evaluations.py",
+      "sha256": "0307d01e58eb5370291404f068c1186e7909b42523a663f3c93759d4ca53a2ab",
+      "bytes": 8842
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/compare_hm3d_resolution_runs.py",
+      "destination": "scripts/compare_hm3d_resolution_runs.py",
+      "sha256": "a05155638464047ecd4262865f8bd2e8617ea668e1a4acccb0e8960e4f666357",
+      "bytes": 15945
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/compute_apt0_object_geometry_gt.py",
+      "destination": "scripts/compute_apt0_object_geometry_gt.py",
+      "sha256": "ce791c5c28aed7cbb3f46a257beb607432bc0148fc78fb008daf44c0118595b7",
+      "bytes": 8829
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/create_apt0_membership_template.py",
+      "destination": "scripts/create_apt0_membership_template.py",
+      "sha256": "b97ba5f663fef9fcfaac03d1712ddcd65d53e022a4d89a1c32c1fe22efd0ae4d",
+      "bytes": 1818
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/diagnose_two_room_sequence.py",
+      "destination": "scripts/diagnose_two_room_sequence.py",
+      "sha256": "a222d00e102ef1717a950d6dd17dff754f0b920e3a1773b3f9bdac9609946fc0",
+      "bytes": 24156
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/doctor.py",
+      "destination": "scripts/doctor.py",
+      "sha256": "e6e0866974a098885f456e0b49c122bded54016e1a28478313f5541a08486615",
+      "bytes": 2511
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/enrich_room_semantics.py",
+      "destination": "scripts/enrich_room_semantics.py",
+      "sha256": "b669cea6b85084f832595f7b669007513fbe94ef252ca951dda25b2dbc00f992",
+      "bytes": 6483
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/evaluate_apt0_ground_truth.py",
+      "destination": "scripts/evaluate_apt0_ground_truth.py",
+      "sha256": "ba0352d5de88eb36189e6d1d87cafc73519f9e679e9b90a6f213691bc4c927e4",
+      "bytes": 62937
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/evaluate_apt0_partition_comparison.py",
+      "destination": "scripts/evaluate_apt0_partition_comparison.py",
+      "sha256": "f74c3c10b8ba02587a1eaf776c9e502a10ba2c55b5ef7b523ff3346c624adf03",
+      "bytes": 16503
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/evaluate_apt0_user_confirmed_partition.py",
+      "destination": "scripts/evaluate_apt0_user_confirmed_partition.py",
+      "sha256": "5c0b684dc11ce1f8cd65152a0a65f2500dfd31210e67412c6bf05b460f8b2767",
+      "bytes": 26579
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/evaluate_complete_apartment_profiles.py",
+      "destination": "scripts/evaluate_complete_apartment_profiles.py",
+      "sha256": "e5f9f87ffd457803f1531ce259cc1986878a25d19fbc7a9b1123f59c90661834",
+      "bytes": 12091
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/evaluate_habitat_run.py",
+      "destination": "scripts/evaluate_habitat_run.py",
+      "sha256": "09a561246b297146d9b423bac1d823912edf88bc3ce45ce5efbc919f57bc0749",
+      "bytes": 55574
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/evaluate_hm3d_object_gt.py",
+      "destination": "scripts/evaluate_hm3d_object_gt.py",
+      "sha256": "2ff3771f3437f63101028a5118b88358153470335a87a75aac7ea1c143c7ec14",
+      "bytes": 75915
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/evaluate_perception_annotations.py",
+      "destination": "scripts/evaluate_perception_annotations.py",
+      "sha256": "f6da3923be7a859bbc065913cf74e252f389c23cfb4c82a986fd6455a5efbb9c",
+      "bytes": 4239
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/export_complete_apartment_evaluation.py",
+      "destination": "scripts/export_complete_apartment_evaluation.py",
+      "sha256": "9d769a5fc7b14dd409a61a44c4865cfd7eeedc7418545dbe2607d0861ac5985a",
+      "bytes": 4485
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/export_complete_apartment_grid_diagnostics.py",
+      "destination": "scripts/export_complete_apartment_grid_diagnostics.py",
+      "sha256": "ea8832ec9218e058e48220170e9457fe972554818c921521c624bbc823555d70",
+      "bytes": 9190
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/export_m10_demo.py",
+      "destination": "scripts/export_m10_demo.py",
+      "sha256": "0de5d5dc518b3b1db39de052255f93024eab5954266a7765b3a22927410f8fa4",
+      "bytes": 4665
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/export_scene_views.py",
+      "destination": "scripts/export_scene_views.py",
+      "sha256": "a503acd53fcd5752dd634bb601f65af78f1fd1a50e84182fa9fa3d237aeb7f12",
+      "bytes": 1845
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/finalize_apt0_gt_inputs.py",
+      "destination": "scripts/finalize_apt0_gt_inputs.py",
+      "sha256": "ab3f1d1ea798a041041078c721301e8bbafc8f61aab102efe14129bd05ac971e",
+      "bytes": 15595
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/hm3d_v02_download.py",
+      "destination": "scripts/hm3d_v02_download.py",
+      "sha256": "8339adddf5be12db4abee5952b18c39386d9362e9eb0481b19756fcd03deff18",
+      "bytes": 11799
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/m12_motor_geometry.py",
+      "destination": "scripts/m12_motor_geometry.py",
+      "sha256": "ed5e39d1650d00f3f4c00be1333246db2913bdc10a76bf1e0401c6a1acca8f6d",
+      "bytes": 6065
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/m12_webots_preflight.py",
+      "destination": "scripts/m12_webots_preflight.py",
+      "sha256": "95fdefea11f1681bc64a354d4f281cb794a1bd287e55f39c9ce548278457585a",
+      "bytes": 2904
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/m4_local_demo.py",
+      "destination": "scripts/m4_local_demo.py",
+      "sha256": "3a927329f3e64d64e6588abf3da9280040513dfbc0f0bf07d572176ce84f00a7",
+      "bytes": 7414
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/normalize_apt0_confirmed_room_gt.py",
+      "destination": "scripts/normalize_apt0_confirmed_room_gt.py",
+      "sha256": "ab0168f94110b4f4e8c8d25abca7dfb97f03596e0d92d0d9f695cac33ef06e95",
+      "bytes": 14380
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/preflight_habitat_run.py",
+      "destination": "scripts/preflight_habitat_run.py",
+      "sha256": "abb49dc5f4e9f566f93c27a1965bf496876a0211624002d46c22c5ac8ff0b280",
+      "bytes": 12661
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/prepare_apt0_room_annotation.py",
+      "destination": "scripts/prepare_apt0_room_annotation.py",
+      "sha256": "83716ed137890d0434c1e922b2a56e73ebd741c6bc2f450fad78d13a1ceff45d",
+      "bytes": 21354
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/preview_hm3d.py",
+      "destination": "scripts/preview_hm3d.py",
+      "sha256": "2ab64fd421e08c202c4ce8ce29d53093d9f6c63a18f7df0f12b1256ac93a1db7",
+      "bytes": 6744
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/preview_hm3d_candidates.py",
+      "destination": "scripts/preview_hm3d_candidates.py",
+      "sha256": "fbc88659fdb03d0ecc694075757ef16f88ad2ad9d837caa3a6a6deabe8a4058b",
+      "bytes": 12536
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/process_m12_sensor_capture.py",
+      "destination": "scripts/process_m12_sensor_capture.py",
+      "sha256": "148e6dee5af057bb86aa1b11faa357832d9246567a6ef99077a04a2595ee2eef",
+      "bytes": 7891
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/project_detection_masks_to_3d.py",
+      "destination": "scripts/project_detection_masks_to_3d.py",
+      "sha256": "61614c8f2d1083f0aad9998747e166cb90542b1c85c5b2b27e4319f259e2cdc0",
+      "bytes": 18477
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/refresh_apt0_gt_review_metadata.py",
+      "destination": "scripts/refresh_apt0_gt_review_metadata.py",
+      "sha256": "0a05cb6f06c249977db950ea616e2d95352f4f5fae7be051c1417faca08f78b4",
+      "bytes": 4706
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/render_apt0_instance_ground_truth.py",
+      "destination": "scripts/render_apt0_instance_ground_truth.py",
+      "sha256": "46d2c54104dcd319c41c9f5abdbc3feff190de05a21b19514a629ccecbb5934a",
+      "bytes": 16169
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/render_habitat_observed_pointcloud.py",
+      "destination": "scripts/render_habitat_observed_pointcloud.py",
+      "sha256": "edfb656ffd8ed77e662df7c6161f893248aff7971743e92cac03562b15e986eb",
+      "bytes": 5026
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/render_membership_review_package.py",
+      "destination": "scripts/render_membership_review_package.py",
+      "sha256": "2183011daf24016f77f74841fea0766a16162f45137550790f6359d21d08d453",
+      "bytes": 13488
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/run_habitat_native_replay.py",
+      "destination": "scripts/run_habitat_native_replay.py",
+      "sha256": "86fde0271b01f20f4554c954ec9941a02b6e1ea3fff4c9ecc772b229ec5c1fb2",
+      "bytes": 20389
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/run_m12_webots_live_bridge.py",
+      "destination": "scripts/run_m12_webots_live_bridge.py",
+      "sha256": "352127d1d568e36d594848766f817715b874f1256f77c19afcfcb37a85ce15aa",
+      "bytes": 53525
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/run_m12_webots_native_replay.py",
+      "destination": "scripts/run_m12_webots_native_replay.py",
+      "sha256": "f052ea55f809e4750b08bedc2d1c9746bec5518c8df85e3011c182c7144a6abc",
+      "bytes": 43985
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/run_native_pipeline_smoke.py",
+      "destination": "scripts/run_native_pipeline_smoke.py",
+      "sha256": "67264fded847dec6b51474f57a4a597424ffdd4e7106e4d97728ec270ea16e68",
+      "bytes": 10246
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/run_native_rgbd_smoke.py",
+      "destination": "scripts/run_native_rgbd_smoke.py",
+      "sha256": "5a34b906a57c3c0cfb50cd921c7edaaaf13721dd98461b2460f8c7ab653a3c10",
+      "bytes": 19191
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/run_native_two_room_rgbd_sequence.py",
+      "destination": "scripts/run_native_two_room_rgbd_sequence.py",
+      "sha256": "7bd001ea0346936d49461d5ec506e7a4cf90d47d7194a4dd806e59214a21386f",
+      "bytes": 24183
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/run_region_object_room_labels.py",
+      "destination": "scripts/run_region_object_room_labels.py",
+      "sha256": "fee87df43165a726e39c364a58639b70ea560b7b8ff81c34243bb5fce885046f",
+      "bytes": 47422
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/run_replica_cad_instance_segmentation.py",
+      "destination": "scripts/run_replica_cad_instance_segmentation.py",
+      "sha256": "27be30abdec807642a2bef391b6bdd019b2eada5807f62e266153e44c8c4ed78",
+      "bytes": 14056
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/scene_launcher.py",
+      "destination": "scripts/scene_launcher.py",
+      "sha256": "938b05230c3cab17bc0e757b3f7815d3ff6d8d331bba5674d3cab0a83f2334a8",
+      "bytes": 88872
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/scout_hm3d_route.py",
+      "destination": "scripts/scout_hm3d_route.py",
+      "sha256": "f479522fc8b8d1cc206e0927d92cced06468ce89dc81e6f6cf77f118fc17d2b9",
+      "bytes": 8682
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/summarize_detection_3d_ledger.py",
+      "destination": "scripts/summarize_detection_3d_ledger.py",
+      "sha256": "91166eeec3cd899e324143644e8d24a9af5edce69c864702989b1af9f6d3d71b",
+      "bytes": 3198
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/validate_habitat_capture_geometry.py",
+      "destination": "scripts/validate_habitat_capture_geometry.py",
+      "sha256": "e4bc3753ca3d48c555675f0dc17a268be58dc48a72572f169af9d4585154b0a3",
+      "bytes": 11820
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/validate_habitat_route.py",
+      "destination": "scripts/validate_habitat_route.py",
+      "sha256": "755b5ca3644b57b21edc2d35bb249e4f7001244eeafe9e175d217849fed168d9",
+      "bytes": 4515
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/scripts/validate_replica_cad_instance_capture.py",
+      "destination": "scripts/validate_replica_cad_instance_capture.py",
+      "sha256": "29491adb7962eeddfb9d4ea91d505c017c5638074f82c7243f625dd0e0da628e",
+      "bytes": 4558
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/evaluation/hm3d_00802_object_category_mapping_v1.json",
+      "destination": "configs/evaluation/hm3d_00802_object_category_mapping_v1.json",
+      "sha256": "a092857effcc6dd1f1aff8497e2c52586cb58f53e57aed1522771acf85317671",
+      "bytes": 3320
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/evaluation/hm3d_00802_scene_eval_v1.json",
+      "destination": "configs/evaluation/hm3d_00802_scene_eval_v1.json",
+      "sha256": "69ddc59893b79ba66cc1ef849114a149ab54d5d0951eaf7d3ce0bf2fd28a3064",
+      "bytes": 2366
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/evaluation/replica_cad_apt0_scene_eval_v1.json",
+      "destination": "configs/evaluation/replica_cad_apt0_scene_eval_v1.json",
+      "sha256": "d7bf1fd2d21eeafd4a2007c87b0aabd584926c78126ef6866caaf10a3e779186",
+      "bytes": 2430
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/habitat/hm3d_minival_v02_00802_main_320_route.json",
+      "destination": "configs/habitat/hm3d_minival_v02_00802_main_320_route.json",
+      "sha256": "f8a7d65f9c2dc993bab836b60338082d828cbcb1c8bc8d63a5e2792e74771a8a",
+      "bytes": 5758
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/habitat/hm3d_minival_v02_00802_main_600_route.json",
+      "destination": "configs/habitat/hm3d_minival_v02_00802_main_600_route.json",
+      "sha256": "e9b4a5cd01fb87da772e7c34c3352dd11df1af49d4a665755695b579253414a5",
+      "bytes": 5667
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/habitat/hm3d_minival_v02_00802_main_dense_route.json",
+      "destination": "configs/habitat/hm3d_minival_v02_00802_main_dense_route.json",
+      "sha256": "1cd5e820f0472daa0b207c43e90fcdb57d96b7aefc4cdb752dc3ca44c942db26",
+      "bytes": 60241
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/habitat/hm3d_minival_v02_00802_main_route.json",
+      "destination": "configs/habitat/hm3d_minival_v02_00802_main_route.json",
+      "sha256": "3ea1a21f6870e1ef292ec2774efa551b9ede6128b72438d20c2b5568db46b691",
+      "bytes": 5743
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/habitat/hm3d_minival_v02_00802_smoke.json",
+      "destination": "configs/habitat/hm3d_minival_v02_00802_smoke.json",
+      "sha256": "ca7e4a6b38be18033c824d0ee29df58e0f13fcb3429d5ad2cf7000d2c88edce4",
+      "bytes": 3199
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/habitat/hm3d_minival_v02_preview_template.json",
+      "destination": "configs/habitat/hm3d_minival_v02_preview_template.json",
+      "sha256": "e9c1fc2a0a0f8b886ae99a4c02b9c1b7e1127fb0e1209edaae80f2284f33215a",
+      "bytes": 1793
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/habitat/m12_replica_cad_apt0_instance_route.json",
+      "destination": "configs/habitat/m12_replica_cad_apt0_instance_route.json",
+      "sha256": "fd0cbfe9c5fdd5a094b8670219756fa0aa3810596a938a5653a6d8a9a1f08cc4",
+      "bytes": 2418
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/habitat/m12_replica_cad_apt0_perception_dev_hires_route.json",
+      "destination": "configs/habitat/m12_replica_cad_apt0_perception_dev_hires_route.json",
+      "sha256": "45ff27b975d5e92264c6bb119bc13c454977139344faa7904cea01bd0aacb02c",
+      "bytes": 2871
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/habitat/m12_replica_cad_apt0_perception_dev_long_route.json",
+      "destination": "configs/habitat/m12_replica_cad_apt0_perception_dev_long_route.json",
+      "sha256": "42bb7b89b3afc7d90a9e419c42b30928206b0b5eff42cdf69f3790cdfc2b3c66",
+      "bytes": 3924
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/habitat/m12_replica_cad_apt0_perception_dev_route.json",
+      "destination": "configs/habitat/m12_replica_cad_apt0_perception_dev_route.json",
+      "sha256": "85dbb01f0a91276b9693f11f0d7baa907b6f70f0cdc773bfecccf396e57e4c0f",
+      "bytes": 3122
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/habitat/m12_replica_cad_apt0_perception_reobserve_route.json",
+      "destination": "configs/habitat/m12_replica_cad_apt0_perception_reobserve_route.json",
+      "sha256": "9fe63bea2bc89f7acca4c8c5de27a961cca0859ca030d7dbd8a90b3888ee0fe3",
+      "bytes": 1642
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/habitat/m12_replica_cad_apt1_instance_route.json",
+      "destination": "configs/habitat/m12_replica_cad_apt1_instance_route.json",
+      "sha256": "e84cb95d442e77a68e6125cf60b6fab933b4c263f23b48939b03405fd0c64d8e",
+      "bytes": 2393
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/habitat/m12_replica_cad_apt1_perception_holdout_hires_route.json",
+      "destination": "configs/habitat/m12_replica_cad_apt1_perception_holdout_hires_route.json",
+      "sha256": "f5257c5d2542990cc9dbbd1e9b36385354dc92c40741a95b7b8ceaf030b4f7db",
+      "bytes": 2444
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/habitat/m12_replica_cad_apt2_instance_route.json",
+      "destination": "configs/habitat/m12_replica_cad_apt2_instance_route.json",
+      "sha256": "9051dda294da94affe27ef2ecf5d051c0506e2c4c70b86c36ca822207b4fed64",
+      "bytes": 2393
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/habitat/m12_replica_cad_apt2_perception_holdout_hires_route.json",
+      "destination": "configs/habitat/m12_replica_cad_apt2_perception_holdout_hires_route.json",
+      "sha256": "2bc4dca0a1d7b7b16baedeb8ae41353c5e04bf1715ee0b2b762613bf2137904c",
+      "bytes": 2444
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/habitat/m12_replica_cad_stage_route.json",
+      "destination": "configs/habitat/m12_replica_cad_stage_route.json",
+      "sha256": "b1849fc9bf2efe67bcbb285a6be9bcb32693df5e8dcdc6837736a30143f9c8a0",
+      "bytes": 1377
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/launcher/local_environment.json",
+      "destination": "configs/launcher/local_environment.json",
+      "sha256": "eff2b18ecac8213f679f50696e31ef756b6cbb8c4a183c9ffc207ee6cb7de563",
+      "bytes": 606
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/launcher/scenes.json",
+      "destination": "configs/launcher/scenes.json",
+      "sha256": "ada99585256d79eac094b52667bb4e287ff11af0f7068fe8b4fdb38d11742685",
+      "bytes": 1160
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/launcher/templates/hm3d_scene_entry.template.json",
+      "destination": "configs/launcher/templates/hm3d_scene_entry.template.json",
+      "sha256": "6d79d807bcb531c03d55f12ac2b243d18c24bc6b7b5932ad6f16c4e83730fbb6",
+      "bytes": 253
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/launcher/templates/replica_cad_scene_entry.template.json",
+      "destination": "configs/launcher/templates/replica_cad_scene_entry.template.json",
+      "sha256": "0b19bc14ee483b9de3de7915869cc6cd637d14ecabd7420fc275818a838999da",
+      "bytes": 256
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/m4_local.yaml",
+      "destination": "configs/m4_local.yaml",
+      "sha256": "628ea081d8526b86c5d896976795fe275cb820c93377fc79ce93b1e176450a19",
+      "bytes": 568
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/perception/coco.names",
+      "destination": "configs/perception/coco.names",
+      "sha256": "bd17f1ee35d5f3c862a4894605855abbb9dda4b0621fdb0ac4c2c8c7bb7e730a",
+      "bytes": 621
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/perception/yolo11n_seg_replica_cad_dev.json",
+      "destination": "configs/perception/yolo11n_seg_replica_cad_dev.json",
+      "sha256": "ec64d9e8c508d54b313abf8495b15631fa95e047e894131db5c5fec7c2dfd0b3",
+      "bytes": 2493
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/reference_code.yaml",
+      "destination": "configs/reference_code.yaml",
+      "sha256": "8c483feec7cce891d4c5194ea9ded7f54f37a366a3c2c8ca63c0bfa0196f1696",
+      "bytes": 2074
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/reference_code_mp3d.yaml",
+      "destination": "configs/reference_code_mp3d.yaml",
+      "sha256": "210124b16fd3651c06fd548a1704f27595f61761dd1bfb4db4099e51895d1523",
+      "bytes": 1918
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/semantics/region_object_room_rules_replica_cad_v1.json",
+      "destination": "configs/semantics/region_object_room_rules_replica_cad_v1.json",
+      "sha256": "a18f39c738e01832caf8c2e187f0a2994294d143df04213ccca9d5c04b8b0e7b",
+      "bytes": 1392
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/semantics/room_rules_replica_cad_dev.json",
+      "destination": "configs/semantics/room_rules_replica_cad_dev.json",
+      "sha256": "9695a8adb1d29b13ff848b5ca7ebc78f693885e8ab8b9e6cde26e0ce2200b434",
+      "bytes": 840
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/test_fixture.yaml",
+      "destination": "configs/test_fixture.yaml",
+      "sha256": "659d6cc119ce27a0a32e0ab76b3dcb51f918e9d74207af18009a6cf86199c86e",
+      "bytes": 1908
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/webots/m12_alt_world_route.json",
+      "destination": "configs/webots/m12_alt_world_route.json",
+      "sha256": "581f1244f95703da9276f5afb2d8a022076fe482dcee1f2e5a11dc974a23509b",
+      "bytes": 903
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/webots/m12_complete_apartment_coverage_route.json",
+      "destination": "configs/webots/m12_complete_apartment_coverage_route.json",
+      "sha256": "ff26ca4ad832c11e1afb953f2baa5d2c1fe31cf198cfbb552e4f11197bda64b4",
+      "bytes": 6153
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/webots/m12_complete_apartment_evaluation.json",
+      "destination": "configs/webots/m12_complete_apartment_evaluation.json",
+      "sha256": "bdadecafa24b03698fbb37f7846a980517c30d5adc8c8003bf7b73e58bbf7fbe",
+      "bytes": 2374
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/webots/m12_complete_apartment_route_recording.json",
+      "destination": "configs/webots/m12_complete_apartment_route_recording.json",
+      "sha256": "f0642708fb4ea95ef2f1e7d4f89656ef818d82a707f364fd40c358edd88a982d",
+      "bytes": 5660
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/webots/m12_corridor_motor_route.json",
+      "destination": "configs/webots/m12_corridor_motor_route.json",
+      "sha256": "8534e5d9755bb70ec98b6e0ca1a0e53dd31a7b23ef4f0644f5bfed3b7c170855",
+      "bytes": 3315
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/webots/m12_kitchen_route_recording.json",
+      "destination": "configs/webots/m12_kitchen_route_recording.json",
+      "sha256": "b2ad3d21c47dd2957d9ee0219bf4f1afcb902abb662f98acd19ed69f3831d578",
+      "bytes": 3892
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/webots/m12_motor_route_recording_template.json",
+      "destination": "configs/webots/m12_motor_route_recording_template.json",
+      "sha256": "89725f8fd6e7c1875e51fe6724b2de807a80a710571e863ef1080d24cec9ccad",
+      "bytes": 3252
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/webots/m12_sensor_sequence.json",
+      "destination": "configs/webots/m12_sensor_sequence.json",
+      "sha256": "011b256becb86be390e8a9202e44bc787d9612115d0685859da56322ab968a9d",
+      "bytes": 1546
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/webots/m12_two_room_motor_route.json",
+      "destination": "configs/webots/m12_two_room_motor_route.json",
+      "sha256": "f883a9a0e43ceb041cbc3e05e68a77a91b653d26f4b32ca8dea6e2b754727c99",
+      "bytes": 3943
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/webots/m12_two_room_route.json",
+      "destination": "configs/webots/m12_two_room_route.json",
+      "sha256": "20a1ac4bfe9e2a224704dfe30b32284ab9464861061bec18457186cf5c751820",
+      "bytes": 1776
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/CMakeLists.txt",
+      "destination": "native/CMakeLists.txt",
+      "sha256": "e9ec29edbcfac8a997b60acb5e29d0937570b1098fabf943ddd416b883ea05ea",
+      "bytes": 2283
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/dude/CMakeLists.txt",
+      "destination": "native/dude/CMakeLists.txt",
+      "sha256": "436689f6ac182389cb64e8e215b98fae94d6ed993eef654ea93c1c6fca45b7f5",
+      "bytes": 3290
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/dude/globals.cpp",
+      "destination": "native/dude/globals.cpp",
+      "sha256": "7bac8174bb810797d675e4b748773b524b53c80961efb6d59580b211cb21a14a",
+      "bytes": 88
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/dude/include/dude_ros_logging.hpp",
+      "destination": "native/dude/include/dude_ros_logging.hpp",
+      "sha256": "c6b3bdbfeb908f3727218fcfb69309f92738c6c1b9b6474d626bd0bba042a52e",
+      "bytes": 1181
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/dude/include/m4_non_ros_logging.hpp",
+      "destination": "native/dude/include/m4_non_ros_logging.hpp",
+      "sha256": "c6b3bdbfeb908f3727218fcfb69309f92738c6c1b9b6474d626bd0bba042a52e",
+      "bytes": 1181
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/dude/preprocessing.cpp",
+      "destination": "native/dude/preprocessing.cpp",
+      "sha256": "87b266d4b58dcbe0f1dd91611680178926913baf866ae79f9ab12556d38848ec",
+      "bytes": 2956
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/dude/preprocessing.hpp",
+      "destination": "native/dude/preprocessing.hpp",
+      "sha256": "67e666f165d08a8033111b672b03d0d8e5f996e00bc9da6a7efee78835a24210",
+      "bytes": 450
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/dude/source_reference.cpp",
+      "destination": "native/dude/source_reference.cpp",
+      "sha256": "c45d05c9dec4bac2c45ceb13d4434f297e74bc40d01a014afc551274147fcf31",
+      "bytes": 6293
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/dude/worker.cpp",
+      "destination": "native/dude/worker.cpp",
+      "sha256": "e6201e95d9ba60b5413365e81997513ca65066b20d9524cee7fffe020bb56699",
+      "bytes": 11316
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/dude_reference/CMakeLists.txt",
+      "destination": "native/dude_reference/CMakeLists.txt",
+      "sha256": "03241e169a1f3c68ed30a01ae79f9b38f77d42c92e0e9851a6541a7b9adc9392",
+      "bytes": 2588
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/m4_dependency_probe/CMakeLists.txt",
+      "destination": "native/m4_dependency_probe/CMakeLists.txt",
+      "sha256": "e9bfd5a673bf52caf7bfd5a9a44e9e5e0ebdc97b5f713f7794498bba921768c9",
+      "bytes": 2173
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/m4_dependency_probe/README.md",
+      "destination": "native/m4_dependency_probe/README.md",
+      "sha256": "4a7bc72e17f52cb3c19bf4fa02319d4a1fc99c4ec286f88df692ae6a1dc52c56",
+      "bytes": 1858
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/m4_dependency_probe/probe.cpp",
+      "destination": "native/m4_dependency_probe/probe.cpp",
+      "sha256": "10a9db983d42f24df9cb013f757511a9557b326741e4bff266cd8e5ac67270b9",
+      "bytes": 2918
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/occupancy/CMakeLists.txt",
+      "destination": "native/occupancy/CMakeLists.txt",
+      "sha256": "fd7afda22dadbfa45b950133ed3277a816d2a686700980ef2ce3e52a10c719e8",
+      "bytes": 1560
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/occupancy/fixture_runner.cpp",
+      "destination": "native/occupancy/fixture_runner.cpp",
+      "sha256": "3f2a25938157e5e85d039abaa2c83daf5e6f4f1ab8ba8f93c6d6e912c5e6ab79",
+      "bytes": 19740
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/occupancy/fixture_runner.cpp.orig",
+      "destination": "native/occupancy/fixture_runner.cpp.orig",
+      "sha256": "9e4c681efc3cfed33ad8f39b96a37da1c42fdd89e9933ad493245adc54742975",
+      "bytes": 18181
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/occupancy/jamb_alignment_sensitivity.cpp",
+      "destination": "native/occupancy/jamb_alignment_sensitivity.cpp",
+      "sha256": "107f1f86f80ac6882cddfcdefd1c93dbf8671305cea760b73d9d11cc73d8d2df",
+      "bytes": 3295
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/occupancy/jamb_alignment_sensitivity_fixed.cpp",
+      "destination": "native/occupancy/jamb_alignment_sensitivity_fixed.cpp",
+      "sha256": "b11b30edc0958cc1598f728dca24a08212b8636408d1fd3ea033fd7b7b635428",
+      "bytes": 2458
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/occupancy/jamb_column_repro.cpp",
+      "destination": "native/occupancy/jamb_column_repro.cpp",
+      "sha256": "3c764f3664daf541c9ae6acf3bb48bdb65e4c451f263e545e1d909d175622a67",
+      "bytes": 5770
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/occupancy/jamb_column_repro_fixed.cpp",
+      "destination": "native/occupancy/jamb_column_repro_fixed.cpp",
+      "sha256": "163211dca001b2997870ce97dc0449d3aae788b9fb7428ed225a227793f3f2b6",
+      "bytes": 4292
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/occupancy/jamb_column_repro_v2.cpp",
+      "destination": "native/occupancy/jamb_column_repro_v2.cpp",
+      "sha256": "80b2d0cf90f8685cf141f60666470368dac9b37f60e15858c7c1fe2e9d50e7ff",
+      "bytes": 19
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/occupancy/occupancy_map.cpp",
+      "destination": "native/occupancy/occupancy_map.cpp",
+      "sha256": "6245e0ddde8b943831ea010cbb4a6f7fd376ec7edc58ebbdf837ab9727d9ccef",
+      "bytes": 6259
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/occupancy/occupancy_map.hpp",
+      "destination": "native/occupancy/occupancy_map.hpp",
+      "sha256": "9017f4b09ebf152264cc4306253cce35527279deb9fa9bc42446f02791f7e125",
+      "bytes": 1978
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/occupancy/projection_backend.cpp",
+      "destination": "native/occupancy/projection_backend.cpp",
+      "sha256": "5cca6b9cc4eb4ec3fe71b24b0cfdbb9492018a67750c11e230f657204840a0d4",
+      "bytes": 7790
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/occupancy/projection_backend.hpp",
+      "destination": "native/occupancy/projection_backend.hpp",
+      "sha256": "47c4d9f1bbda4b77e02f58fdad41350e0bb40ac698fbeca492e9e689be6e77f3",
+      "bytes": 1908
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/occupancy/projection_backend_smoke.cpp",
+      "destination": "native/occupancy/projection_backend_smoke.cpp",
+      "sha256": "c6d96bb377bfb16b3233a8f94cd833227f375f5bff8aaa65299ecc9e990d7202",
+      "bytes": 10656
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/occupancy/reference_insert_scan.cpp",
+      "destination": "native/occupancy/reference_insert_scan.cpp",
+      "sha256": "d2adab9fe1c413164e7f18b46e05560d02ba60a8df516c4b46395a1a43ab0b7b",
+      "bytes": 2368
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/occupancy/reference_insert_scan.hpp",
+      "destination": "native/occupancy/reference_insert_scan.hpp",
+      "sha256": "86a2fdda2b4847d33e051f2be3aa208aeae1920753280ecf3c2165f130512e39",
+      "bytes": 454
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/native/probe.cpp",
+      "destination": "native/probe.cpp",
+      "sha256": "93eb1aab21e4716544e4670e8195cf0ed8e283ed77d40c81f86f0b9905ac31c3",
+      "bytes": 222
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/adapters/habitat/__init__.py",
+      "destination": "adapters/habitat/__init__.py",
+      "sha256": "c38ce6c160bd3802de168ef44eb40e06b5613d45af52bb11a329fa2225250afd",
+      "bytes": 188
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/adapters/habitat/frames.py",
+      "destination": "adapters/habitat/frames.py",
+      "sha256": "49eaddbd61fb4a81ae37ef7038337647b201a74c7c00b0fab88976820e8ff54b",
+      "bytes": 7596
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/adapters/habitat/raw.py",
+      "destination": "adapters/habitat/raw.py",
+      "sha256": "0330ab32c59a5e4bed44efeee32dccdb3547cddf83a82a92a982ffa6849b5d8d",
+      "bytes": 826
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/adapters/webots/__init__.py",
+      "destination": "adapters/webots/__init__.py",
+      "sha256": "2baff03bac7d75a47afc5da358b3eb019434d43e2bf1a8707b4eacdb6699ddac",
+      "bytes": 353
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/adapters/webots/capture.py",
+      "destination": "adapters/webots/capture.py",
+      "sha256": "0d23f52fa461da75fb4f204de997e1864fd21ed59559e042f2587fee1ff10ac6",
+      "bytes": 3949
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/conftest.py",
+      "destination": "tests/conftest.py",
+      "sha256": "3e61915fa8f6777f41485bd64b8b9497e9b9697b088030dbd4d60bf1cd0aa620",
+      "bytes": 120
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/fixtures/m1_backprojection_reference.json",
+      "destination": "tests/fixtures/m1_backprojection_reference.json",
+      "sha256": "4539d5355373a2f0b836489cdaefb965e856b3150f136fbd7cff42b7a01cd6ca",
+      "bytes": 311
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/fixtures/m2_octomap_basic.golden.json",
+      "destination": "tests/fixtures/m2_octomap_basic.golden.json",
+      "sha256": "e01e62d89f80d7e159aeb76c6929c471c6f365c2f6bd9431fb344f7dd12b07c1",
+      "bytes": 2604
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/fixtures/m2_octomap_basic.scan",
+      "destination": "tests/fixtures/m2_octomap_basic.scan",
+      "sha256": "75d89319da5a8cfd0f112a22e14c84d8ac10108d776935700ec804c03cf9662c",
+      "bytes": 370
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/fixtures/m2_octomap_edgecases.scan",
+      "destination": "tests/fixtures/m2_octomap_edgecases.scan",
+      "sha256": "bf80dfdd73c37779e95331a3abda779dadcc15aa2c0bacf0d1980c20f8ead50b",
+      "bytes": 354
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/fixtures/m2_octomap_edgecases_reversed.scan",
+      "destination": "tests/fixtures/m2_octomap_edgecases_reversed.scan",
+      "sha256": "c4a2cdc27d211a80a786969f0a908680c4e2e5a8a9f981a339086e1d8d840835",
+      "bytes": 215
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/fixtures/m2_octomap_resolution005.scan",
+      "destination": "tests/fixtures/m2_octomap_resolution005.scan",
+      "sha256": "97984ab79c916376cd2ea77193f39eb5e0ba393ef3f323927f4dc0c9a5230d00",
+      "bytes": 386
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/fixtures/m3_mapconversion_disjoint_ranges.json",
+      "destination": "tests/fixtures/m3_mapconversion_disjoint_ranges.json",
+      "sha256": "8b5300e0430feccbeba377ff8bed633e8438d5960719268c6ad97862e8bcfd37",
+      "bytes": 615
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/fixtures/m3_mapconversion_reference.json",
+      "destination": "tests/fixtures/m3_mapconversion_reference.json",
+      "sha256": "611f3f02234e32b78e9d510779d243b79ad88d246af2b3c842f6b4a7f3a19316",
+      "bytes": 1426
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/fixtures/m3_mapconversion_resolution005.json",
+      "destination": "tests/fixtures/m3_mapconversion_resolution005.json",
+      "sha256": "ab29a1c0b00e1858be650624246c49bb9f8a3e663832eeb39ddfe44425e84770",
+      "bytes": 1311
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_backproject.py",
+      "destination": "tests/test_backproject.py",
+      "sha256": "b8e3360844feb00501c7e7568411aea53b695d953824a77c737d0434467661f5",
+      "bytes": 5308
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_compare_habitat_evaluations.py",
+      "destination": "tests/test_compare_habitat_evaluations.py",
+      "sha256": "134406673e36eff79f672b71ff4afff322dc090e400db857b61d0e530af576cc",
+      "bytes": 2355
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_config.py",
+      "destination": "tests/test_config.py",
+      "sha256": "fecf19971f13f9a2adb5626189120af3e691d773559217fe0e9a3965dad71c07",
+      "bytes": 4832
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_coordinates.py",
+      "destination": "tests/test_coordinates.py",
+      "sha256": "7c8638d41b7a0394d3a90343c1f6e13f34578b2ce29b1cbde8f2194370abf8db",
+      "bytes": 4138
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_frames.py",
+      "destination": "tests/test_frames.py",
+      "sha256": "3f8c58c360ac6a9f597749f35158eb239d0c9c11384af08ec3dd52a7f58a5f61",
+      "bytes": 1397
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_ground_truth_metrics.py",
+      "destination": "tests/test_ground_truth_metrics.py",
+      "sha256": "150709a0387f38bee66df583097c29ab5cf2b3183f1ad96c899c8b791dbb0f43",
+      "bytes": 11274
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_habitat_adapter.py",
+      "destination": "tests/test_habitat_adapter.py",
+      "sha256": "33e611f145e4614df475c8e9bceb7b16f4a1123ca1eef1d080dd517972d40a62",
+      "bytes": 1573
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_habitat_evaluation_bundle.py",
+      "destination": "tests/test_habitat_evaluation_bundle.py",
+      "sha256": "680fe0f47f6e7c7e44c6192881417c8a2354a799170b7c00a1f682a16de1d496",
+      "bytes": 3058
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_hm3d_object_gt_evaluator.py",
+      "destination": "tests/test_hm3d_object_gt_evaluator.py",
+      "sha256": "8be94afb199dcf542e3f397947cf6f923afa611dab063df41f3a883de639aa86",
+      "bytes": 13727
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_hm3d_preparation.py",
+      "destination": "tests/test_hm3d_preparation.py",
+      "sha256": "bee24302c91231b7198b680c79926f1ee7e98fc73fc022aa478891de7eee40d5",
+      "bytes": 3415
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_m10_serialization.py",
+      "destination": "tests/test_m10_serialization.py",
+      "sha256": "fba6a19344a4744204909bf6b41b1d0d96977d45aa76f4176e86b15b2ba5abc1",
+      "bytes": 6093
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_m11_native_smoke.py",
+      "destination": "tests/test_m11_native_smoke.py",
+      "sha256": "018661de03f62ee3cd4c50d0ee9562345e3f84d1631893e9b40a765ff3af2c1c",
+      "bytes": 1769
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_m11_rgbd_smoke.py",
+      "destination": "tests/test_m11_rgbd_smoke.py",
+      "sha256": "0eb1fb865d4c0c1330fee0c2d5fe956dd9313e5b471ea7800824d1f7b929d833",
+      "bytes": 3577
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_m11_two_room_sequence.py",
+      "destination": "tests/test_m11_two_room_sequence.py",
+      "sha256": "0f7903371a3afb203f4b730572c289f2dc2564e704827bd8d3587f5540534cda",
+      "bytes": 4800
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_m12_live_overlay.py",
+      "destination": "tests/test_m12_live_overlay.py",
+      "sha256": "acefbe93aee6050eeb96a6b954884a07065dbc00042c7206d38ccacf27ee6148",
+      "bytes": 6141
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_m12_motor_contract.py",
+      "destination": "tests/test_m12_motor_contract.py",
+      "sha256": "e6f4915237eb951118f1121454459766c58ab7743aefeb6134c7bac76153bd77",
+      "bytes": 4876
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_m12_replay_policy.py",
+      "destination": "tests/test_m12_replay_policy.py",
+      "sha256": "4914008cc9b8d745cda0740f2bff946412524216e263807e3b15de85f22f6ed3",
+      "bytes": 2426
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_m12_route_recording.py",
+      "destination": "tests/test_m12_route_recording.py",
+      "sha256": "3d014275df17d51a503e6747e7694181f6a64460a9beef062c0bd904b57eec82",
+      "bytes": 3669
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_m12_webots_preflight.py",
+      "destination": "tests/test_m12_webots_preflight.py",
+      "sha256": "3a86ae622702cca0518eb7c45461bc9fc546a0e73e52bbf0acc473818649873a",
+      "bytes": 1226
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_m2_octomap.py",
+      "destination": "tests/test_m2_octomap.py",
+      "sha256": "627e96f3b90fcac7f8de1f8011e1237fb70df04b02c9074b09e0a03fd32a6161",
+      "bytes": 4986
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_m2_worker.py",
+      "destination": "tests/test_m2_worker.py",
+      "sha256": "dee7c7adfd0e841e9df07499aa20ea8673af71646ea979fbdfa697864ebb5642",
+      "bytes": 6853
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_m3_grid_artifacts.py",
+      "destination": "tests/test_m3_grid_artifacts.py",
+      "sha256": "30913e6084c672105b77bb26148d7b4a8ebcb88aaeb31b89a135767443b23434",
+      "bytes": 2282
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_m3_native_integration.py",
+      "destination": "tests/test_m3_native_integration.py",
+      "sha256": "875b86b1c9bef41b8c892aa6ebbdbd513154a2c804eed8df5e628f30d1635fe9",
+      "bytes": 7379
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_m3_projection.py",
+      "destination": "tests/test_m3_projection.py",
+      "sha256": "c7264006f4d4c486ceae59d25b2f8d8c76334a6d649c4049556b42f0db9d9ab5",
+      "bytes": 5471
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_m3_source_parity.py",
+      "destination": "tests/test_m3_source_parity.py",
+      "sha256": "4ad3ae7d4c51d092a5839f90137ffac479b3dd40b552c903ffaabc1edbc34dbf",
+      "bytes": 8271
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_m4_degenerate_resolution.py",
+      "destination": "tests/test_m4_degenerate_resolution.py",
+      "sha256": "28031b7fefd3aef53b5297e6c8c0ff6a593253bb301687e97ad09f1687563c8d",
+      "bytes": 977
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_m4_dude.py",
+      "destination": "tests/test_m4_dude.py",
+      "sha256": "8f37efdfee1b61d50f91a232656bc95e871084100ba9054f0f02707cda477c5a",
+      "bytes": 6837
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_m4_m5_m8_integration.py",
+      "destination": "tests/test_m4_m5_m8_integration.py",
+      "sha256": "bdfa8599f2f9777b1c3915ad805f38453205d98dca91bd5988982af1664da79c",
+      "bytes": 4006
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_m4_source_parity.py",
+      "destination": "tests/test_m4_source_parity.py",
+      "sha256": "8c676a840bcbb0c650c7a694aa70be097e5b8d883197a0ccadc082fae672d92a",
+      "bytes": 5929
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_m4_stateful_worker.py",
+      "destination": "tests/test_m4_stateful_worker.py",
+      "sha256": "e873dd79a04e36e1df0d4a8aed052384d3fbb638e8b5696a2cf757e6b71eada4",
+      "bytes": 3653
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_m4_worker_lifecycle.py",
+      "destination": "tests/test_m4_worker_lifecycle.py",
+      "sha256": "c8924a3a954654d89b81453a81f605e6fa0f6ec05ccf06623c5a7667cadb074c",
+      "bytes": 1892
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_m5_regions.py",
+      "destination": "tests/test_m5_regions.py",
+      "sha256": "8008098eb08cdff3df7e5cd29e6c5d8d673fe164491d71c9ff4ff3c0e0276521",
+      "bytes": 19118
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_m6_object_association.py",
+      "destination": "tests/test_m6_object_association.py",
+      "sha256": "49ce6e76f03c6e8baecbcf9450b9c1b2a7d5a41355d24bec71bdb881dcce91d4",
+      "bytes": 10650
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_m7_m8_contract.py",
+      "destination": "tests/test_m7_m8_contract.py",
+      "sha256": "4b3c570655e8d7a8672e9ca440e00a7da5c80e7ed4aa219fa906f51c47f6f367",
+      "bytes": 3780
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_m7_navigation.py",
+      "destination": "tests/test_m7_navigation.py",
+      "sha256": "6fcd8a500ca829b8f176f7dbde771cdaf0fb61307848c3d2a1177c7decd0ae79",
+      "bytes": 7583
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_m8_rooms.py",
+      "destination": "tests/test_m8_rooms.py",
+      "sha256": "a0e12075fa22b91166d22c6e48298b205f8ed63ef1a714b20a6c3491ec203556",
+      "bytes": 7819
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_m9_builder.py",
+      "destination": "tests/test_m9_builder.py",
+      "sha256": "d4594ad01e9839958fd8533194bb047dc14ffe7ffdec619cfa56c4cde2447402",
+      "bytes": 16631
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_perception_cache.py",
+      "destination": "tests/test_perception_cache.py",
+      "sha256": "2a806f04a7821480e657b4ea88cfbace11ce5849d423b21107ef4be0c4b98173",
+      "bytes": 1663
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_perception_runtime_config.py",
+      "destination": "tests/test_perception_runtime_config.py",
+      "sha256": "e3d57b725b1ea31ccf59f7412a68faf270fca838bc26a7c85f8f7bffc7dcfbf5",
+      "bytes": 951
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_region_object_room_semantics.py",
+      "destination": "tests/test_region_object_room_semantics.py",
+      "sha256": "fa51b2570bfc98b7caff44df4c3431125f1520bddec6b53086fc754e950ed8ea",
+      "bytes": 5745
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_replica_cad_instance_capture.py",
+      "destination": "tests/test_replica_cad_instance_capture.py",
+      "sha256": "9f05a97b4457cf9ff11ba89de19fbf87e116a0ef101d3e60110f0a3123193945",
+      "bytes": 1185
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_room_semantics.py",
+      "destination": "tests/test_room_semantics.py",
+      "sha256": "d5bd23cf44d26e0c94a4ca29932e75bc159271761ed148ab535257caf7c03843",
+      "bytes": 4162
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_scene_launcher.py",
+      "destination": "tests/test_scene_launcher.py",
+      "sha256": "2bdb55aa2a8a2dee8cd1bc08f3e89131c8f1e6ef3e11d6e7a1e2937e92e2b428",
+      "bytes": 13160
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_scene_launcher_object_gt.py",
+      "destination": "tests/test_scene_launcher_object_gt.py",
+      "sha256": "1fabeced2d8668ba0bed247e1724b4394c04e506c8521a965669998b3eac0ec9",
+      "bytes": 5400
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_visualization_views.py",
+      "destination": "tests/test_visualization_views.py",
+      "sha256": "43e68bc2922a4f153f7898966fa3b0bda7aed10e142514ef0d38c6988f283875",
+      "bytes": 3128
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/tests/test_webots_adapter.py",
+      "destination": "tests/test_webots_adapter.py",
+      "sha256": "af874205ab0b51fc44aa8857ebb151db4f0b24b1e13772809777c0bea40fecb8",
+      "bytes": 3602
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/webots/controllers/m12_motor_capture/live_overlay_protocol.py",
+      "destination": "webots/controllers/m12_motor_capture/live_overlay_protocol.py",
+      "sha256": "7738648c0882000d94827f6547d09faede4303c3b808770347c593f3189a40b3",
+      "bytes": 4834
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/webots/controllers/m12_motor_capture/m12_motor_capture.py",
+      "destination": "webots/controllers/m12_motor_capture/m12_motor_capture.py",
+      "sha256": "fe8a7cd9f4910ddcb1220d313c2f74414299e69437b11b33c828158affdc9a6f",
+      "bytes": 41258
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/webots/controllers/m12_motor_capture/route_recording.py",
+      "destination": "webots/controllers/m12_motor_capture/route_recording.py",
+      "sha256": "2999044197c445a2b715af6f45aea1f32a21fada8bdb6f278c78c6c3fa83be74",
+      "bytes": 9501
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/webots/controllers/m12_sensor_probe/m12_sensor_probe.py",
+      "destination": "webots/controllers/m12_sensor_probe/m12_sensor_probe.py",
+      "sha256": "c2bf5a79a8b57bcd1acfbb64b01a92261abdec65b382c48269803ca35e3615b7",
+      "bytes": 5381
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/webots/controllers/m12_sequence_capture/m12_sequence_capture.py",
+      "destination": "webots/controllers/m12_sequence_capture/m12_sequence_capture.py",
+      "sha256": "7287cb18057177305e9050db2a7d1a16a8950373f71c7c1c1e36fc576485330d",
+      "bytes": 10121
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/webots/protos/M12DiffDriveRGBD.proto",
+      "destination": "webots/protos/M12DiffDriveRGBD.proto",
+      "sha256": "5b89806846a084f4e283516d2860c708cea4671fc2a8d29ad8ac6ac8f88c9e4f",
+      "bytes": 3787
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/webots/worlds/.complete_apartment.jpg",
+      "destination": "webots/worlds/.complete_apartment.jpg",
+      "sha256": "556ac1c9316013d8ee055a44baef1b8dcb03c9f46a584b5a1d6869cda6f95f92",
+      "bytes": 33731
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/webots/worlds/.complete_apartment.wbproj",
+      "destination": "webots/worlds/.complete_apartment.wbproj",
+      "sha256": "33c314dd44b3d39d4257602a2b48c49c84f789e38fd4a6798c106ddf2a717d0a",
+      "bytes": 1250
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/webots/worlds/.m12_alt_corridor.wbproj",
+      "destination": "webots/worlds/.m12_alt_corridor.wbproj",
+      "sha256": "28e281cb41c8720bcd1290e8a6994674d005e7035202e804ee7ed1bf3481e840",
+      "bytes": 777
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/webots/worlds/.m12_corridor_motor.wbproj",
+      "destination": "webots/worlds/.m12_corridor_motor.wbproj",
+      "sha256": "7bf344f656a5cc81e7aef5ae088f49f14b668d215539ebad0efe991c627031a6",
+      "bytes": 857
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/webots/worlds/.m12_kitchen_motor.jpg",
+      "destination": "webots/worlds/.m12_kitchen_motor.jpg",
+      "sha256": "7ba66e3a0d0ee6f161ef64567791964622d8129462e8bdd80544306da6005132",
+      "bytes": 31517
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/webots/worlds/.m12_kitchen_motor.wbproj",
+      "destination": "webots/worlds/.m12_kitchen_motor.wbproj",
+      "sha256": "241e66b90566ba157bbb839baaab2a08371e5b380905bc50253f015f1d776100",
+      "bytes": 896
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/webots/worlds/.m12_sensor_calibration.wbproj",
+      "destination": "webots/worlds/.m12_sensor_calibration.wbproj",
+      "sha256": "28e281cb41c8720bcd1290e8a6994674d005e7035202e804ee7ed1bf3481e840",
+      "bytes": 777
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/webots/worlds/.m12_sensor_sequence.wbproj",
+      "destination": "webots/worlds/.m12_sensor_sequence.wbproj",
+      "sha256": "28e281cb41c8720bcd1290e8a6994674d005e7035202e804ee7ed1bf3481e840",
+      "bytes": 777
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/webots/worlds/.m12_two_rooms.wbproj",
+      "destination": "webots/worlds/.m12_two_rooms.wbproj",
+      "sha256": "28e281cb41c8720bcd1290e8a6994674d005e7035202e804ee7ed1bf3481e840",
+      "bytes": 777
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/webots/worlds/.m12_two_rooms_motor.wbproj",
+      "destination": "webots/worlds/.m12_two_rooms_motor.wbproj",
+      "sha256": "c38d03ea5ab155abf84740d1b828b7d15ca59b7241bf19146908cd1f2249d3a0",
+      "bytes": 864
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/webots/worlds/complete_apartment.wbt",
+      "destination": "webots/worlds/complete_apartment.wbt",
+      "sha256": "2f8066c422b54f56d383693b08752f0733ad542971c9615cadfd981bfbba7470",
+      "bytes": 61545
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/webots/worlds/m12_alt_corridor.wbt",
+      "destination": "webots/worlds/m12_alt_corridor.wbt",
+      "sha256": "d85cb3a4d8312680c64e0b7cac23c343b552dd4d146f008bb0cbcf1dbcff7192",
+      "bytes": 1749
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/webots/worlds/m12_corridor_motor.wbt",
+      "destination": "webots/worlds/m12_corridor_motor.wbt",
+      "sha256": "0323eabfef812e4a76e7760a5ab697b24d7567893519aa0fc08bd80f4f573222",
+      "bytes": 1283
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/webots/worlds/m12_kitchen_motor.wbt",
+      "destination": "webots/worlds/m12_kitchen_motor.wbt",
+      "sha256": "e3585d580ed875539a9080ef49dcc7235d8be75e9705d5cb90c1279f837273b2",
+      "bytes": 24892
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/webots/worlds/m12_sensor_calibration.wbt",
+      "destination": "webots/worlds/m12_sensor_calibration.wbt",
+      "sha256": "8336ed6660ab6726a358f2e35d596dc408564a45b55cbb14be16955231adb612",
+      "bytes": 1685
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/webots/worlds/m12_sensor_sequence.wbt",
+      "destination": "webots/worlds/m12_sensor_sequence.wbt",
+      "sha256": "e912c7f943c8654042f889167f2d2e1747b3d311e2f6021ff635f93429ecb82c",
+      "bytes": 2710
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/webots/worlds/m12_two_rooms.wbt",
+      "destination": "webots/worlds/m12_two_rooms.wbt",
+      "sha256": "fa472c632f8886cb2adb1fbf38b2249eb4e5c0975220a3a7bdcb0aba7f579905",
+      "bytes": 2566
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/webots/worlds/m12_two_rooms_motor.wbt",
+      "destination": "webots/worlds/m12_two_rooms_motor.wbt",
+      "sha256": "6eaa5a941867241eb1701685da8e436ab45ba7c5c1a5d736a08b30efcd44aa44",
+      "bytes": 2969
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/pyproject.toml",
+      "destination": "pyproject.toml",
+      "sha256": "7b69696461d7b86ac037af8da94d6e701df76cf48b03f03bdbe1628e314c850a",
+      "bytes": 549
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/run_scene.sh",
+      "destination": "run_scene.sh",
+      "sha256": "19a9f1299576fdb030b3e9f89e88f7ad8279488c9a11aee8b5848b7f6dce9b3b",
+      "bytes": 155
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/locks/sources.json",
+      "destination": "locks/sources.json",
+      "sha256": "a717323522bded8d1e846125b740889f748ca38a6b842de8b71c95039a346a3c",
+      "bytes": 27420
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/evaluation/__init__.py",
+      "destination": "evaluation/__init__.py",
+      "sha256": "f011e585b64c8ca230aab76cb1876af5e18d94851e353bd3568d950f980cd8be",
+      "bytes": 83
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/evaluation/metrics.py",
+      "destination": "evaluation/metrics.py",
+      "sha256": "bc9c3103b93808aa362a07b06855bd0137115f704c2dc5e241c933c8c221103b",
+      "bytes": 35607
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/evaluation/protocol.md",
+      "destination": "evaluation/protocol.md",
+      "sha256": "03e08fcd28d3ee1abf40d1a06b1a4c9bd6a5c254b16fc84266db467460f6ba2a",
+      "bytes": 8476
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/evaluation/protocol_habitat_v1.json",
+      "destination": "evaluation/protocol_habitat_v1.json",
+      "sha256": "44d5b11e3b79410f3827a10828736af40e149f53b177701a778a1d79804ffc67",
+      "bytes": 1978
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/docs/PHASE1_PLAN.vi.md",
+      "destination": "docs/baseline_reference/PHASE1_PLAN.vi.md",
+      "sha256": "85b964943360626d899ede87e56654ead996d13b1ef681e7b2d54864ed6be826",
+      "bytes": 117884
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/docs/SCENE_LAUNCHER.vi.md",
+      "destination": "docs/baseline_reference/SCENE_LAUNCHER.vi.md",
+      "sha256": "fba27ef360680ece88ab27b7cd819636ddb8e19f1c2bba91d54dd647abfe2d90",
+      "bytes": 13412
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/docs/RUN_AND_EVALUATE.vi.md",
+      "destination": "docs/baseline_reference/RUN_AND_EVALUATE.vi.md",
+      "sha256": "71780f36eb180156fac210f3613841ced883fc2744a6bb6234588263eac6490a",
+      "bytes": 15251
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/docs/M3_STATUS.vi.md",
+      "destination": "docs/baseline_reference/M3_STATUS.vi.md",
+      "sha256": "a22a2f7f0e0186c632b0ae10419ecade0ad049e4f442dde002b9d7d01c349f10",
+      "bytes": 5727
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/docs/M4_STATUS.vi.md",
+      "destination": "docs/baseline_reference/M4_STATUS.vi.md",
+      "sha256": "54df9180a565b2f050ffdb27d813c31e1e0bbe0775e0d1dc69acce51fff8caf5",
+      "bytes": 20067
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/docs/M6_STATUS.vi.md",
+      "destination": "docs/baseline_reference/M6_STATUS.vi.md",
+      "sha256": "c56f5498b45d8c154d00a8370242ca92efb194c98c8c11c923d0ecc941b5e259",
+      "bytes": 4568
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/docs/M8_STATUS.vi.md",
+      "destination": "docs/baseline_reference/M8_STATUS.vi.md",
+      "sha256": "0ec9fede039afad4f65996f6887756c22e88c78e2bb6606127c015716345a74f",
+      "bytes": 4350
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/docs/M9_STATUS.vi.md",
+      "destination": "docs/baseline_reference/M9_STATUS.vi.md",
+      "sha256": "4dc89f9ce26a4fe4ff955487955638b4507bedc398dee17f4cf5b4b5a6214ba7",
+      "bytes": 5112
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/docs/REGION_OBJECT_ROOM_LABEL_STATUS.vi.md",
+      "destination": "docs/baseline_reference/REGION_OBJECT_ROOM_LABEL_STATUS.vi.md",
+      "sha256": "6ab75d666cc0fa3bc74f5c0a491e0c18f71a3bbf4dc18e9a61a10f6e2c3ec8d1",
+      "bytes": 7650
+    },
+    {
+      "source": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/docs/GT_SEMANTIC_OBJECT_BUILD.md",
+      "destination": "docs/baseline_reference/GT_SEMANTIC_OBJECT_BUILD.md",
+      "sha256": "287f97c7e797e7c56447420174bd26f5ce1d608cbf4ccf2852bc18bf6a1af8fb",
+      "bytes": 8205
+    }
+  ],
+  "bytes": 2361452,
+  "excluded": [
+    "old runs",
+    "datasets",
+    "model weights",
+    "venvs",
+    "build trees",
+    "GT renders",
+    "credentials",
+    ".aws",
+    ".codex",
+    ".agents",
+    "caches"
+  ],
+  "note": "Webots source-only retained for existing imports/tests; Habitat is active scope."
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "id": "k4-pixel-visibility-diagnostic-v1",
+  "purpose": "offline diagnostic only; never an identity or association decision",
+  "projection": "pinhole_from_capture_horizontal_fov_square_pixels",
+  "depth_representation": "axial_meters",
+  "pixel_rounding": "nearest_integer",
+  "prior_surface_zbuffer": "nearest_axial_depth_per_pixel",
+  "depth_agreement_tolerance_m": 0.05,
+  "support_definition": "projected prior z-buffer sample has valid observed depth within tolerance and lies inside current predicted mask",
+  "contradiction_definition": "valid observed axial depth is farther than projected prior surface by more than tolerance",
+  "occlusion_definition": "valid observed axial depth is closer than projected prior surface by more than tolerance",
+  "outside_mask_semantics": "diagnostic_only_not_identity_contradiction",
+  "unknown_semantics": ["outside_image", "behind_camera", "invalid_depth", "prior_zbuffer_occluded"],
+  "minimum_support_for_identity": null,
+  "identity_decision": "not_emitted",
+  "candidate_matcher": false,
+  "future_evidence": false,
+  "self_fusion_before_matching": false
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "world_id": "m12_route_recording_template",
+  "world_file": "webots/worlds/m12_two_rooms_motor.wbt",
+  "sequence_id": "m12-route-recording",
+  "output_dir": "artifacts/m12_route_recording_capture",
+  "pipeline_config": "configs/reference_code_mp3d.yaml",
+  "coordinate_system": "ENU",
+  "canonical_origin_coincident": true,
+  "world_to_canonical_matrix": [[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]],
+  "route_type": "keyboard_motor_route_recording",
+  "motion_mode": "motor",
+  "sensor": {
+    "base_offset_m": [0.22, 0.0, 0.43],
+    "relative_yaw_rad": 0.0,
+    "extrinsics_tolerance_m": 0.03,
+    "extrinsics_yaw_tolerance_rad": 0.03
+  },
+  "motor": {
+    "wheel_radius_m": 0.18,
+    "wheel_base_m": 0.38,
+    "max_linear_speed_m_s": 0.35,
+    "max_angular_speed_rad_s": 0.9,
+    "max_wheel_speed_rad_s": 8.0,
+    "max_wheel_accel_rad_s2": 12.0,
+    "linear_kp": 0.8,
+    "heading_kp": 2.5,
+    "turn_in_place_threshold_rad": 0.5,
+    "turn_slowdown_factor": 0.25,
+    "position_tolerance_m": 0.25,
+    "yaw_tolerance_rad": 0.12,
+    "waypoint_timeout_s": 25.0,
+    "stuck_timeout_s": 4.0,
+    "stuck_min_progress_m": 0.01
+  },
+  "timing": {
+    "physics_timestep_ms": 32,
+    "capture_every_physics_steps": 40,
+    "max_capture_frames": 1000,
+    "max_simulation_time_s": 600.0,
+    "capture_queue_max": 8,
+    "slow_consumer_policy": "block_sender_then_fail_explicitly"
+  },
+  "visualization": {
+    "enabled": true,
+    "display_name": "m12_overlay",
+    "width": 640,
+    "height": 480,
+    "publish_max_hz": 5.0,
+    "render_max_hz": 10.0,
+    "stale_timeout_s": 2.0,
+    "finish_behavior": "hold",
+    "hold_after_finish_s": 8.0,
+    "connection_timeout_s": 0.5,
+    "layers": {"unknown": true, "free": true, "occupied": true, "trajectory": true, "robot": true, "rooms": false},
+    "colors": {"unknown": 8421504, "free": 16119285, "occupied_low": 12566463, "occupied_high": 15, "trajectory": 2007270, "robot": 14429475, "background": 2304048}
+  },
+  "route_recording": {
+    "enabled": true,
+    "output_path": "artifacts/recorded_routes/m12_route_config.json",
+    "allow_overwrite": false,
+    "linear_speed_m_s": 0.20,
+    "angular_speed_rad_s": 0.80,
+    "max_wheel_speed_rad_s": 8.0,
+    "max_wheel_accel_rad_s2": 12.0,
+    "max_duration_s": 600.0,
+    "min_waypoint_distance_m": 0.05,
+    "record_initial_waypoint": false,
+    "stop_on_collision": true,
+    "mark_key": "SPACE",
+    "stop_key": "Q"
+  },
+  "route": [],
+  "collision": {
+    "robot_radius_m": 0.30,
+    "contact_tolerance_m": 0.01,
+    "wall_aabbs_xy": [
+      {"name": "outer_left", "min": [-0.06, -2.56], "max": [0.06, 2.44]},
+      {"name": "outer_right", "min": [7.94, -2.56], "max": [8.06, 2.44]},
+      {"name": "outer_bottom", "min": [0.0, -2.62], "max": [8.0, -2.50]},
+      {"name": "outer_top", "min": [0.0, 2.50], "max": [8.0, 2.62]},
+      {"name": "partition_lower", "min": [3.94, -2.50], "max": [4.06, -0.75]},
+      {"name": "partition_upper", "min": [3.94, 0.75], "max": [4.06, 2.50]}
+    ],
+    "obstacle_aabbs_xy": [
+      {"name": "blue_obstacle", "min": [1.70, 0.50], "max": [2.50, 1.20]},
+      {"name": "orange_obstacle", "min": [5.70, -1.20], "max": [6.60, -0.60]}
+    ]
+  }
+}

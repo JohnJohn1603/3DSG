@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "project_python": ".venv-perception/bin/python",
+  "habitat_python": "/home/kiettran05/miniconda3/envs/habitat/bin/python",
+  "pythonpath": [".", "src"],
+  "mplconfigdir": "/tmp/m12-habitat-mpl",
+  "detection_3d_profile": "configs/perception/yolo11n_seg_replica_cad_dev.json",
+  "project_package_pins": {
+    "numpy": "2.5.3",
+    "Pillow": "10.2.0",
+    "PyYAML": "6.0.1",
+    "matplotlib": "3.9.1",
+    "onnxruntime": "1.24.4"
+  },
+  "native_m2_m3": "build/native-m3/occupancy/standalone_sg_octomap_fixture_runner",
+  "native_dude": "build/native-m4-dude/occusg_dude_worker"
+}

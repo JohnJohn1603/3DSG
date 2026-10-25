@@ -1,0 +1,165 @@
+{
+  "baseline_root": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG",
+  "directories": {
+    "habitat_data_root": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data",
+      "role": "read_only_input_root"
+    },
+    "native_dependency_prefixes": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/build/deps",
+      "role": "read_only_dynamic_library_input"
+    }
+  },
+  "files": {
+    "baseline_lock": {
+      "bytes": 2851,
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_integration_20261005/baseline_lock.json",
+      "sha256": "77905f7c3cb63b53535c50310d6efe2cb0b3dbf49c963932915db3ba1bd7d1f8"
+    },
+    "dense_capture_manifest": {
+      "bytes": 45301,
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_00802_20261006T163140.468551Z_e4a058/capture/capture_manifest.json",
+      "sha256": "f2eba637f2d9bc53f06cb21d7a059e9dd675faba0f470a9bc6047131b9ca6149"
+    },
+    "dense_detection_2d_index": {
+      "bytes": 958091,
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_00802_20261006T163140.468551Z_e4a058/detection_2d/detection_2d_index.json",
+      "sha256": "b4c3f615d0180f7b9a50cae0b6e4b7d623328ab007ee92cc6cf9685690b51949"
+    },
+    "dense_detection_3d_cache": {
+      "bytes": 960672,
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_00802_20261006T163140.468551Z_e4a058/detection_3d/detection_3d.jsonl",
+      "sha256": "1a57ff1a6d90b7792ce9ef80d709623174bed404d8e4ffa0a955ae9a8e8f4d57"
+    },
+    "dense_replay_delta_log": {
+      "bytes": 50437992,
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_00802_20261006T163140.468551Z_e4a058/replay/delta_log.json",
+      "sha256": "7b46627ec863b6cc635c33f4c109e0f3299fb60676225d16426148ffa81e9766"
+    },
+    "dense_replay_diagnostics": {
+      "bytes": 5970652,
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_00802_20261006T163140.468551Z_e4a058/replay/frame_diagnostics.json",
+      "sha256": "012811a997a1d377d29f3acb458dbf2e64216d6c58aff8939c341552f103b7df"
+    },
+    "dense_replay_snapshot": {
+      "bytes": 1190760,
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_00802_20261006T163140.468551Z_e4a058/replay/snapshot.json",
+      "sha256": "bd0e800869cf1748f68f9d6f8c2f2762e4e4a187c93e12ddd0a30d2cf3f15293"
+    },
+    "hm3d_navmesh": {
+      "bytes": 44728,
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/scene_datasets/hm3d/minival/00802-wcojb4TFT35/wcojb4TFT35.basis.navmesh",
+      "sha256": "ae5ddd8ca77480eea3c401059844ae1ccc42d9cce75770a25b0d79b02d077232"
+    },
+    "hm3d_scene_dataset_config": {
+      "bytes": 1077,
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d/minival/hm3d_annotated_minival_basis.scene_dataset_config.json",
+      "sha256": "549f8b4527a93f117ed4d814468f71e8c290dd799af1212d1290f4148f34c294"
+    },
+    "hm3d_scene_glb": {
+      "bytes": 46195688,
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d/minival/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "sha256": "075e243b372458df4055a55e27c93885ba44ae8c36b4bc4446e0393c60c14540"
+    },
+    "native_dude": {
+      "bytes": 940344,
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/build/native-m4-dude/occusg_dude_worker",
+      "sha256": "7868c892f3584faa17712e1ede0660006d97531b05be5c258fe303015f1ef959"
+    },
+    "native_m2_m3": {
+      "bytes": 431608,
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/build/native-m3/occupancy/standalone_sg_octomap_fixture_runner",
+      "sha256": "617477524aa81acb0a0a46575741497aa15ed9b095f8fd72f92e09a81043cdc6"
+    },
+    "smoke_capture_manifest": {
+      "bytes": 3781,
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_00802_20261005T155214.379554Z_657f1e/capture/capture_manifest.json",
+      "sha256": "21f30d0f49a8aafd346d7d892cd296b7db2fec49cad1cbdbbc96f58ce4c4b6da"
+    },
+    "smoke_detection_3d_cache": {
+      "bytes": 10362,
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_00802_20261005T155214.379554Z_657f1e/detection_3d/detection_3d.jsonl",
+      "sha256": "8286c1f7388a65e984fb2029d91ecca5e43d942efe47ee47a378a4ae3dbecb66"
+    },
+    "smoke_pipeline_config": {
+      "bytes": 1918,
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/configs/reference_code_mp3d.yaml",
+      "sha256": "210124b16fd3651c06fd548a1704f27595f61761dd1bfb4db4099e51895d1523"
+    },
+    "yolo_onnx": {
+      "bytes": 11763717,
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/models/ultralytics/yolo11n-seg.onnx",
+      "sha256": "0bc32bc92e985b881141ef9bd2216e2a746f70519d0d24da9fc85decc4428cf4"
+    },
+    "dense_object_evaluation_observation_matches": {
+      "bytes": 361469,
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_00802_20261006T163140.468551Z_e4a058/object_evaluations/eval_20261006T184217.537953Z_880c87/observation_matches.jsonl",
+      "sha256": "409f82e8c59ed7c9c737f6ceb1711aece868b7cce5b17fb2df9e27d94916ab71",
+      "role": "posthoc_evaluation_only_not_predictor_input"
+    },
+    "dense_object_evaluation_protocol": {
+      "bytes": 1800,
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_00802_20261006T163140.468551Z_e4a058/object_evaluations/eval_20261006T184217.537953Z_880c87/protocol.json",
+      "sha256": "b5121faecc6f0219fea37ceaa8ff399c7a40682519ebeecaffc1275ec730c7eb",
+      "role": "posthoc_evaluation_protocol_only"
+    },
+    "native_m2": {
+      "bytes": 260200,
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/build/native-m2/occupancy/standalone_sg_octomap_fixture_runner",
+      "sha256": "baed56ca28b8c4483b891649734e65d44b4dd794328484f78086e273c0eb3edf",
+      "role": "read_only_external_test_input",
+      "description": "native M2 worker fixture runner"
+    },
+    "native_m3_smoke": {
+      "bytes": 369400,
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/build/native-m3/occupancy/standalone_sg_m3_projection_smoke",
+      "sha256": "e3c5141f91be1c14c2860fc5414ba95ab49cd62f012368196a8c11cbcc840f44",
+      "role": "read_only_external_test_input",
+      "description": "native M3 projection smoke harness"
+    },
+    "native_dude_source_reference": {
+      "bytes": 934256,
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/build/native-m4-dude-reference/occusg_dude_source_reference",
+      "sha256": "49a9b467a8ba3c54b406098aacb4dc549a4a595cee554e0d8097ea43134ef5b6",
+      "role": "read_only_external_test_input",
+      "description": "pinned DuDe direct source oracle"
+    }
+  },
+  "interpreters": {
+    "habitat_capture": {
+      "path": "/home/kiettran05/miniconda3/envs/habitat/bin/python",
+      "reported_executable": "/home/kiettran05/miniconda3/envs/habitat/bin/python",
+      "version": "3.9.23"
+    },
+    "perception_replay": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/.venv-perception/bin/python",
+      "reported_executable": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/.venv-perception/bin/python",
+      "version": "3.12.3"
+    }
+  },
+  "mapconversion": {
+    "actual_commit": "14b8cb9e6534ba21e84f624c94d20960f6613f3c",
+    "expected_commit": "14b8cb9e6534ba21e84f624c94d20960f6613f3c",
+    "path": "/home/kiettran05/Documents/Codex/2026-09-22/c-c/research/occusg_phase1/upstream/mapconversion"
+  },
+  "references": {
+    "ConceptGraphs": {
+      "clean": true,
+      "commit": "93277a02bd89171f8121e84203121cf7af9ebb5d",
+      "origin": "https://github.com/concept-graphs/concept-graphs.git",
+      "path": "ref_ConceptGraph/concept-graphs",
+      "submodules_initialized": false
+    },
+    "OccuSG": {
+      "clean": true,
+      "commit": "2bca2fa06af87fd9dd0542957039be8f580f0dca",
+      "origin": "https://github.com/crcz25/OccuSG.git",
+      "path": "ref_OccuSG/OccuSG",
+      "submodules_initialized": false
+    }
+  },
+  "schema_version": 1,
+  "status": "bound_input_only",
+  "workspace_root": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG",
+  "write_policy": "External paths are input-only. All new logs, caches, replay outputs, and evaluations must be created under workspace_root."
+}

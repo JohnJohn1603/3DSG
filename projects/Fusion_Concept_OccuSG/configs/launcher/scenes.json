@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "catalog": {
+    "schema_version": 1,
+    "c2_template": "configs/scene_runs/replica_cad_apt5_short_c2_v1.json",
+    "capture_profiles": {
+      "default_profile_id": "native_640x480_v1",
+      "profiles": {
+        "native_640x480_v1": "configs/habitat/capture_profiles/native_640x480_v1.json",
+        "legacy_160x120_smoke_v1": "configs/habitat/capture_profiles/legacy_160x120_smoke_v1.json"
+      }
+    },
+    "datasets": [
+      {
+        "id": "replica_cad",
+        "display_name": "ReplicaCAD",
+        "adapter": "habitat_replica_cad_v1",
+        "version": "v1.6",
+        "scene_glob": "versioned_data/replica_cad_dataset/configs/scenes/*.scene_instance.json",
+        "navmesh_pattern": "versioned_data/replica_cad_dataset/navmeshes/{scene_id}.navmesh",
+        "scene_dataset_config": "versioned_data/replica_cad_dataset/replicaCAD.scene_dataset_config.json",
+        "route_glob": "configs/habitat/m12_replica_cad_*.json",
+        "c2_type": "replica_cad"
+      },
+      {
+        "id": "hm3d_minival_v0.2",
+        "display_name": "HM3D minival v0.2",
+        "adapter": "habitat_hm3d_minival_v02_v1",
+        "version": "v0.2",
+        "scene_glob": "scene_datasets/hm3d/minival/*/*.basis.glb",
+        "navmesh_pattern": "scene_datasets/hm3d/minival/{scene_id}/{asset_stem}.basis.navmesh",
+        "scene_dataset_config": "versioned_data/hm3d-0.2/hm3d/minival/hm3d_annotated_minival_basis.scene_dataset_config.json",
+        "route_glob": "configs/habitat/hm3d_minival_v02_*.json",
+        "c2_type": "hm3d"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "alias": "hm3d_00802",
+      "evaluation_profile": "configs/evaluation/hm3d_00802_scene_eval_v1.json",
+      "routes": {
+        "smoke": "configs/habitat/hm3d_minival_v02_00802_smoke.json",
+        "main": "configs/habitat/hm3d_minival_v02_00802_main_route.json",
+        "main_320": "configs/habitat/hm3d_minival_v02_00802_main_320_route.json",
+        "main_600": "configs/habitat/hm3d_minival_v02_00802_main_600_route.json",
+        "main_dense": "configs/habitat/hm3d_minival_v02_00802_main_dense_route.json"
+      },
+      "default_route": "main"
+    },
+    {
+      "alias": "replica_apt0",
+      "evaluation_profile": "configs/evaluation/replica_cad_apt0_scene_eval_v1.json",
+      "routes": {
+        "dev_long": "configs/habitat/m12_replica_cad_apt0_perception_dev_long_route.json",
+        "dev": "configs/habitat/m12_replica_cad_apt0_perception_dev_route.json",
+        "reobserve": "configs/habitat/m12_replica_cad_apt0_perception_reobserve_route.json",
+        "hires": "configs/habitat/m12_replica_cad_apt0_perception_dev_hires_route.json"
+      },
+      "default_route": "dev_long"
+    }
+  ]
+}

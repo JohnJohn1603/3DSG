@@ -1,0 +1,46 @@
+cmake_minimum_required(VERSION 3.19)
+project(standalone_sg_native_probe LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+option(STANDALONE_SG_ENABLE_M2 "Build the OctoMap occupancy backend" OFF)
+option(STANDALONE_SG_ENABLE_M3 "Build pinned MapConverter projection into the M2 worker" OFF)
+set(MAPCONVERSION_SOURCE_DIR "" CACHE PATH "Checkout of pinned Map-Conversion source")
+
+if(STANDALONE_SG_ENABLE_M3)
+  if(NOT STANDALONE_SG_ENABLE_M2)
+    message(FATAL_ERROR "STANDALONE_SG_ENABLE_M3 requires STANDALONE_SG_ENABLE_M2")
+  endif()
+  if(NOT MAPCONVERSION_SOURCE_DIR AND DEFINED ENV{STANDALONE_SG_MAPCONVERSION_SOURCE})
+    set(MAPCONVERSION_SOURCE_DIR "$ENV{STANDALONE_SG_MAPCONVERSION_SOURCE}")
+  endif()
+  if(NOT MAPCONVERSION_SOURCE_DIR)
+    file(READ "${CMAKE_CURRENT_SOURCE_DIR}/../locks/sources.json" SOURCE_LOCK_JSON)
+    string(JSON MAPCONVERSION_CHECKOUT GET "${SOURCE_LOCK_JSON}" submodules 0 checkout)
+    get_filename_component(PROJECT_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/.." ABSOLUTE)
+    get_filename_component(MAPCONVERSION_SOURCE_DIR "${PROJECT_ROOT}/${MAPCONVERSION_CHECKOUT}" ABSOLUTE)
+  endif()
+  if(NOT EXISTS "${MAPCONVERSION_SOURCE_DIR}/mapconversion/src/MapConverter.cpp")
+    message(FATAL_ERROR "MapConversion source missing under MAPCONVERSION_SOURCE_DIR=${MAPCONVERSION_SOURCE_DIR}")
+  endif()
+  execute_process(
+    COMMAND git -C "${MAPCONVERSION_SOURCE_DIR}" rev-parse HEAD
+    OUTPUT_VARIABLE MAPCONVERSION_ACTUAL_COMMIT
+    OUTPUT_STRIP_TRAILING_WHITESPACE
+    RESULT_VARIABLE MAPCONVERSION_GIT_RESULT
+  )
+  file(READ "${CMAKE_CURRENT_SOURCE_DIR}/../locks/sources.json" SOURCE_LOCK_JSON)
+  string(JSON MAPCONVERSION_EXPECTED_COMMIT GET "${SOURCE_LOCK_JSON}" submodules 0 commit)
+  if(NOT MAPCONVERSION_GIT_RESULT EQUAL 0 OR NOT MAPCONVERSION_ACTUAL_COMMIT STREQUAL MAPCONVERSION_EXPECTED_COMMIT)
+    message(FATAL_ERROR "MapConversion checkout must match pinned commit ${MAPCONVERSION_EXPECTED_COMMIT}; got ${MAPCONVERSION_ACTUAL_COMMIT}")
+  endif()
+  set(MAPCONVERSION_SOURCE_DIR "${MAPCONVERSION_SOURCE_DIR}" CACHE PATH "Pinned Map-Conversion checkout" FORCE)
+endif()
+
+add_executable(standalone_sg_native_probe probe.cpp)
+
+if(STANDALONE_SG_ENABLE_M2)
+  add_subdirectory(occupancy)
+endif()

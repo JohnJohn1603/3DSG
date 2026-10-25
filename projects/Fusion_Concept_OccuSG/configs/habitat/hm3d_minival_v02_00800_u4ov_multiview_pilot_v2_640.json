@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "dataset_type": "hm3d",
+  "dataset_version": "v0.2",
+  "split": "minival",
+  "scene_id": "00800-TEEsavR23oF",
+  "scene_provenance": "Matterport HM3D v0.2 minival; existing read-only local assets",
+  "scene_license_note": "Academic non-commercial use only; include Matterport EULA link with publications containing or derived from this data",
+  "scene_file": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d/minival/00800-TEEsavR23oF/TEEsavR23oF.basis.glb",
+  "scene_dataset_config": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d/minival/hm3d_annotated_minival_basis.scene_dataset_config.json",
+  "navmesh_file": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d/minival/00800-TEEsavR23oF/TEEsavR23oF.basis.navmesh",
+  "sequence_id": "hm3d-v02-00800-u4ov-multiview-pilot-v2-640",
+  "frame_id_prefix": "hm3d-00800-u4ov-mv-pilot-v2",
+  "resolution_px": [
+    640,
+    480
+  ],
+  "horizontal_fov_deg": 90.0,
+  "sensor_position_habitat": [
+    0.0,
+    1.5,
+    0.0
+  ],
+  "sensor_orientation_habitat_rad": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "calibration_id": "habitat-rgbd-stage-v1-640x480",
+  "min_depth_m": 0.1,
+  "max_depth_m": 10.0,
+  "simulation_step_s": 0.1,
+  "gpu_device_id": -1,
+  "require_navigable": true,
+  "route_policy": "single development pilot; three navmesh positions around one P3-derived region, brief glance to nearby separately accepted region, then exact A revisit; no GT or identity assignment",
+  "route_selection_provenance": {
+    "source": "candidate640 P3 visible-cluster centers from resolution ablation v1",
+    "target_region_center_habitat_xz": [
+      -5.427,
+      -1.389
+    ],
+    "target_detection_ids": [
+      "hm3d-00800-u4ov-res-v1-candidate640-0000:det-0001",
+      "hm3d-00800-u4ov-res-v1-candidate640-0001:det-0000",
+      "hm3d-00800-u4ov-res-v1-candidate640-0003:det-0000"
+    ],
+    "neighbor_glance_region_center_habitat_xz": [
+      -6.206,
+      0.422
+    ],
+    "neighbor_glance_detection_ids": [
+      "hm3d-00800-u4ov-res-v1-candidate640-0000:det-0003",
+      "hm3d-00800-u4ov-res-v1-candidate640-0001:det-0002"
+    ],
+    "selection_note": "Route targets are geometric regions from predicted accepted P3 records; no evaluator GT, semantic instance IDs, room label, or identity assignments used."
+  },
+  "route": [
+    {
+      "label": "view_A1_bearing140",
+      "position_habitat": [
+        -7.05,
+        0.163378,
+        -0.05
+      ],
+      "yaw_rad": 5.40219819
+    },
+    {
+      "label": "view_B_bearing180",
+      "position_habitat": [
+        -7.65,
+        0.163378,
+        -1.4
+      ],
+      "yaw_rad": 4.707440753
+    },
+    {
+      "label": "neighbor_glance_from_B",
+      "position_habitat": [
+        -7.65,
+        0.163378,
+        -1.4
+      ],
+      "yaw_rad": 3.811765577
+    },
+    {
+      "label": "view_C_bearing220",
+      "position_habitat": [
+        -7.1,
+        0.163378,
+        -2.8
+      ],
+      "yaw_rad": 4.011741921
+    },
+    {
+      "label": "view_A2_exact_revisit",
+      "position_habitat": [
+        -7.05,
+        0.163378,
+        -0.05
+      ],
+      "yaw_rad": 5.40219819
+    }
+  ],
+  "semantic_evaluator_only": {
+    "enabled": false,
+    "semantic_mesh": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d/minival/00800-TEEsavR23oF/TEEsavR23oF.semantic.glb",
+    "semantic_descriptor": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d/minival/00800-TEEsavR23oF/TEEsavR23oF.semantic.txt",
+    "allowed_for_predictor": false,
+    "room_polygon_ground_truth_assumed": false
+  },
+  "predictor": {
+    "pipeline_config": "configs/reference_code_mp3d.yaml",
+    "detector_config": "configs/perception/yolo11n_seg_replica_cad_dev.json",
+    "semantic_rules": "configs/semantics/region_object_room_rules_replica_cad_v1.json",
+    "semantic_gt_input": false,
+    "room_gt_input": false,
+    "navmesh_input": false
+  },
+  "autonomous_navigation_value_map_slam": false,
+  "expected_pilot_outcome": {
+    "target": "at least three P3-accepted observations of the same image region from three camera azimuth bins; exact revisit is repeatability only, not independent view evidence",
+    "azimuth_bin_width_deg": 30,
+    "no_threshold_model_or_sensor_changes": true
+  },
+  "profile_version": "u4ov_capture_resolution_v1",
+  "ablation_role": "one_multiview_development_pilot"
+}

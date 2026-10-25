@@ -1,0 +1,113 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: octomap
+Upstream-Contact: Armin Hornung <hornunga@cs.uni-freiburg.de>
+Source: https://octomap.github.io
+Files-Excluded: octovis/src/extern/QGLViewer .travis.yml .github
+
+Files: *
+Copyright: 2013, F-M. De Rainville, P. Bourke
+           2009, K. M. Wurm, A. Hornung, University of Freiburg
+           2009-2013, K.M. Wurm and A. Hornung, University of Freiburg
+License: BSD-3-clause
+
+Files: octovis/*
+Copyright: 2009-2016  K. M. Wurm, A. Hornung, University of Freiburg
+License: GPL-2
+
+Files: dynamicEDT3D/*
+Copyright: 2011-2012, C. Sprunk, B. Lau, W. Burgard, University of Freiburg
+           2009-2016, Christoph Sprunk <sprunkc@informatik.uni-freiburg.de>
+           2009-2016, University of Freiburg
+License: BSD-3-clause
+
+Files: octovis/src/icons/*
+Copyright: 2008-2014 The Oxygen Team
+License: LGPL-3
+Comment: Upstream says that these are the KDE4 icons from http://www.oxygen-icons.org/.
+ This site is down. This icons are the same that provides the 
+ package oxygen-icon-theme (in debian).
+ .
+ In the copyright file from oxygen-icon-theme package appears more details from the
+ authors.
+
+Files: debian/*
+Copyright: 2016 Leopold Palomo-Avellaneda <leo@alaxarxa.net>
+License: GPL-2
+
+Files: octovis/CMakeLists.txt
+       octovis/CMakeLists_src.txt
+       octovis/CMakeModules/*
+       octovis/LICENSE.txt
+       octovis/include/octovis/ViewerGui.ui
+       octovis/include/octovis/ViewerSettings.ui
+       octovis/include/octovis/ViewerSettingsPanel.ui
+       octovis/include/octovis/ViewerSettingsPanelCamera.ui
+       octovis/octovis-config.cmake.in
+       octovis/package.xml
+       octovis/src/icons.qrc
+Copyright: 1989-1991, Free Software Foundation, Inc
+           2009-2016, K. M. Wurm, A. Hornung, University of Freiburg
+           2009-2014, K.M. Wurm and A. Hornung, University of Freiburg
+License: GPL-2
+
+Files: CMakeLists.txt
+       README.md
+       scripts/*
+Copyright: Armin Hornung <hornunga@cs.uni-freiburg.de>
+           B. Jensen, TU Munich
+           C. Dornhege, University of Freiburg
+           C. Sprunk, University of Freiburg
+           F-M. de Rainville, Universite Laval Quebec
+           Further contributors:
+           J. Mueller, University of Freiburg
+           2009-2016, Kai M. Wurm <wurm@informatik.uni-freiburg.de>
+           R. Bogdan Rusu, Willow Garage Inc
+           R. Schmitt, University of Freiburg
+           S. Osswald, University of Freiburg
+           2009-2016, University of Freiburg
+License: BSD-3-clause
+
+License: GPL-2
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: BSD-3-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer. 
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. Neither the name of the University nor the names of its contributors
+    may be used to endorse or promote products derived from this software
+    without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE  
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE  
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS   
+ OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)     
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY 
+ OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF    
+ SUCH DAMAGE.
+
+License: LGPL-3
+ See `/usr/share/common-licenses/LGPL-3'.

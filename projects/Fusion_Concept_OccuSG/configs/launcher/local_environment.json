@@ -1,0 +1,24 @@
+{
+  "schema_version": 2,
+  "project_python": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/.venv-perception/bin/python",
+  "habitat_python": "/home/kiettran05/miniconda3/envs/habitat/bin/python",
+  "baseline_read_root": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG",
+  "habitat_data_root": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data",
+  "model_root": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/models",
+  "native_dependency_prefix": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/build/deps",
+  "mapconversion_source": "/home/kiettran05/Documents/Codex/2026-09-22/c-c/research/occusg_phase1/upstream/mapconversion",
+  "mapconversion_expected_commit": "14b8cb9e6534ba21e84f624c94d20960f6613f3c",
+  "pythonpath": [".", "src"],
+  "mplconfigdir": "artifacts/cache/matplotlib",
+  "detection_3d_profile": "configs/perception/yolo11n_seg_replica_cad_dev.json",
+  "project_package_pins": {
+    "numpy": "2.5.3",
+    "Pillow": "10.2.0",
+    "PyYAML": "6.0.1",
+    "matplotlib": "3.9.1",
+    "onnxruntime": "1.24.4"
+  },
+  "native_m2_m3": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/build/native-m3/occupancy/standalone_sg_octomap_fixture_runner",
+  "native_dude": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/build/native-m4-dude/occusg_dude_worker",
+  "resource_manifest": "locks/external_resources.json"
+}

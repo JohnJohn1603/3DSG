@@ -1,0 +1,14 @@
+# M2 boundary fixture near the benchmark resolution.  Coordinates deliberately
+# straddle voxel boundaries and include a clipped endpoint and a no-return.
+resolution 0.05
+prob_hit 0.7
+prob_miss 0.4
+clamping_min 0.12
+clamping_max 0.97
+occupancy_threshold 0.5
+scan_count 1
+scan 0.25 0.013 -0.017 0.025 4
+0.163 -0.017 0.025 1
+0.313 -0.017 0.025 1
+0.013 0.233 0.025 0
+-0.067 -0.097 0.025 1

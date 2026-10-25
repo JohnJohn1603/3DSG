@@ -1,0 +1,13 @@
+# Generated local state and installed environments
+.venvs/
+.venv*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+runs/
+artifacts/
+3DSG_demo_outputs/
+runtime.local.json
+*.tar.gz
+# This 605 MB checkpoint is included in the complete GitHub Release archive.
+/assets/models/openclip/open_clip_model.safetensors

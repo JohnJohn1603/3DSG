@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "profile_id": "replica_cad_room_rules_dev_v1",
+  "status_values": ["unknown", "predicted", "ambiguous", "stale"],
+  "score_kind": "uncalibrated_additive_evidence",
+  "minimum_support_classes": 2,
+  "minimum_top_score": 2.0,
+  "minimum_margin": 1.0,
+  "count_cap_per_class": 2,
+  "labels": {
+    "living_room": {"sofa": 3.0, "tv": 2.0, "chair": 1.0, "potted_plant": 0.5},
+    "dining_room": {"dining_table": 3.0, "chair": 1.0},
+    "kitchen": {"refrigerator": 3.0, "oven": 3.0, "microwave": 2.0, "sink": 2.0, "dining_table": 0.5},
+    "bathroom": {"toilet": 3.0, "sink": 2.0},
+    "bedroom": {"bed": 4.0, "chair": 0.5}
+  },
+  "provenance": {
+    "room_gt_used": false,
+    "scene_asset_names_used": false,
+    "navmesh_used": false,
+    "development_scene": "apt_0",
+    "holdout_scenes": ["apt_1", "apt_2"]
+  }
+}

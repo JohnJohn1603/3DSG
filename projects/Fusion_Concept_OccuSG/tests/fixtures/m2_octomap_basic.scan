@@ -1,0 +1,17 @@
+# Deterministic M2 fixture. Each scan line is:
+# scan max_range origin_x origin_y origin_z point_count
+# Each point is: x y z has_hit(0|1)
+resolution 1.0
+prob_hit 0.7
+prob_miss 0.4
+clamping_min 0.12
+clamping_max 0.97
+occupancy_threshold 0.5
+scan_count 2
+scan 5.0 0.0 0.0 0.0 3
+2.0 0.0 0.0 1
+0.0 2.0 0.0 1
+2.0 0.0 0.0 1
+scan 5.0 0.0 0.0 0.0 2
+6.0 0.0 0.0 1
+0.0 3.0 0.0 0

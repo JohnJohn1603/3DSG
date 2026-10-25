@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "profile_id": "q2_prior_surface_bounds_v1",
+  "status": "locked_development_candidate_before_scoring",
+  "base_profile": "geometry_only_accumulated_surface_v1",
+  "representation_only": true,
+  "matcher_geometry": {
+    "source": "ObjectGeometryFusion prior snapshot per track before the current frame",
+    "representatives": "existing accumulated per-voxel mean xyz_W values",
+    "bounds_min_W": "componentwise min of prior voxel representatives",
+    "bounds_max_W": "componentwise max of prior voxel representatives",
+    "center_W": "(bounds_min_W + bounds_max_W) / 2",
+    "extents_m": "bounds_max_W - bounds_min_W",
+    "prior_revision": "count of prior applied observations in the accumulator",
+    "evidence_ids": "all observation IDs applied before current frame"
+  },
+  "unchanged_from_k4": [
+    "same-frame dedup and canonical policy",
+    "input ordering and timestamps",
+    "layer and center-radius gates",
+    "IoU eligibility thresholds",
+    "one-to-one assignment policy",
+    "surface fallback and mixed-mask ambiguity policy",
+    "same-frame aliases add no geometry",
+    "deferred observations add no geometry"
+  ],
+  "causality": {
+    "all_observations_in_frame_share_one_prior_snapshot": true,
+    "decisions_complete_before_surface_commit": true,
+    "current_observation_not_in_its_own_prior_geometry": true,
+    "annotation_or_evaluator_input_to_predictor": false
+  }
+}

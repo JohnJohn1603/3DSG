@@ -1,0 +1,102 @@
+{
+  "angular_speed_deg_per_s": 30.0,
+  "camera_pacing": {
+    "mode": "monotonic_sim_time",
+    "overrun_policy": "record_and_continue_no_catchup",
+    "real_time_factor": 1.0,
+    "schema": "camera-pacing-policy/v1",
+    "target_camera_fps": 25.0
+  },
+  "geometry_contract": {
+    "boundary_policy": "fail_closed_within_margin_plus_numeric_tolerance",
+    "clearance_api": "PathFinder.distance_to_closest_obstacle",
+    "clearance_unavailable_policy": "fail_closed",
+    "extra_navmesh_clearance_margin_m": 0.0,
+    "max_search_radius_policy": "extra_margin_plus_2x_numeric_boundary_tolerance",
+    "navmesh_baked_agent_height_m": 1.5,
+    "navmesh_baked_agent_radius_m": 0.1,
+    "navmesh_settings_source": "Habitat-Sim PathFinder.nav_mesh_settings from the loaded navmesh binary",
+    "numeric_boundary_tolerance_basis": "float32 PathFinder API; 0.1mm fail-closed band, 0.05m navmesh cell",
+    "numeric_boundary_tolerance_m": 0.0001,
+    "profile_compatibility_tolerance_m": 1e-06,
+    "runtime_agent_profile": {
+      "height_m": 1.5,
+      "radius_m": 0.1
+    },
+    "schema": "habitat-navmesh-clearance-contract/v1",
+    "semantics": {
+      "baked_radius_is_compatibility_check_only": true,
+      "baked_radius_is_not_added_to_extra_clearance_margin": true,
+      "measured_zero_clearance_fails_closed": true,
+      "missing_or_nonfinite_clearance_fails_closed": true,
+      "navmesh_profile_mismatch_fails_before_path_search": true,
+      "numeric_boundary_tolerance_is_not_physical_safety_margin": true
+    },
+    "vertical_navmesh_tolerance_m": 0.05
+  },
+  "keyframes": {
+    "include_first_valid_frame": true,
+    "min_interval_s": 0.5,
+    "min_translation_m": 0.4,
+    "min_yaw_deg": 20.0,
+    "policy": "pose_delta_or_v1"
+  },
+  "linear_speed_mps": 0.2,
+  "mapper_enabled": false,
+  "motion_timebase": {
+    "actual_speed_semantics": "pose_delta_divided_by_observed_simulation_delta",
+    "clock_domains": {
+      "monotonic": "host_monotonic",
+      "simulation": "habitat_simulation",
+      "wall": "unix_epoch_seconds"
+    },
+    "deviation_policy": "record_positive_finite_observed_delta; enforce_locked_operational_guards",
+    "deviation_rule": "per_step and cumulative deviation are recorded; no pass/fail tolerance for mismatch to requested dt",
+    "move_increment_m_per_action": 0.008,
+    "nominal_angular_speed_deg_per_s": 30.0,
+    "nominal_linear_speed_mps": 0.2,
+    "nominal_speed_basis": "fixed_action_increment_divided_by_requested_simulator_dt",
+    "operational_stop_limits": {
+      "max_camera_frames": 1800,
+      "max_simulation_elapsed_s": 75.0,
+      "other_guards": [
+        "finite strictly increasing world time",
+        "navmesh/collision checks",
+        "actual displacement and route endpoint checks"
+      ],
+      "wall_timeout_source": "camera runner --timeout-s"
+    },
+    "real_time_factor_target": 1.0,
+    "requested_dt_semantics": "requested_step_dt_not_assumed_observed_delta",
+    "requested_simulator_dt_s": 0.04,
+    "schema": "habitat-motion-timebase/v2",
+    "target_fps": 25.0,
+    "timestamp_authority": "habitat_sim.Simulator.get_world_time_after_step",
+    "turn_increment_deg_per_action": 1.2
+  },
+  "policy_id": "smooth_route_hm3d00802_geometry_candidate_v6",
+  "predictor_inputs": [],
+  "preview": {
+    "jpeg_quality": 85,
+    "write_rgb_every_camera_frame": true,
+    "write_rgbd_for_candidate_keyframes": true
+  },
+  "queue": {
+    "in_flight_capacity": 1,
+    "pending_capacity": 1,
+    "pending_policy": "latest_wins_with_supersede_event"
+  },
+  "room_semantics_enabled": false,
+  "route_follow": {
+    "endpoint_tolerance_m": 0.05,
+    "max_camera_frames": 1800,
+    "max_sim_time_s": 75.0,
+    "path_sample_step_m": 0.04,
+    "position_tolerance_m": 0.025,
+    "yaw_tolerance_deg": 1.5
+  },
+  "schema": "smooth-route-t1-policy/v6",
+  "simulator_seed": 0,
+  "simulator_step_s": 0.04,
+  "status": "development_unvalidated"
+}

@@ -1,0 +1,310 @@
+{
+  "schema_version": 1,
+  "created_at_local": "2026-10-10",
+  "status": "partial",
+  "scope": "U5 technical checkpoint only; no quality promotion",
+  "profile_policy": {
+    "source": "default",
+    "geometry_only": "experimental_opt_in",
+    "geometry_plus_appearance": "ablation_only",
+    "u4_ov": "diagnostics_only",
+    "room_scores": "unchanged"
+  },
+  "source_config_resource_hashes": {
+    "src/standalone_sg/objects/association.py": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/objects/association.py",
+      "sha256": "44d157ba59158f22a21748c347919e580584992b2989c3cb98cb83ffa9941203",
+      "bytes": 9282,
+      "exists": true
+    },
+    "src/standalone_sg/objects/u5_backends.py": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/objects/u5_backends.py",
+      "sha256": "a35a4a3e6ff5409c098db86e469e6a836dcd27beb818b3956fe80cc10a5797ec",
+      "bytes": 10959,
+      "exists": true
+    },
+    "src/standalone_sg/objects/lifecycle.py": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/objects/lifecycle.py",
+      "sha256": "3778c1e13d7b41863a35cc32e3f913247532dae65ce9947ffdf3ca38141bf54f",
+      "bytes": 16341,
+      "exists": true
+    },
+    "src/standalone_sg/objects/u3_experimental.py": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/objects/u3_experimental.py",
+      "sha256": "ecd93fb4117c3584f9b029d12aa5cb6c4dc076fd173e1b9f79dba8cb7813eb13",
+      "bytes": 12057,
+      "exists": true
+    },
+    "src/standalone_sg/pipeline/builder.py": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/pipeline/builder.py",
+      "sha256": "c21b381e122254eadd371c12fa5a5fde8eab61d981cef4fde79b71844d9a6a2f",
+      "bytes": 33382,
+      "exists": true
+    },
+    "src/standalone_sg/serialization/json_graph.py": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/serialization/json_graph.py",
+      "sha256": "0d790d89f2c05c6141fe9972c669f5dc656204d597aa4a1c01dd93464f8dc1a3",
+      "bytes": 22049,
+      "exists": true
+    },
+    "src/standalone_sg/resource_binding.py": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/resource_binding.py",
+      "sha256": "0793d271e6acd674d1262d18790cae34cba4637b87a3a5c5514acf85e5629f33",
+      "bytes": 4390,
+      "exists": true
+    },
+    "scripts/run_habitat_native_replay.py": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/run_habitat_native_replay.py",
+      "sha256": "ccea47ddb4150fa039dde02bb7aad240183349d034e8f5ed293c9a52b2ae5c85",
+      "bytes": 43533,
+      "exists": true
+    },
+    "scripts/scene_launcher.py": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/scene_launcher.py",
+      "sha256": "93878a41ad7452be61e28e491e6ca3ed9d2b2cbf98ee1431da04e16e7d351551",
+      "bytes": 108834,
+      "exists": true
+    },
+    "configs/reference_code_mp3d.yaml": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/configs/reference_code_mp3d.yaml",
+      "sha256": "210124b16fd3651c06fd548a1704f27595f61761dd1bfb4db4099e51895d1523",
+      "bytes": 1918,
+      "exists": true
+    },
+    "locks/sources.json": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/locks/sources.json",
+      "sha256": "a717323522bded8d1e846125b740889f748ca38a6b842de8b71c95039a346a3c",
+      "bytes": 27420,
+      "exists": true
+    },
+    "locks/external_resources.json": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/locks/external_resources.json",
+      "sha256": "b5faba8e0c7f72a27d7459edb8c4f7b5868753b0e3f5ae1fdea2f045735411f3",
+      "bytes": 9099,
+      "exists": true
+    },
+    "locks/u5_m9_00802_29frame.lock.json": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/locks/u5_m9_00802_29frame.lock.json",
+      "sha256": "7d8465bc451294ec016ae5493bfd917e2f6d47bf026e92dc4cfa6ed25967faaa",
+      "bytes": 2789,
+      "exists": true
+    }
+  },
+  "recorded_tests": {
+    "full_suite": {
+      "command": "python3 -m pytest --integration-resources -q",
+      "result": "363 passed, 0 failed, 0 skipped",
+      "runtime_s": 86.51,
+      "run_date": "2026-10-09",
+      "provenance": "docs/U5_RESOURCE_LIFECYCLE_HANDOFF.vi.md; not rerun in current U6 turn"
+    },
+    "targeted_backend_lifecycle_resource": {
+      "result": "10 passed",
+      "run_date": "2026-10-10",
+      "provenance": "user reported; command/log not supplied"
+    },
+    "prior_targeted_sets": {
+      "results": [
+        "81 passed",
+        "25 passed"
+      ],
+      "provenance": "docs/U5_RESOURCE_LIFECYCLE_HANDOFF.vi.md"
+    }
+  },
+  "cached_29_frame_replays": {
+    "u5m9_20261009T063525.490715Z_455818": {
+      "manifest": {
+        "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/runs/u5m9_20261009T063525.490715Z_455818/replay/manifest.json",
+        "sha256": "bf8c218c2e58a73e101f5d45ce1691beb1c68dc9b4ea755b39d7d908f58a8aed",
+        "bytes": 7726,
+        "exists": true
+      },
+      "backend": "source-wrapper",
+      "runtime_ms": 129905.01644800042,
+      "peak_rss_kib": 543352,
+      "nodes": 200,
+      "edges": 1208,
+      "fresh_replay_equal": true,
+      "snapshot_reload_equal": true,
+      "delta_replay_equal": true,
+      "graph_integrity": {
+        "conflicting_room_owner_target_count": 0,
+        "dangling_edge_count": 0,
+        "self_edge_count": 0
+      },
+      "geometry_offline_reference": null,
+      "mapping_backend": "NativeRGBDMappingStage -> native M2/M3",
+      "native_resource_binding": {
+        "native_dude": {
+          "bytes": 940344,
+          "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/build/native-m4-dude/occusg_dude_worker",
+          "role": "read_only_external_input",
+          "sha256": "7868c892f3584faa17712e1ede0660006d97531b05be5c258fe303015f1ef959"
+        },
+        "native_m2_m3": {
+          "bytes": 422552,
+          "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/build/native-m3/occupancy/standalone_sg_octomap_fixture_runner",
+          "role": "read_only_external_input",
+          "sha256": "bd171a8ac9974eec18957af97e6fc369729358ca62985390eb994c26f2040b29"
+        }
+      },
+      "m2_m5_comparison": {
+        "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/runs/u5m9_20261009T063525.490715Z_455818/replay/backend_comparison_m2_m5.json",
+        "bytes": 1213,
+        "sha256": "904c863b62359d8be5b34892a61364040feff84889c9f06c9de1b293e9ceb545"
+      }
+    },
+    "u5m9_20261009T063739.654426Z_7e7fe5": {
+      "manifest": {
+        "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/runs/u5m9_20261009T063739.654426Z_7e7fe5/replay/manifest.json",
+        "sha256": "d82655c50242d0ffc896dd89667542f1a4f9452813b5c383cd3fb25224525953",
+        "bytes": 8616,
+        "exists": true
+      },
+      "backend": "geometry-only",
+      "runtime_ms": 144789.29840500042,
+      "peak_rss_kib": 549008,
+      "nodes": 202,
+      "edges": 1210,
+      "fresh_replay_equal": true,
+      "snapshot_reload_equal": true,
+      "delta_replay_equal": true,
+      "graph_integrity": {
+        "conflicting_room_owner_target_count": 0,
+        "dangling_edge_count": 0,
+        "self_edge_count": 0
+      },
+      "geometry_offline_reference": {
+        "actual_assigned_observations": 12,
+        "exact_assignment_parity": true,
+        "expected_assigned_observations": 12,
+        "kind": "independent_empty_state_u3_geometry_replay_same_packets",
+        "mismatch_count": 0,
+        "mismatch_detection_ids": [],
+        "reference_assignments_sha256": "7eb59471611048ab3a7634611c33e890d8a906f1f21b2ae653a76d50706d8a0c"
+      },
+      "mapping_backend": "NativeRGBDMappingStage -> native M2/M3",
+      "native_resource_binding": {
+        "native_dude": {
+          "bytes": 940344,
+          "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/build/native-m4-dude/occusg_dude_worker",
+          "role": "read_only_external_input",
+          "sha256": "7868c892f3584faa17712e1ede0660006d97531b05be5c258fe303015f1ef959"
+        },
+        "native_m2_m3": {
+          "bytes": 422552,
+          "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/build/native-m3/occupancy/standalone_sg_octomap_fixture_runner",
+          "role": "read_only_external_input",
+          "sha256": "bd171a8ac9974eec18957af97e6fc369729358ca62985390eb994c26f2040b29"
+        }
+      }
+    }
+  },
+  "dense_280_cache_audit": {
+    "status": "compatible_cached_inputs_integrity_verified_read_only",
+    "root": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_00802_20261006T163140.468551Z_e4a058",
+    "scene_id": "00802-wcojb4TFT35",
+    "sequence_id": "hm3d-v02-00802-main-dense-route-01",
+    "resolution_px": [
+      600,
+      340
+    ],
+    "horizontal_fov_deg": 90.0,
+    "frames": 280,
+    "capture_manifest": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_00802_20261006T163140.468551Z_e4a058/capture/capture_manifest.json",
+      "sha256": "f2eba637f2d9bc53f06cb21d7a059e9dd675faba0f470a9bc6047131b9ca6149",
+      "bytes": 45301,
+      "exists": true
+    },
+    "p2_index": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_00802_20261006T163140.468551Z_e4a058/detection_2d/detection_2d_index.json",
+      "sha256": "b4c3f615d0180f7b9a50cae0b6e4b7d623328ab007ee92cc6cf9685690b51949",
+      "bytes": 958091,
+      "exists": true
+    },
+    "p3_manifest": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_00802_20261006T163140.468551Z_e4a058/detection_3d/detection_3d_manifest.json",
+      "sha256": "af04d84ab4c2a88e8005307c413f34988bf739da5213d3ceec3472961e03de49",
+      "bytes": 1523,
+      "exists": true
+    },
+    "p3_jsonl": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_00802_20261006T163140.468551Z_e4a058/detection_3d/detection_3d.jsonl",
+      "sha256": "1a57ff1a6d90b7792ce9ef80d709623174bed404d8e4ffa0a955ae9a8e8f4d57",
+      "bytes": 960672,
+      "exists": true
+    },
+    "p2_detections": 738,
+    "mask_integrity": {
+      "expected": 738,
+      "missing": 0,
+      "sha256_mismatch": 0
+    },
+    "p3": {
+      "accepted": 713,
+      "rejected": 25,
+      "eps_m": 0.02,
+      "min_points": 100,
+      "stride": 1,
+      "present_batch_count": 230,
+      "profile_sha256": "ec64d9e8c508d54b313abf8495b15631fa95e047e894131db5c5fec7c2dfd0b3"
+    },
+    "accepted_cluster_points": {
+      "sum": 2988009,
+      "mean": 4190.76,
+      "median": 2951,
+      "p95": 11462,
+      "max": 33963
+    },
+    "old_native_replay": {
+      "manifest": {
+        "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/runs/hm3d_00802_20261006T163140.468551Z_e4a058/replay/manifest.json",
+        "sha256": "bff411f86bebe1bd10595c93115cc6b5832f414ab859850542a6fd9810ebac71",
+        "bytes": 4983,
+        "exists": true
+      },
+      "runtime_ms": 3304268.073059,
+      "peak_rss_kib": 1307136,
+      "fresh_replay_equal": true,
+      "snapshot_reload_equal": true,
+      "delta_replay_equal": true
+    },
+    "replay_cost_estimate": {
+      "source_min": 55,
+      "source_max": 60,
+      "geometry_only_min": 55,
+      "geometry_only_max": 65,
+      "paired_total_min": 110,
+      "paired_total_max": 125,
+      "units": "minutes",
+      "confidence": "medium-low",
+      "basis": "same dense 600x340 cache previous native replay was 55.07 min and passes fresh/reload/delta; 29-frame 160x120 paired runs source 129.9 s vs geometry 144.8 s (1.114x), but 713 accepted P3 observations may increase geometry association cost; range deliberately conservative; includes fresh-process deterministic verification per profile",
+      "approval_required": true,
+      "not_run": true
+    }
+  },
+  "gates": {
+    "integration_and_reconciliation": "achieved within tested M9/M10 contract",
+    "real_merge_retirement_policy": "deferred; no policy / no real events",
+    "dense_replay": "not verified in Fusion workspace; approval required because estimate exceeds 30 minutes"
+  },
+  "preservation": "baseline and existing artifacts read-only; no predictor/config/model/vocabulary/threshold/room-rule changes",
+  "test_result_provenance": {
+    "handoff_report": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/docs/U5_RESOURCE_LIFECYCLE_HANDOFF.vi.md",
+      "bytes": 7990,
+      "sha256": "65ed4501501b2ec376f976c5e020336cf30ef26a0649501b200e11fb0853be7e"
+    },
+    "integration_report": {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/docs/U5_EXPERIMENTAL_INTEGRATION.vi.md",
+      "bytes": 7820,
+      "sha256": "cf5fa6f95f907eea1361cb374631e1ea5440d4240c9d76485471563dd10fbc93"
+    },
+    "user_reported_targeted_test_result": {
+      "source": "current user message",
+      "result": "10 passed",
+      "command": "not supplied; not independently rerun in this turn"
+    }
+  }
+}

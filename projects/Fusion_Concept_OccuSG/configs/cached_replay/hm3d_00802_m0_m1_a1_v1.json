@@ -1,0 +1,29 @@
+{
+  "schema": "scene-graph-cached-replay-inputs/v1",
+  "expected_identity": {
+    "scene_id": "00802-wcojb4TFT35",
+    "sequence_id": "hm3d-v02-00802-main-route-01"
+  },
+  "inputs": {
+    "object_timeline": {
+      "root": "../../artifacts/scene_graph_timeline/m0_m1_00802/recorder_room_1/timeline",
+      "manifest_sha256": "9db3610e82d6091fdd023767ebe72212c29e3939a23dee1ab8ffe94d6a7e7c9a"
+    },
+    "causal_state": {
+      "root": "../../artifacts/scene_graph_timeline/m4_causal_hybrid_00802_a1_v6",
+      "manifest_sha256": "ba8b5d86b2e4b20fcc23a27deb2ad4c4f12dfa9cceb9f9f7098bc14dc84c43e2"
+    }
+  },
+  "frame_alignment": "frame_index+frame_id+timestamp_s; room revision via object snapshot state_ref",
+  "coordinate_contract": {
+    "object_frame": "capture/world",
+    "room_frame": "capture/world_xy",
+    "units": "m",
+    "up_axis": "Z",
+    "transform_convention": "Z-up; C.x=H.x, C.y=-H.z, C.z=H.y"
+  },
+  "policy_fingerprint_sha256": "7b9e3a36e1df1b61e5229c4959d88701252cbf15e13e386ae2ebe2e49c40d41c",
+  "viewer": {
+    "max_points_per_object": 300
+  }
+}

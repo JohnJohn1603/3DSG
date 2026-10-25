@@ -1,0 +1,6 @@
+{
+  "habitat_python": ".venvs/habitat/bin/python",
+  "conceptgraphs_python": ".venvs/conceptgraphs/bin/python",
+  "appearance_python": ".venvs/appearance/bin/python",
+  "perception_python": ".venvs/perception/bin/python"
+}

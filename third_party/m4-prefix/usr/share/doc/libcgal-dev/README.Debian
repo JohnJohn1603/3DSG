@@ -1,0 +1,43 @@
+README.Debian
+-------------
+
+The homepage of CGAL (http://www.cgal.org/) offers more information about
+CGAL. In particular, a mailing list and the documentation for the library
+(online and offline) are available. The authors ask you to give some
+feedback about your usage of CGAL in a short questionnaire (in the "Support"
+section).
+
+
+Documentation
+-------------
+
+Note that the CGAL documentation cannot be packaged for Debian due to
+unclear license conditions. The complete documentation (online and offline)
+is available at http://www.cgal.org/.
+
+
+Demos and examples
+------------------
+
+Tarballs with demos and examples can be found in /usr/share/doc/libcgal-demo.
+Extract the tarballs somewhere and call "cmake ." to configure the
+demos/examples. Call "make" to build them, either in the top-level directory
+to build all demos/examples (which takes some time and needs quite some disk
+space), or in the subdirectory of the desired demo/exmaple. The cmake option
+-DCMAKE_VERBOSE_MAKEFILE=ON is useful to generate verbose makefiles that show
+each executed command.
+
+The data files will be found automatically if their tarball is extracted into
+the same directory as the demos and/or examples. Otherwise, the location can
+be set with the cmake option -DCGAL_DATA_DIR.
+
+
+Support for MPFI and NTL
+------------------------
+
+Support for MPFI and NTL is not enabled in the default configuration. The
+support can be manually enabled by defining the macros CGAL_USE_MPFI and
+CGAL_USE_NTL and linking with -lmpfi and -lntl, respectively.
+
+ -- Joachim Reichel <reichel@debian.org>  Sat, 18 Dec 2021 12:05:42 +0100
+

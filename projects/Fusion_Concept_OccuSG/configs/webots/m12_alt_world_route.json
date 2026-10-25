@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "world_id": "m12_alt_corridor_scene",
+  "sequence_id": "m12-alt-corridor-v1",
+  "output_dir": "artifacts/m12_webots_alt_world_capture",
+  "pipeline_config": "configs/reference_code_mp3d.yaml",
+  "coordinate_system": "ENU",
+  "canonical_origin_coincident": true,
+  "world_to_canonical_matrix": [[1.0,0.0,0.0,0.0],[0.0,1.0,0.0,0.0],[0.0,0.0,1.0,0.0],[0.0,0.0,0.0,1.0]],
+  "route_type": "supervisor_ground_truth_waypoints_no_dynamics",
+  "route": [
+    {"translation":[0.8,0.0,0.0],"yaw_rad":1.5707963267948966,"label":"start"},
+    {"translation":[1.8,0.0,0.0],"yaw_rad":1.5207963267948966,"label":"middle"},
+    {"translation":[2.8,0.2,0.0],"yaw_rad":1.4207963267948966,"label":"end"},
+    {"translation":[1.8,0.2,0.0],"yaw_rad":-1.5707963267948966,"label":"return"}
+  ],
+  "fixture_geometry": {"markers":[],"require_four_off_axis_markers":false,"geometry_tolerance_m":0.03}
+}

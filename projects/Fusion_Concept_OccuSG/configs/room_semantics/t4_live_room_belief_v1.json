@@ -1,0 +1,27 @@
+{
+  "schema": "t4-live-room-belief-config/v1",
+  "a_tables_archive": {
+    "path": "artifacts/room_belief/rb2_kaggle_diagnostics/full_a_20261015/run_7c43877ac67928df_artifacts.zip",
+    "sha256": "0e30cc12058ec22372fe8b2df49279ec6a917027bef74182f8831374a7418997"
+  },
+  "consensus_policy": {
+    "path": "configs/room_semantics/consensus_v1.proposal.json",
+    "sha256": "1b2d1a4f6bb349e910c7bd6c4dc94bdd73ca19f81df28a670f46b8e12f955bc5"
+  },
+  "room_belief_policy": {
+    "path": "configs/room_semantics/room_belief_v1.proposal.json",
+    "sha256": "262d87f89790037f9b8ceec5ace1999536fe9a33875979ed1ee2f9d01c615c77"
+  },
+  "detector_profile": {
+    "path": "configs/perception/yolo11n_seg_replica_cad_dev.json",
+    "sha256": "ec64d9e8c508d54b313abf8495b15631fa95e047e894131db5c5fec7c2dfd0b3"
+  },
+  "ontology": {
+    "path": "configs/room_semantics/ontology_v1.json",
+    "sha256": "b272ed261954a74dfaabbeec55cb977bd2113659f761bd45783f94d70ce98317"
+  },
+  "scope_policy": {
+    "mode": "verified_only",
+    "assumed_declaration": null
+  }
+}

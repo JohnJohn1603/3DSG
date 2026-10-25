@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "profile_id": "geometry_only_accumulated_surface_v1",
+  "status": "locked_development_candidate_before_scoring",
+  "base_profile": "geometry-only-dedup-v2",
+  "base_same_frame_duplicate_config": "configs/association/u3_same_frame_duplicate_candidate_v2.json",
+  "association": {
+    "candidate_center_radius_m": 0.75,
+    "geometry_min_iou_prefilter": 0.01,
+    "original_geometry_acceptance_iou": 0.05,
+    "original_ambiguity_score_margin": 0.05,
+    "hard_gates": ["same_layer", "center_distance_within_radius"],
+    "continuity_branch_only_when_no_original_geometry_candidate": true,
+    "one_to_one": "existing deterministic greedy assignment; unchanged"
+  },
+  "surface_support": {
+    "observation_downsample_voxel_m": 0.02,
+    "track_surface_voxel_m": 0.02,
+    "nearest_surface_tolerance_m": 0.04,
+    "minimum_forward_supported_voxels": 100,
+    "minimum_forward_support_ratio": 0.35,
+    "continuity_candidate_ambiguity_margin": 0.1,
+    "possible_containment_guard": {
+      "observation_to_track_surface_size_ratio": 1.5,
+      "minimum_reverse_support_ratio": 0.9,
+      "maximum_forward_support_ratio": 0.8,
+      "action": "defer_without_fusion"
+    },
+    "direction_definitions": {
+      "forward": "fraction of current observation surface representatives within tolerance of prior track surface",
+      "reverse": "fraction of prior track surface representatives within tolerance of current observation surface"
+    },
+    "missing_evidence": "candidate run fails preflight; never silently omit an observation",
+    "uninformative_or_below_minimum": "retain original geometry behavior",
+    "multiple_candidates": "choose unique best only when score margin meets locked threshold; otherwise defer"
+  },
+  "rationale": {
+    "voxel_scale": "reuse K3's 0.02 m representative scale",
+    "support_tolerance": "two 0.02 m voxels to allow small discretization/depth noise without broad proximity matching",
+    "minimum_support": "100 supported representatives prevents a small contact patch from passing alone",
+    "partial_view": "forward support permits an observation to cover a subset of an accumulated surface; reverse support is diagnostic and guards the larger-observation containment case",
+    "reference_inspiration": "ConceptGraphs compute_overlap_matrix_2set uses nearest-point support from map objects to new detections with an asymmetric denominator; this adaptation adds symmetric diagnostics and causal prior-state gating",
+    "not_identity_proof": true
+  },
+  "predictor_inputs": {
+    "uses_class": false,
+    "uses_appearance": false,
+    "uses_gt_or_annotations": false,
+    "uses_room_labels": false,
+    "uses_future_observations": false
+  },
+  "outputs": {
+    "track_surface_config": "configs/fusion/object_geometry_v2.json",
+    "raw_observations_retained": true,
+    "same_frame_aliases_add_no_surface_support": true,
+    "deferred_observations_add_no_surface_support": true
+  }
+}

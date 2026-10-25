@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "status": "u2_complete_stop_before_u3",
+  "scope": "U2 appearance extraction only; no association/fusion or baseline modification",
+  "interpreter": {
+    "implementation": "CPython",
+    "version": "3.12.3",
+    "proposed_path": ".venv-appearance/bin/python",
+    "environment_isolation": "new workspace-local venv; do not modify Habitat or baseline perception environments"
+  },
+  "runtime": {
+    "device": "CPU",
+    "reason": "lowest-risk initial microbenchmark; GPU availability not established",
+    "batch_size_initial": 1,
+    "inference_mode": true,
+    "thread_policy": "record torch intra-op threads and host CPU model during benchmark"
+  },
+  "dependencies": {
+    "proposed_direct_pins": [
+      "torch==2.6.0+cpu",
+      "torchvision==0.21.0+cpu",
+      "open_clip_torch==3.2.0"
+    ],
+    "torch_wheel_index": "https://download.pytorch.org/whl/cpu",
+    "transitive_lock_json": "locks/appearance_dependencies.lock.json",
+    "transitive_requirements_lock": "locks/appearance_requirements.lock.txt",
+    "transitive_package_count": 31,
+    "install_status": "installed in .venv-appearance; pip check passed"
+  },
+  "encoder": {
+    "library": "OpenCLIP",
+    "architecture": "ViT-B-32",
+    "checkpoint_family": "OpenAI CLIP ViT-B/32",
+    "embedding_dimension": 512,
+    "input_resolution": 224,
+    "checkpoint_repository": "timm/vit_base_patch32_clip_224.openai",
+    "checkpoint_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+    "checkpoint_file": "open_clip_model.safetensors",
+    "checkpoint_file_size_bytes": 605143284,
+    "checkpoint_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+    "download_status": "downloaded from the pinned single-file resolve URL; exact size verified",
+    "metadata_file": "artifacts/models/openclip/vit-b-32-openai-a6f597a30f7b82c51704746581f9a4e41421e878/checkpoint_metadata.json"
+  },
+  "preprocessing": {
+    "crop_source": "saved RGB image and cached 2D detection bbox only",
+    "crop_policy": "ConceptGraphs-style bbox crop with 20-pixel context on each side, clipped to image bounds; preserve float bbox coordinates and pass the padded float box to PIL.Image.crop, which applies its own edge rounding",
+    "mask_use": "mask hash is part of cache identity; do not black out or otherwise alter pixels inside the bbox crop",
+    "model_transform": "OpenCLIP ViT-B-32 OpenAI evaluation transform instantiated by open_clip.create_model_and_transforms('ViT-B-32', pretrained=None); actual transform repr is written to benchmark report and preprocessing fingerprint",
+    "normalization": "L2-normalize the 512-dimensional image embedding; reject zero/non-finite outputs"
+  },
+  "cache_contract": {
+    "format": "NPZ with allow_pickle=false plus append-only JSONL manifest",
+    "key_fields": [
+      "RGB image SHA-256",
+      "mask file SHA-256",
+      "float bbox coordinates and ConceptGraphs padding plus PIL edge-rounding behavior",
+      "crop policy/version and crop pixel SHA-256",
+      "model architecture and checkpoint revision/file SHA-256",
+      "preprocessing identifier and transform configuration"
+    ],
+    "payload": "image_feature float32[512] only; no GT labels, semantic instance IDs, room labels, or text features",
+    "manifest_fields": [
+      "schema_version",
+      "observation_id",
+      "frame_id",
+      "image/mask/crop/model/preprocessing hashes",
+      "feature shape/dtype/L2 norm/finite flag/feature SHA-256",
+      "runtime device and software lock identifier"
+    ],
+    "missing_feature_policy": "explicit missing/error record; never substitute an all-zero vector"
+  },
+  "resource_estimate": {
+    "checkpoint_storage": "about 605 MB for the selected safetensors file",
+    "runtime_ram": "measured peak RSS about 1.46 GiB in CPU benchmark and 47-crop extraction; host had about 7.7 GiB available before execution",
+    "total_install_storage": "measured workspace env + checkpoint + wheel cache are below 2 GiB; workspace filesystem had 322 GiB free before setup"
+  },
+  "measured_u2": {
+    "pip_check": "pass",
+    "strict_checkpoint_load": "pass",
+    "benchmark_crops": 16,
+    "benchmark_process_start_to_report_seconds": 8.0398,
+    "model_import_create_and_checkpoint_load_seconds": 2.0407,
+    "first_inference_seconds": 0.1530,
+    "warm_inference_total_seconds": 1.5848,
+    "warm_mean_seconds_per_crop": 0.0991,
+    "peak_rss_mib": 1494.8,
+    "feature_observations": 47,
+    "feature_shape": [47, 512],
+    "all_pairs": 1081,
+    "feature_validation": "all finite, float32, L2 norm within atol=rtol=1e-5; benchmark repeatability allclose at atol=rtol=1e-5 and cosine >= 0.999999",
+    "outputs": "artifacts/audits/dining_table_bed_224_230/appearance/"
+  },
+  "provenance": {
+    "conceptgraphs_reference_commit": "93277a02bd89171f8121e84203121cf7af9ebb5d",
+    "source_behavior": "bbox crop with 20-pixel padding and normalized OpenCLIP image features, as audited in ref_ConceptGraph/concept-graphs/conceptgraph/utils/model_utils.py",
+    "adaptations": [
+      "ViT-B-32 instead of the larger ViT-H-14 used by the audited ConceptGraphs scripts",
+      "CPU-only isolated extractor and reuse of saved detection RGB/bbox/mask caches",
+      "NPZ/JSONL hash-keyed feature cache and explicit repeatability checks"
+    ]
+  },
+  "completed_u2_actions": [
+      "created .venv-appearance inside this workspace",
+      "installed only the pinned CPU inference stack into that venv and wrote a transitive hash lock",
+      "downloaded only the pinned checkpoint file and verified its revision, size and SHA-256",
+      "benchmarked 16 existing RGB detection crops, then extracted the predeclared 47-observation frame-224-230 set"
+  ],
+  "u2_scope_boundary": {
+    "prohibited_actions": [
+      "install into Habitat or baseline perception environments",
+      "run YOLO, P3, native mapping, or capture again",
+      "use evaluator GT, semantic instance IDs, or room labels as feature inputs or match-selection inputs",
+      "change association, class scores, room scores, or implement U3"
+    ]
+  }
+}

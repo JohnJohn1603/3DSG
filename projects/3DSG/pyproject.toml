@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "frontier-3dsg"
+version = "0.1.0"
+description = "Observed-map frontier exploration and 3D scene graph extension"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3"]
+
+[project.optional-dependencies]
+desktop = ["PyQt5>=5.15"]
+
+[tool.setuptools]
+packages = ["exploration"]

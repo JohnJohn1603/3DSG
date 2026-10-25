@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "world_id": "m12_two_rooms_finite_walls",
+  "sequence_id": "m12-two-room-route-v1",
+  "output_dir": "artifacts/m12_webots_two_rooms_capture",
+  "pipeline_config": "configs/reference_code_mp3d.yaml",
+  "coordinate_system": "ENU",
+  "canonical_origin_coincident": true,
+  "world_to_canonical_matrix": [[1.0,0.0,0.0,0.0],[0.0,1.0,0.0,0.0],[0.0,0.0,1.0,0.0],[0.0,0.0,0.0,1.0]],
+  "route_type": "supervisor_ground_truth_waypoints_no_dynamics",
+  "route": [
+    {"translation":[1.0,0.0,0.0],"yaw_rad":1.5707963267948966,"label":"before_door"},
+    {"translation":[2.8,0.0,0.0],"yaw_rad":1.5707963267948966,"label":"before_door"},
+    {"translation":[3.65,0.0,0.0],"yaw_rad":1.5707963267948966,"label":"doorway"},
+    {"translation":[4.45,0.0,0.0],"yaw_rad":1.5707963267948966,"label":"after_door"},
+    {"translation":[5.8,0.25,0.0],"yaw_rad":1.4707963267948965,"label":"after_door"},
+    {"translation":[6.8,0.25,0.0],"yaw_rad":1.5707963267948966,"label":"far_room"},
+    {"translation":[6.8,0.25,0.0],"yaw_rad":-1.5707963267948966,"label":"turn_back"},
+    {"translation":[5.7,0.0,0.0],"yaw_rad":-1.5707963267948966,"label":"return"},
+    {"translation":[4.45,0.0,0.0],"yaw_rad":-1.5707963267948966,"label":"return"},
+    {"translation":[3.2,0.0,0.0],"yaw_rad":-1.5707963267948966,"label":"return"},
+    {"translation":[1.0,0.0,0.0],"yaw_rad":1.5707963267948966,"label":"return"}
+  ],
+  "fixture_geometry": {
+    "room_a_bounds_xy":[0.0,4.0,-2.5,2.5],
+    "room_b_bounds_xy":[4.0,8.0,-2.5,2.5],
+    "partition_wall_aabbs":[{"min":[3.94,-2.5,0.0],"max":[4.06,-0.75,2.6]},{"min":[3.94,0.75,0.0],"max":[4.06,2.5,2.6]}],
+    "doorway_y_bounds":[-0.75,0.75],
+    "markers":[],
+    "require_four_off_axis_markers":false,
+    "geometry_tolerance_m":0.03
+  }
+}

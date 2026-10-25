@@ -1,0 +1,16 @@
+{
+  "source": "OccuSG point_cloud_generator._depth_to_pointcloud",
+  "width": 2,
+  "height": 2,
+  "fx": 2.0,
+  "fy": 2.0,
+  "cx": 0.5,
+  "cy": 0.5,
+  "depth_m": [[1.0, 2.0], [3.0, 4.0]],
+  "expected_xyz_camera": [
+    [-0.25, -0.25, 1.0],
+    [0.5, -0.5, 2.0],
+    [-0.75, 0.75, 3.0],
+    [1.0, 1.0, 4.0]
+  ]
+}

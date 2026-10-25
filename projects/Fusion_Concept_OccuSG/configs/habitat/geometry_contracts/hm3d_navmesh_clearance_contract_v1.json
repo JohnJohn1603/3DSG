@@ -1,0 +1,27 @@
+{
+  "schema": "habitat-navmesh-clearance-contract/v1",
+  "navmesh_settings_source": "Habitat-Sim PathFinder.nav_mesh_settings from the loaded navmesh binary",
+  "navmesh_baked_agent_radius_m": 0.1,
+  "navmesh_baked_agent_height_m": 1.5,
+  "runtime_agent_profile": {
+    "radius_m": 0.1,
+    "height_m": 1.5
+  },
+  "profile_compatibility_tolerance_m": 0.000001,
+  "extra_navmesh_clearance_margin_m": 0.0,
+  "numeric_boundary_tolerance_m": 0.0001,
+  "numeric_boundary_tolerance_basis": "float32 PathFinder API; 0.1mm fail-closed band, 0.05m navmesh cell",
+  "clearance_api": "PathFinder.distance_to_closest_obstacle",
+  "clearance_unavailable_policy": "fail_closed",
+  "boundary_policy": "fail_closed_within_margin_plus_numeric_tolerance",
+  "max_search_radius_policy": "extra_margin_plus_2x_numeric_boundary_tolerance",
+  "vertical_navmesh_tolerance_m": 0.05,
+  "semantics": {
+    "baked_radius_is_compatibility_check_only": true,
+    "baked_radius_is_not_added_to_extra_clearance_margin": true,
+    "numeric_boundary_tolerance_is_not_physical_safety_margin": true,
+    "measured_zero_clearance_fails_closed": true,
+    "missing_or_nonfinite_clearance_fails_closed": true,
+    "navmesh_profile_mismatch_fails_before_path_search": true
+  }
+}

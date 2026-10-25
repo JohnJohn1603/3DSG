@@ -1,0 +1,9 @@
+{
+  "feature_contract": {
+    "checkpoint_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+    "model_fingerprint": "17d5da24f0319f81b00b9372aa11c366ab7c98e9b4911e4e2cfef65e8554ad83",
+    "preprocessing_id": "openclip-vit-b-32-openai-eval-224-cg-bboxpad20-pil-floatcrop-v1",
+    "prompt_policy": "exact raw class string; no room alias/canonical rewrite",
+    "tokenizer_id": "open_clip.get_tokenizer('ViT-B-32')"
+  }
+}

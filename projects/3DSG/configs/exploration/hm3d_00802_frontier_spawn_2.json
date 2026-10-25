@@ -1,0 +1,84 @@
+{
+  "schema": "frontier-habitat-scene/v1",
+  "scene_id": "00802-wcojb4TFT35",
+  "scene_asset": "../../assets/scenes/hm3d-00802/wcojb4TFT35.basis.glb",
+  "scene_asset_sha256": "075e243b372458df4055a55e27c93885ba44ae8c36b4bc4446e0393c60c14540",
+  "scene_dataset_config": "../../assets/scenes/hm3d-00802/demo.scene_dataset_config.json",
+  "scene_dataset_config_sha256": "22d0485c749193e19e4ac0502610d51a9022183a3387f36395630ae6dd30a9f4",
+  "navmesh_file": "../../assets/scenes/hm3d-00802/wcojb4TFT35.basis.navmesh",
+  "navmesh_sha256": "ae5ddd8ca77480eea3c401059844ae1ccc42d9cce75770a25b0d79b02d077232",
+  "provenance": {
+    "source_effective_config": "../../config/spawn_sources/hm3d_00802_frontier_spawn_2.json",
+    "source_effective_config_sha256": "cef8c4ad6c0b85e7dad9543433673f1c67ff43a83d7f83b77db3007b41be3aa7",
+    "spawn_only": true,
+    "semantic_ground_truth_used_for_policy": false,
+    "spawn_source_run": "native-live-multisensor-120s-20261023-a",
+    "spawn_source_frame_index": 630,
+    "spawn_source_kind": "reached_viewpoint"
+  },
+  "seed": 0,
+  "spawn": {
+    "position_habitat_m": [
+      2.7533261776,
+      0.124,
+      -5.162430286
+    ],
+    "yaw_habitat_rad": -0.8377571600948965
+  },
+  "agent": {
+    "navmesh_baked_radius_m": 0.1,
+    "navmesh_baked_height_m": 1.5,
+    "sensor_position_habitat_m": [
+      0.0,
+      1.5,
+      0.0
+    ],
+    "sensor_orientation_habitat_rad": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "camera": {
+    "width": 640,
+    "height": 480,
+    "horizontal_fov_deg": 90.0,
+    "depth_min_m": 0.1,
+    "depth_max_m": 10.0,
+    "calibration_id": "habitat-rgbd-split-nav-depth-endpoint-support-low-mount-v1"
+  },
+  "simulation": {
+    "step_s": 0.04,
+    "move_increment_m": 0.02,
+    "turn_increment_deg": 6.0,
+    "allow_sliding": false,
+    "enable_physics": false,
+    "gpu_device_id": -1
+  },
+  "navigation_depth": {
+    "enabled": true,
+    "width": 160,
+    "height": 120,
+    "orientation_habitat_rad": [
+      -0.8726646259971648,
+      0.0,
+      0.0
+    ],
+    "depth_min_m": 0.1,
+    "depth_max_m": 4.0,
+    "update_period_frames": 1,
+    "sensor_position_habitat_m": [
+      0.0,
+      0.6,
+      0.0
+    ]
+  },
+  "floor_z_m": 0.011,
+  "floor_z_calibration": {
+    "source_run_id": "p2-floor-endpoint-low-nav-camera-120s-20261023-a",
+    "method": "median of dense RGB-D surface returns within 2 m of spawn during initial scan",
+    "coordinate_frame": "canonical_world_z_up",
+    "floor_reference_m": 0.011
+  },
+  "navmesh_file_sha256": "ae5ddd8ca77480eea3c401059844ae1ccc42d9cce75770a25b0d79b02d077232"
+}

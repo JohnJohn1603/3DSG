@@ -1,0 +1,9 @@
+{
+  "alias": "hm3d_SCENE_ALIAS",
+  "evaluation_profile": "configs/evaluation/SCENE_scene_eval_v1.json",
+  "routes": {
+    "smoke": "configs/habitat/SCENE_smoke.json",
+    "main": "configs/habitat/SCENE_main_route.json"
+  },
+  "default_route": "smoke"
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "policy_id": "room_object_consensus_v1_proposed",
+  "approval_status": "proposed_unapproved",
+  "view_group_policy_id": "exact_camera_pose_matrix_v1",
+  "minimum_view_groups": 2,
+  "minimum_top_share": 0.7,
+  "minimum_margin": 0.2,
+  "notes": [
+    "Thresholds are starting values for later development evaluation, not calibrated or validated.",
+    "One view group contributes at most one unit; categories observed within a group split that unit evenly.",
+    "Exact equality of the cached 4x4 camera pose matrix groups revisits; distinct transforms form distinct pose groups.",
+    "Pose groups are not statistically independent view claims; near-pose grouping is not performed."
+  ]
+}

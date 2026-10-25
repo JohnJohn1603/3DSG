@@ -1,0 +1,17 @@
+"use strict";
+const assert = require("node:assert/strict");
+global.window = {};
+global.document = {};
+require("../scripts/xyz_renderer.js");
+const { lookAt, perspective, multiply, transformPoint, niceLength } = window.XYZ_VIEWER_MATH;
+const eye = [0, -5, 0], target = [0, 0, 0], upWorldZ = [0, 0, 1];
+const mvp = multiply(perspective(Math.PI / 4, 1, 0.1, 100), lookAt(eye, target, upWorldZ));
+const center = transformPoint(mvp, [0, 0, 0]);
+const x = transformPoint(mvp, [1, 0, 0]);
+const z = transformPoint(mvp, [0, 0, 1]);
+assert.ok(x[0] > center[0], "world +X projects to the right from a -Y view");
+assert.ok(z[1] > center[1], "world +Z projects upward from a -Y view");
+assert.equal(niceLength(2.6), 2, "scale ruler stays in world metre units");
+const camera = [[1,0,0,3],[0,0,-1,4],[0,-1,0,1.5],[0,0,0,1]];
+assert.deepEqual([camera[0][3], camera[1][3], camera[2][3]], [3, 4, 1.5], "T_W_Copt translation is used directly as world camera position");
+console.log("XYZ renderer math fixture checks passed: world axes, metre scale selection, T_W_Copt translation.");

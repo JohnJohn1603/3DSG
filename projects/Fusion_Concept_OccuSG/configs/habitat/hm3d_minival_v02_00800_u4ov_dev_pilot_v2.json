@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "dataset_type": "hm3d",
+  "dataset_version": "v0.2",
+  "split": "minival",
+  "scene_id": "00800-TEEsavR23oF",
+  "scene_provenance": "Matterport HM3D v0.2 minival; existing read-only local assets",
+  "scene_license_note": "Academic non-commercial use only; include Matterport EULA link with publications containing or derived from this data",
+  "scene_file": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d/minival/00800-TEEsavR23oF/TEEsavR23oF.basis.glb",
+  "scene_dataset_config": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d/minival/hm3d_annotated_minival_basis.scene_dataset_config.json",
+  "navmesh_file": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d/minival/00800-TEEsavR23oF/TEEsavR23oF.basis.navmesh",
+  "sequence_id": "hm3d-v02-00800-u4ov-dev-pilot-v2",
+  "frame_id_prefix": "hm3d-00800-u4ov-pilot",
+  "resolution_px": [
+    160,
+    120
+  ],
+  "horizontal_fov_deg": 90.0,
+  "sensor_position_habitat": [
+    0.0,
+    1.5,
+    0.0
+  ],
+  "sensor_orientation_habitat_rad": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "calibration_id": "habitat-rgbd-stage-v1",
+  "min_depth_m": 0.1,
+  "max_depth_m": 10.0,
+  "simulation_step_s": 0.1,
+  "gpu_device_id": -1,
+  "require_navigable": true,
+  "route_policy": "development pilot targeted using the prior P3-accepted geometric center (not semantic GT); three close positions/view angles around the predicted target, one neighboring-surface glance, then a revisit; target class, semantic ID, room label, and evaluator GT not used",
+  "route_selection_provenance": {
+    "source_p3_detection_id": "hm3d-00800-u4ov-dense-0008:det-0002",
+    "source_p3_output": "geometry only; center transformed to Habitat coordinates using locked canonical transform",
+    "target_center_habitat_estimate": [
+      -5.9238550662994385,
+      0.664181262254715,
+      -1.5543749332427979
+    ],
+    "target_radius_m": 1.0,
+    "route_adjustment": "close-up viewpoints to increase metric point density while sensor profile and P3 settings stay fixed"
+  },
+  "route": [
+    {
+      "position_habitat": [
+        -6.919,
+        0.163378,
+        -1.45
+      ],
+      "yaw_rad": 4.817108735504349,
+      "label": "table_view_A1"
+    },
+    {
+      "position_habitat": [
+        -6.78,
+        0.163378,
+        -1.038
+      ],
+      "yaw_rad": 5.253441048502932,
+      "label": "table_view_B"
+    },
+    {
+      "position_habitat": [
+        -6.919,
+        0.163378,
+        -1.45
+      ],
+      "yaw_rad": 4.101523742186674,
+      "label": "neighbor_glance"
+    },
+    {
+      "position_habitat": [
+        -6.868,
+        0.163378,
+        -1.881
+      ],
+      "yaw_rad": 4.380776422505767,
+      "label": "table_view_C"
+    },
+    {
+      "position_habitat": [
+        -6.919,
+        0.163378,
+        -1.45
+      ],
+      "yaw_rad": 4.817108735504349,
+      "label": "table_revisit_A2"
+    }
+  ],
+  "semantic_evaluator_only": {
+    "enabled": false,
+    "semantic_mesh": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d/minival/00800-TEEsavR23oF/TEEsavR23oF.semantic.glb",
+    "semantic_descriptor": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG/artifacts/habitat_data/versioned_data/hm3d-0.2/hm3d/minival/00800-TEEsavR23oF/TEEsavR23oF.semantic.txt",
+    "allowed_for_predictor": false,
+    "room_polygon_ground_truth_assumed": false
+  },
+  "predictor": {
+    "pipeline_config": "configs/reference_code_mp3d.yaml",
+    "detector_config": "configs/perception/yolo11n_seg_replica_cad_dev.json",
+    "semantic_rules": "configs/semantics/region_object_room_rules_replica_cad_v1.json",
+    "semantic_gt_input": false,
+    "room_gt_input": false,
+    "navmesh_input": false
+  },
+  "autonomous_navigation_value_map_slam": false,
+  "route_type": "fixed_ground_truth_observation_poses",
+  "expected_pilot_outcome": {
+    "target": "at least 3 P3-accepted observations of one visibly repeated object across at least 3 distinct camera positions/angles, with a deliberate revisit after neighbor_glance",
+    "no_threshold_or_profile_change": true
+  }
+}

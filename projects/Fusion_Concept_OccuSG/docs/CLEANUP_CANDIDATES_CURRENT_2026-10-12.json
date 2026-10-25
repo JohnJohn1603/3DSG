@@ -1,0 +1,1939 @@
+{
+  "schema": "cleanup-candidates-current/v1",
+  "measured_utc_date": "2026-10-12",
+  "workspace": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG",
+  "source_cleanup_plan": {
+    "path": "/home/kiettran05/Documents/Codex/2026-09-22/c-c/PROJECT_CLEANUP_PLAN.vi.md",
+    "sha256": "491249a233a51f7c108d24b00f77e97fb2a7cc1e607c94a5ed7590601b34ad25"
+  },
+  "reused_inventory": "docs/REBUILD_R0_R1_PREFLIGHT.vi.md and docs/CLEANUP_MANIFEST_R0_R1.vi.md; this addendum only measures existing named cache candidates, not a workspace rescan.",
+  "status": "proposal_only_no_deletion_or_move",
+  "symlink_policy": "Do not follow symlinks outside the workspace. No cleanup executed.",
+  "candidates": [
+    {
+      "kind": "regenerable_python_test_cache",
+      "target_path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/.pytest_cache",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/.pytest_cache",
+      "bytes": 53055,
+      "file_count": 6,
+      "action": "candidate_after_separate_approval",
+      "dependencies": "No runtime import depends on cached bytecode; .pytest_cache stores pytest state only. Confirm no process is using the target before cleanup.",
+      "reason": "Generated Python bytecode or pytest cache; source and tests remain the authoritative inputs.",
+      "regenerate": "Run the relevant Python module or pytest command; no model/dataset download required.",
+      "contents": [
+        {
+          "path": ".pytest_cache/.gitignore",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/.pytest_cache/.gitignore",
+          "bytes": 37
+        },
+        {
+          "path": ".pytest_cache/CACHEDIR.TAG",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/.pytest_cache/CACHEDIR.TAG",
+          "bytes": 191
+        },
+        {
+          "path": ".pytest_cache/README.md",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/.pytest_cache/README.md",
+          "bytes": 302
+        },
+        {
+          "path": ".pytest_cache/v/cache/lastfailed",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/.pytest_cache/v/cache/lastfailed",
+          "bytes": 130
+        },
+        {
+          "path": ".pytest_cache/v/cache/nodeids",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/.pytest_cache/v/cache/nodeids",
+          "bytes": 52393
+        },
+        {
+          "path": ".pytest_cache/v/cache/stepwise",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/.pytest_cache/v/cache/stepwise",
+          "bytes": 2
+        }
+      ]
+    },
+    {
+      "kind": "regenerable_python_test_cache",
+      "target_path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/adapters/habitat/__pycache__",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/adapters/habitat/__pycache__",
+      "bytes": 12712,
+      "file_count": 3,
+      "action": "candidate_after_separate_approval",
+      "dependencies": "No runtime import depends on cached bytecode; .pytest_cache stores pytest state only. Confirm no process is using the target before cleanup.",
+      "reason": "Generated Python bytecode or pytest cache; source and tests remain the authoritative inputs.",
+      "regenerate": "Run the relevant Python module or pytest command; no model/dataset download required.",
+      "contents": [
+        {
+          "path": "adapters/habitat/__pycache__/__init__.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/adapters/habitat/__pycache__/__init__.cpython-312.pyc",
+          "bytes": 392
+        },
+        {
+          "path": "adapters/habitat/__pycache__/frames.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/adapters/habitat/__pycache__/frames.cpython-312.pyc",
+          "bytes": 10778
+        },
+        {
+          "path": "adapters/habitat/__pycache__/raw.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/adapters/habitat/__pycache__/raw.cpython-312.pyc",
+          "bytes": 1542
+        }
+      ]
+    },
+    {
+      "kind": "regenerable_python_test_cache",
+      "target_path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/adapters/webots/__pycache__",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/adapters/webots/__pycache__",
+      "bytes": 6346,
+      "file_count": 2,
+      "action": "candidate_after_separate_approval",
+      "dependencies": "No runtime import depends on cached bytecode; .pytest_cache stores pytest state only. Confirm no process is using the target before cleanup.",
+      "reason": "Generated Python bytecode or pytest cache; source and tests remain the authoritative inputs.",
+      "regenerate": "Run the relevant Python module or pytest command; no model/dataset download required.",
+      "contents": [
+        {
+          "path": "adapters/webots/__pycache__/__init__.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/adapters/webots/__pycache__/__init__.cpython-312.pyc",
+          "bytes": 472
+        },
+        {
+          "path": "adapters/webots/__pycache__/capture.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/adapters/webots/__pycache__/capture.cpython-312.pyc",
+          "bytes": 5874
+        }
+      ]
+    },
+    {
+      "kind": "regenerable_python_test_cache",
+      "target_path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/evaluation/__pycache__",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/evaluation/__pycache__",
+      "bytes": 50963,
+      "file_count": 2,
+      "action": "candidate_after_separate_approval",
+      "dependencies": "No runtime import depends on cached bytecode; .pytest_cache stores pytest state only. Confirm no process is using the target before cleanup.",
+      "reason": "Generated Python bytecode or pytest cache; source and tests remain the authoritative inputs.",
+      "regenerate": "Run the relevant Python module or pytest command; no model/dataset download required.",
+      "contents": [
+        {
+          "path": "evaluation/__pycache__/__init__.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/evaluation/__pycache__/__init__.cpython-312.pyc",
+          "bytes": 280
+        },
+        {
+          "path": "evaluation/__pycache__/metrics.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/evaluation/__pycache__/metrics.cpython-312.pyc",
+          "bytes": 50683
+        }
+      ]
+    },
+    {
+      "kind": "regenerable_python_test_cache",
+      "target_path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__",
+      "bytes": 2910845,
+      "file_count": 131,
+      "action": "candidate_after_separate_approval",
+      "dependencies": "No runtime import depends on cached bytecode; .pytest_cache stores pytest state only. Confirm no process is using the target before cleanup.",
+      "reason": "Generated Python bytecode or pytest cache; source and tests remain the authoritative inputs.",
+      "regenerate": "Run the relevant Python module or pytest command; no model/dataset download required.",
+      "contents": [
+        {
+          "path": "scripts/__pycache__/analyze_complete_apartment_grid_trace.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/analyze_complete_apartment_grid_trace.cpython-312.pyc",
+          "bytes": 8193
+        },
+        {
+          "path": "scripts/__pycache__/archive_conceptgraphs_package.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/archive_conceptgraphs_package.cpython-312.pyc",
+          "bytes": 3099
+        },
+        {
+          "path": "scripts/__pycache__/audit_habitat_graph_quality.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/audit_habitat_graph_quality.cpython-312.pyc",
+          "bytes": 20075
+        },
+        {
+          "path": "scripts/__pycache__/audit_hm3d_minival.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/audit_hm3d_minival.cpython-312.pyc",
+          "bytes": 14845
+        },
+        {
+          "path": "scripts/__pycache__/audit_membership_events.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/audit_membership_events.cpython-312.pyc",
+          "bytes": 32512
+        },
+        {
+          "path": "scripts/__pycache__/audit_source_association_prefix.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/audit_source_association_prefix.cpython-312.pyc",
+          "bytes": 4621
+        },
+        {
+          "path": "scripts/__pycache__/build_apt0_room_review_context.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/build_apt0_room_review_context.cpython-312.pyc",
+          "bytes": 14615
+        },
+        {
+          "path": "scripts/__pycache__/build_conceptgraphs_input_package.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/build_conceptgraphs_input_package.cpython-312.pyc",
+          "bytes": 3126
+        },
+        {
+          "path": "scripts/__pycache__/build_conceptgraphs_kaggle_bundle.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/build_conceptgraphs_kaggle_bundle.cpython-312.pyc",
+          "bytes": 3402
+        },
+        {
+          "path": "scripts/__pycache__/build_hm3d_u4ov_review_html.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/build_hm3d_u4ov_review_html.cpython-312.pyc",
+          "bytes": 9468
+        },
+        {
+          "path": "scripts/__pycache__/build_k4_review_v2.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/build_k4_review_v2.cpython-312.pyc",
+          "bytes": 37205
+        },
+        {
+          "path": "scripts/__pycache__/build_q1_pilot_review.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/build_q1_pilot_review.cpython-312.pyc",
+          "bytes": 42980
+        },
+        {
+          "path": "scripts/__pycache__/build_u3_duplicate_partition_review.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/build_u3_duplicate_partition_review.cpython-312.pyc",
+          "bytes": 19154
+        },
+        {
+          "path": "scripts/__pycache__/build_u4_ov_causal_track_predictions.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/build_u4_ov_causal_track_predictions.cpython-312.pyc",
+          "bytes": 8800
+        },
+        {
+          "path": "scripts/__pycache__/build_u4ov_pilot_review_packet.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/build_u4ov_pilot_review_packet.cpython-312.pyc",
+          "bytes": 14425
+        },
+        {
+          "path": "scripts/__pycache__/build_u6_diagnostic_review.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/build_u6_diagnostic_review.cpython-312.pyc",
+          "bytes": 20550
+        },
+        {
+          "path": "scripts/__pycache__/build_u6_review_bundle.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/build_u6_review_bundle.cpython-312.pyc",
+          "bytes": 11760
+        },
+        {
+          "path": "scripts/__pycache__/capture_habitat_replica.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/capture_habitat_replica.cpython-312.pyc",
+          "bytes": 16713
+        },
+        {
+          "path": "scripts/__pycache__/check_conceptgraphs_dataset_adapter.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/check_conceptgraphs_dataset_adapter.cpython-312.pyc",
+          "bytes": 2033
+        },
+        {
+          "path": "scripts/__pycache__/check_u5_duplicate_v2_adapter_parity.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/check_u5_duplicate_v2_adapter_parity.cpython-312.pyc",
+          "bytes": 13988
+        },
+        {
+          "path": "scripts/__pycache__/compare_association_profiles.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/compare_association_profiles.cpython-312.pyc",
+          "bytes": 41084
+        },
+        {
+          "path": "scripts/__pycache__/compare_complete_apartment_profiles.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/compare_complete_apartment_profiles.cpython-312.pyc",
+          "bytes": 7737
+        },
+        {
+          "path": "scripts/__pycache__/compare_complete_apartment_repeatability.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/compare_complete_apartment_repeatability.cpython-312.pyc",
+          "bytes": 18600
+        },
+        {
+          "path": "scripts/__pycache__/compare_habitat_evaluations.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/compare_habitat_evaluations.cpython-312.pyc",
+          "bytes": 15042
+        },
+        {
+          "path": "scripts/__pycache__/compare_hm3d_resolution_runs.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/compare_hm3d_resolution_runs.cpython-312.pyc",
+          "bytes": 26144
+        },
+        {
+          "path": "scripts/__pycache__/compare_object_fusion_results.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/compare_object_fusion_results.cpython-312.pyc",
+          "bytes": 23565
+        },
+        {
+          "path": "scripts/__pycache__/compute_apt0_object_geometry_gt.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/compute_apt0_object_geometry_gt.cpython-312.pyc",
+          "bytes": 13427
+        },
+        {
+          "path": "scripts/__pycache__/conceptgraphs_kaggle_runner.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/conceptgraphs_kaggle_runner.cpython-312.pyc",
+          "bytes": 36001
+        },
+        {
+          "path": "scripts/__pycache__/create_apt0_membership_template.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/create_apt0_membership_template.cpython-312.pyc",
+          "bytes": 2691
+        },
+        {
+          "path": "scripts/__pycache__/diagnose_hm3d00800_p3_rejections.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/diagnose_hm3d00800_p3_rejections.cpython-312.pyc",
+          "bytes": 16528
+        },
+        {
+          "path": "scripts/__pycache__/diagnose_two_room_sequence.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/diagnose_two_room_sequence.cpython-312.pyc",
+          "bytes": 34843
+        },
+        {
+          "path": "scripts/__pycache__/doctor.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/doctor.cpython-312.pyc",
+          "bytes": 3739
+        },
+        {
+          "path": "scripts/__pycache__/download_u2_checkpoint.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/download_u2_checkpoint.cpython-312.pyc",
+          "bytes": 6081
+        },
+        {
+          "path": "scripts/__pycache__/download_u2_torch_wheel.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/download_u2_torch_wheel.cpython-312.pyc",
+          "bytes": 6424
+        },
+        {
+          "path": "scripts/__pycache__/enrich_room_semantics.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/enrich_room_semantics.cpython-312.pyc",
+          "bytes": 9709
+        },
+        {
+          "path": "scripts/__pycache__/evaluate_apt0_ground_truth.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/evaluate_apt0_ground_truth.cpython-312.pyc",
+          "bytes": 86624
+        },
+        {
+          "path": "scripts/__pycache__/evaluate_apt0_partition_comparison.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/evaluate_apt0_partition_comparison.cpython-312.pyc",
+          "bytes": 26998
+        },
+        {
+          "path": "scripts/__pycache__/evaluate_apt0_user_confirmed_partition.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/evaluate_apt0_user_confirmed_partition.cpython-312.pyc",
+          "bytes": 38599
+        },
+        {
+          "path": "scripts/__pycache__/evaluate_complete_apartment_profiles.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/evaluate_complete_apartment_profiles.cpython-312.pyc",
+          "bytes": 19432
+        },
+        {
+          "path": "scripts/__pycache__/evaluate_habitat_run.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/evaluate_habitat_run.cpython-312.pyc",
+          "bytes": 72494
+        },
+        {
+          "path": "scripts/__pycache__/evaluate_hm3d_object_gt.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/evaluate_hm3d_object_gt.cpython-312.pyc",
+          "bytes": 117399
+        },
+        {
+          "path": "scripts/__pycache__/evaluate_perception_annotations.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/evaluate_perception_annotations.cpython-312.pyc",
+          "bytes": 6807
+        },
+        {
+          "path": "scripts/__pycache__/evaluate_u4_ov_offline.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/evaluate_u4_ov_offline.cpython-312.pyc",
+          "bytes": 42184
+        },
+        {
+          "path": "scripts/__pycache__/evaluate_u4_semantic_fusion_offline.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/evaluate_u4_semantic_fusion_offline.cpython-312.pyc",
+          "bytes": 14064
+        },
+        {
+          "path": "scripts/__pycache__/evaluate_u6_human_diagnostic.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/evaluate_u6_human_diagnostic.cpython-312.pyc",
+          "bytes": 26455
+        },
+        {
+          "path": "scripts/__pycache__/evaluate_u6_offline.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/evaluate_u6_offline.cpython-312.pyc",
+          "bytes": 35744
+        },
+        {
+          "path": "scripts/__pycache__/export_complete_apartment_evaluation.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/export_complete_apartment_evaluation.cpython-312.pyc",
+          "bytes": 7115
+        },
+        {
+          "path": "scripts/__pycache__/export_complete_apartment_grid_diagnostics.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/export_complete_apartment_grid_diagnostics.cpython-312.pyc",
+          "bytes": 14345
+        },
+        {
+          "path": "scripts/__pycache__/export_m10_demo.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/export_m10_demo.cpython-312.pyc",
+          "bytes": 7086
+        },
+        {
+          "path": "scripts/__pycache__/export_scene_views.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/export_scene_views.cpython-312.pyc",
+          "bytes": 3184
+        },
+        {
+          "path": "scripts/__pycache__/export_selected_pointset_lineage.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/export_selected_pointset_lineage.cpython-312.pyc",
+          "bytes": 10529
+        },
+        {
+          "path": "scripts/__pycache__/export_u2_posthoc_pair_review.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/export_u2_posthoc_pair_review.cpython-312.pyc",
+          "bytes": 8386
+        },
+        {
+          "path": "scripts/__pycache__/export_u3_causal_holdout_review.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/export_u3_causal_holdout_review.cpython-312.pyc",
+          "bytes": 12660
+        },
+        {
+          "path": "scripts/__pycache__/export_u4_review_package.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/export_u4_review_package.cpython-312.pyc",
+          "bytes": 31212
+        },
+        {
+          "path": "scripts/__pycache__/extract_u2_appearance.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/extract_u2_appearance.cpython-312.pyc",
+          "bytes": 33763
+        },
+        {
+          "path": "scripts/__pycache__/extract_u2_dev_pilot_features.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/extract_u2_dev_pilot_features.cpython-312.pyc",
+          "bytes": 9915
+        },
+        {
+          "path": "scripts/__pycache__/extract_u2_scene_features.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/extract_u2_scene_features.cpython-312.pyc",
+          "bytes": 16841
+        },
+        {
+          "path": "scripts/__pycache__/extract_u3_causal_features.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/extract_u3_causal_features.cpython-312.pyc",
+          "bytes": 22686
+        },
+        {
+          "path": "scripts/__pycache__/finalize_apt0_gt_inputs.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/finalize_apt0_gt_inputs.cpython-312.pyc",
+          "bytes": 20344
+        },
+        {
+          "path": "scripts/__pycache__/finalize_u4_review_manifest.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/finalize_u4_review_manifest.cpython-312.pyc",
+          "bytes": 1499
+        },
+        {
+          "path": "scripts/__pycache__/hm3d_v02_download.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/hm3d_v02_download.cpython-312.pyc",
+          "bytes": 14461
+        },
+        {
+          "path": "scripts/__pycache__/lock_q4_margin_candidate.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/lock_q4_margin_candidate.cpython-312.pyc",
+          "bytes": 4081
+        },
+        {
+          "path": "scripts/__pycache__/lock_q4_semantic_inputs.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/lock_q4_semantic_inputs.cpython-312.pyc",
+          "bytes": 5631
+        },
+        {
+          "path": "scripts/__pycache__/lock_u4_ov_vocabulary.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/lock_u4_ov_vocabulary.cpython-312.pyc",
+          "bytes": 5202
+        },
+        {
+          "path": "scripts/__pycache__/lock_u4ov_dev_pilot_v2.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/lock_u4ov_dev_pilot_v2.cpython-312.pyc",
+          "bytes": 5737
+        },
+        {
+          "path": "scripts/__pycache__/lock_u4ov_new_scene_test.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/lock_u4ov_new_scene_test.cpython-312.pyc",
+          "bytes": 10677
+        },
+        {
+          "path": "scripts/__pycache__/m12_motor_geometry.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/m12_motor_geometry.cpython-312.pyc",
+          "bytes": 8923
+        },
+        {
+          "path": "scripts/__pycache__/m12_webots_preflight.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/m12_webots_preflight.cpython-312.pyc",
+          "bytes": 3678
+        },
+        {
+          "path": "scripts/__pycache__/m4_local_demo.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/m4_local_demo.cpython-312.pyc",
+          "bytes": 9872
+        },
+        {
+          "path": "scripts/__pycache__/normalize_apt0_confirmed_room_gt.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/normalize_apt0_confirmed_room_gt.cpython-312.pyc",
+          "bytes": 22147
+        },
+        {
+          "path": "scripts/__pycache__/object_fusion_launcher.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/object_fusion_launcher.cpython-312.pyc",
+          "bytes": 20823
+        },
+        {
+          "path": "scripts/__pycache__/preflight_habitat_run.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/preflight_habitat_run.cpython-312.pyc",
+          "bytes": 19071
+        },
+        {
+          "path": "scripts/__pycache__/prepare_apt0_room_annotation.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/prepare_apt0_room_annotation.cpython-312.pyc",
+          "bytes": 28122
+        },
+        {
+          "path": "scripts/__pycache__/prepare_u4_ov_evaluator_mappings.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/prepare_u4_ov_evaluator_mappings.cpython-312.pyc",
+          "bytes": 6869
+        },
+        {
+          "path": "scripts/__pycache__/preview_hm3d.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/preview_hm3d.cpython-312.pyc",
+          "bytes": 9956
+        },
+        {
+          "path": "scripts/__pycache__/preview_hm3d_candidates.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/preview_hm3d_candidates.cpython-312.pyc",
+          "bytes": 19354
+        },
+        {
+          "path": "scripts/__pycache__/process_m12_sensor_capture.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/process_m12_sensor_capture.cpython-312.pyc",
+          "bytes": 10276
+        },
+        {
+          "path": "scripts/__pycache__/project_detection_masks_to_3d.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/project_detection_masks_to_3d.cpython-312.pyc",
+          "bytes": 31165
+        },
+        {
+          "path": "scripts/__pycache__/q4_semantic_evaluation.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/q4_semantic_evaluation.cpython-312.pyc",
+          "bytes": 30475
+        },
+        {
+          "path": "scripts/__pycache__/record_u4_user_review_v1.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/record_u4_user_review_v1.cpython-312.pyc",
+          "bytes": 8196
+        },
+        {
+          "path": "scripts/__pycache__/refresh_apt0_gt_review_metadata.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/refresh_apt0_gt_review_metadata.cpython-312.pyc",
+          "bytes": 6683
+        },
+        {
+          "path": "scripts/__pycache__/render_apt0_instance_ground_truth.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/render_apt0_instance_ground_truth.cpython-312.pyc",
+          "bytes": 23172
+        },
+        {
+          "path": "scripts/__pycache__/render_habitat_observed_pointcloud.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/render_habitat_observed_pointcloud.cpython-312.pyc",
+          "bytes": 8597
+        },
+        {
+          "path": "scripts/__pycache__/render_membership_review_package.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/render_membership_review_package.cpython-312.pyc",
+          "bytes": 20380
+        },
+        {
+          "path": "scripts/__pycache__/report_object_graph_three_modes.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/report_object_graph_three_modes.cpython-312.pyc",
+          "bytes": 22265
+        },
+        {
+          "path": "scripts/__pycache__/run_habitat_native_replay.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/run_habitat_native_replay.cpython-312.pyc",
+          "bytes": 63533
+        },
+        {
+          "path": "scripts/__pycache__/run_m12_webots_live_bridge.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/run_m12_webots_live_bridge.cpython-312.pyc",
+          "bytes": 67529
+        },
+        {
+          "path": "scripts/__pycache__/run_m12_webots_native_replay.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/run_m12_webots_native_replay.cpython-312.pyc",
+          "bytes": 53383
+        },
+        {
+          "path": "scripts/__pycache__/run_native_pipeline_smoke.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/run_native_pipeline_smoke.cpython-312.pyc",
+          "bytes": 15182
+        },
+        {
+          "path": "scripts/__pycache__/run_native_rgbd_smoke.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/run_native_rgbd_smoke.cpython-312.pyc",
+          "bytes": 24978
+        },
+        {
+          "path": "scripts/__pycache__/run_native_two_room_rgbd_sequence.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/run_native_two_room_rgbd_sequence.cpython-312.pyc",
+          "bytes": 38400
+        },
+        {
+          "path": "scripts/__pycache__/run_object_fusion_offline.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/run_object_fusion_offline.cpython-312.pyc",
+          "bytes": 44142
+        },
+        {
+          "path": "scripts/__pycache__/run_q2_representation_ablation.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/run_q2_representation_ablation.cpython-312.pyc",
+          "bytes": 26574
+        },
+        {
+          "path": "scripts/__pycache__/run_q3_raw_class_ablation.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/run_q3_raw_class_ablation.cpython-312.pyc",
+          "bytes": 17323
+        },
+        {
+          "path": "scripts/__pycache__/run_q4_margin_candidate.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/run_q4_margin_candidate.cpython-312.pyc",
+          "bytes": 12785
+        },
+        {
+          "path": "scripts/__pycache__/run_q4_semantic_baseline.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/run_q4_semantic_baseline.cpython-312.pyc",
+          "bytes": 4107
+        },
+        {
+          "path": "scripts/__pycache__/run_region_object_room_labels.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/run_region_object_room_labels.cpython-312.pyc",
+          "bytes": 67170
+        },
+        {
+          "path": "scripts/__pycache__/run_replica_cad_instance_segmentation.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/run_replica_cad_instance_segmentation.cpython-312.pyc",
+          "bytes": 24182
+        },
+        {
+          "path": "scripts/__pycache__/run_u3_association_experiment.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/run_u3_association_experiment.cpython-312.pyc",
+          "bytes": 39083
+        },
+        {
+          "path": "scripts/__pycache__/run_u3_causal_prefix.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/run_u3_causal_prefix.cpython-312.pyc",
+          "bytes": 39737
+        },
+        {
+          "path": "scripts/__pycache__/run_u3_dev_pilot.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/run_u3_dev_pilot.cpython-312.pyc",
+          "bytes": 18976
+        },
+        {
+          "path": "scripts/__pycache__/run_u3_fixture_matrix.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/run_u3_fixture_matrix.cpython-312.pyc",
+          "bytes": 7010
+        },
+        {
+          "path": "scripts/__pycache__/run_u3_hm3d_route_v1.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/run_u3_hm3d_route_v1.cpython-312.pyc",
+          "bytes": 13783
+        },
+        {
+          "path": "scripts/__pycache__/run_u3_same_frame_duplicate_candidate_v2.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/run_u3_same_frame_duplicate_candidate_v2.cpython-312.pyc",
+          "bytes": 17953
+        },
+        {
+          "path": "scripts/__pycache__/run_u3_same_frame_duplicate_experiment.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/run_u3_same_frame_duplicate_experiment.cpython-312.pyc",
+          "bytes": 37279
+        },
+        {
+          "path": "scripts/__pycache__/run_u3_surface_support_candidate.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/run_u3_surface_support_candidate.cpython-312.pyc",
+          "bytes": 76285
+        },
+        {
+          "path": "scripts/__pycache__/run_u4_locked_temporal_test.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/run_u4_locked_temporal_test.cpython-312.pyc",
+          "bytes": 45320
+        },
+        {
+          "path": "scripts/__pycache__/run_u4_ov_offline.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/run_u4_ov_offline.cpython-312.pyc",
+          "bytes": 21973
+        },
+        {
+          "path": "scripts/__pycache__/run_u4_semantic_fusion_offline.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/run_u4_semantic_fusion_offline.cpython-312.pyc",
+          "bytes": 16297
+        },
+        {
+          "path": "scripts/__pycache__/run_u4ov_dev_pilot.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/run_u4ov_dev_pilot.cpython-312.pyc",
+          "bytes": 30768
+        },
+        {
+          "path": "scripts/__pycache__/run_u4ov_hm3d_route_v1.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/run_u4ov_hm3d_route_v1.cpython-312.pyc",
+          "bytes": 13824
+        },
+        {
+          "path": "scripts/__pycache__/run_u5_duplicate_v2_r23_fixed_region_m9_fixture.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/run_u5_duplicate_v2_r23_fixed_region_m9_fixture.cpython-312.pyc",
+          "bytes": 11001
+        },
+        {
+          "path": "scripts/__pycache__/scene_launcher.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/scene_launcher.cpython-312.pyc",
+          "bytes": 225488
+        },
+        {
+          "path": "scripts/__pycache__/score_k4_pixel_visibility.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/score_k4_pixel_visibility.cpython-312.pyc",
+          "bytes": 21164
+        },
+        {
+          "path": "scripts/__pycache__/score_q1_00808_reviewed_subset.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/score_q1_00808_reviewed_subset.cpython-312.pyc",
+          "bytes": 19786
+        },
+        {
+          "path": "scripts/__pycache__/score_u4_user_review_v1.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/score_u4_user_review_v1.cpython-312.pyc",
+          "bytes": 11745
+        },
+        {
+          "path": "scripts/__pycache__/score_u4ov_multiview_user_review_v1.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/score_u4ov_multiview_user_review_v1.cpython-312.pyc",
+          "bytes": 33181
+        },
+        {
+          "path": "scripts/__pycache__/scout_hm3d_route.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/scout_hm3d_route.cpython-312.pyc",
+          "bytes": 14414
+        },
+        {
+          "path": "scripts/__pycache__/summarize_detection_3d_ledger.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/summarize_detection_3d_ledger.cpython-312.pyc",
+          "bytes": 4959
+        },
+        {
+          "path": "scripts/__pycache__/u4_ov_evaluation_core.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/u4_ov_evaluation_core.cpython-312.pyc",
+          "bytes": 9250
+        },
+        {
+          "path": "scripts/__pycache__/u4ov_multiview_review_metrics.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/u4ov_multiview_review_metrics.cpython-312.pyc",
+          "bytes": 8263
+        },
+        {
+          "path": "scripts/__pycache__/u5_experimental.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/u5_experimental.cpython-312.pyc",
+          "bytes": 29656
+        },
+        {
+          "path": "scripts/__pycache__/u6_scoring.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/u6_scoring.cpython-312.pyc",
+          "bytes": 7711
+        },
+        {
+          "path": "scripts/__pycache__/validate_conceptgraphs_export.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/validate_conceptgraphs_export.cpython-312.pyc",
+          "bytes": 1479
+        },
+        {
+          "path": "scripts/__pycache__/validate_conceptgraphs_package.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/validate_conceptgraphs_package.cpython-312.pyc",
+          "bytes": 1468
+        },
+        {
+          "path": "scripts/__pycache__/validate_habitat_capture_geometry.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/validate_habitat_capture_geometry.cpython-312.pyc",
+          "bytes": 16771
+        },
+        {
+          "path": "scripts/__pycache__/validate_habitat_route.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/validate_habitat_route.cpython-312.pyc",
+          "bytes": 8651
+        },
+        {
+          "path": "scripts/__pycache__/validate_replica_cad_instance_capture.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/validate_replica_cad_instance_capture.cpython-312.pyc",
+          "bytes": 7773
+        },
+        {
+          "path": "scripts/__pycache__/validate_u2_appearance_artifacts.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/validate_u2_appearance_artifacts.cpython-312.pyc",
+          "bytes": 12562
+        },
+        {
+          "path": "scripts/__pycache__/verify_object_evidence_sidecar.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/verify_object_evidence_sidecar.cpython-312.pyc",
+          "bytes": 10303
+        },
+        {
+          "path": "scripts/__pycache__/verify_u1_pointset_parity.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/scripts/__pycache__/verify_u1_pointset_parity.cpython-312.pyc",
+          "bytes": 12287
+        }
+      ]
+    },
+    {
+      "kind": "regenerable_python_test_cache",
+      "target_path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/integration_v2/__pycache__",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/integration_v2/__pycache__",
+      "bytes": 29359,
+      "file_count": 4,
+      "action": "candidate_after_separate_approval",
+      "dependencies": "No runtime import depends on cached bytecode; .pytest_cache stores pytest state only. Confirm no process is using the target before cleanup.",
+      "reason": "Generated Python bytecode or pytest cache; source and tests remain the authoritative inputs.",
+      "regenerate": "Run the relevant Python module or pytest command; no model/dataset download required.",
+      "contents": [
+        {
+          "path": "integration_v2/__pycache__/__init__.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/integration_v2/__pycache__/__init__.cpython-312.pyc",
+          "bytes": 192
+        },
+        {
+          "path": "integration_v2/__pycache__/capture_package.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/integration_v2/__pycache__/capture_package.cpython-312.pyc",
+          "bytes": 17856
+        },
+        {
+          "path": "integration_v2/__pycache__/conceptgraphs_adapter.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/integration_v2/__pycache__/conceptgraphs_adapter.cpython-312.pyc",
+          "bytes": 6582
+        },
+        {
+          "path": "integration_v2/__pycache__/object_export_contract.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/integration_v2/__pycache__/object_export_contract.cpython-312.pyc",
+          "bytes": 4729
+        }
+      ]
+    },
+    {
+      "kind": "regenerable_python_test_cache",
+      "target_path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/__pycache__",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/__pycache__",
+      "bytes": 7694,
+      "file_count": 2,
+      "action": "candidate_after_separate_approval",
+      "dependencies": "No runtime import depends on cached bytecode; .pytest_cache stores pytest state only. Confirm no process is using the target before cleanup.",
+      "reason": "Generated Python bytecode or pytest cache; source and tests remain the authoritative inputs.",
+      "regenerate": "Run the relevant Python module or pytest command; no model/dataset download required.",
+      "contents": [
+        {
+          "path": "src/standalone_sg/__pycache__/__init__.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/__pycache__/__init__.cpython-312.pyc",
+          "bytes": 708
+        },
+        {
+          "path": "src/standalone_sg/__pycache__/resource_binding.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/__pycache__/resource_binding.cpython-312.pyc",
+          "bytes": 6986
+        }
+      ]
+    },
+    {
+      "kind": "regenerable_python_test_cache",
+      "target_path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/adapters/__pycache__",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/adapters/__pycache__",
+      "bytes": 256,
+      "file_count": 1,
+      "action": "candidate_after_separate_approval",
+      "dependencies": "No runtime import depends on cached bytecode; .pytest_cache stores pytest state only. Confirm no process is using the target before cleanup.",
+      "reason": "Generated Python bytecode or pytest cache; source and tests remain the authoritative inputs.",
+      "regenerate": "Run the relevant Python module or pytest command; no model/dataset download required.",
+      "contents": [
+        {
+          "path": "src/standalone_sg/adapters/__pycache__/__init__.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/adapters/__pycache__/__init__.cpython-312.pyc",
+          "bytes": 256
+        }
+      ]
+    },
+    {
+      "kind": "regenerable_python_test_cache",
+      "target_path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/adapters/semantic/__pycache__",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/adapters/semantic/__pycache__",
+      "bytes": 5286,
+      "file_count": 3,
+      "action": "candidate_after_separate_approval",
+      "dependencies": "No runtime import depends on cached bytecode; .pytest_cache stores pytest state only. Confirm no process is using the target before cleanup.",
+      "reason": "Generated Python bytecode or pytest cache; source and tests remain the authoritative inputs.",
+      "regenerate": "Run the relevant Python module or pytest command; no model/dataset download required.",
+      "contents": [
+        {
+          "path": "src/standalone_sg/adapters/semantic/__pycache__/__init__.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/adapters/semantic/__pycache__/__init__.cpython-312.pyc",
+          "bytes": 432
+        },
+        {
+          "path": "src/standalone_sg/adapters/semantic/__pycache__/base.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/adapters/semantic/__pycache__/base.cpython-312.pyc",
+          "bytes": 1095
+        },
+        {
+          "path": "src/standalone_sg/adapters/semantic/__pycache__/cached.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/adapters/semantic/__pycache__/cached.cpython-312.pyc",
+          "bytes": 3759
+        }
+      ]
+    },
+    {
+      "kind": "regenerable_python_test_cache",
+      "target_path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/config/__pycache__",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/config/__pycache__",
+      "bytes": 35742,
+      "file_count": 2,
+      "action": "candidate_after_separate_approval",
+      "dependencies": "No runtime import depends on cached bytecode; .pytest_cache stores pytest state only. Confirm no process is using the target before cleanup.",
+      "reason": "Generated Python bytecode or pytest cache; source and tests remain the authoritative inputs.",
+      "regenerate": "Run the relevant Python module or pytest command; no model/dataset download required.",
+      "contents": [
+        {
+          "path": "src/standalone_sg/config/__pycache__/__init__.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/config/__pycache__/__init__.cpython-312.pyc",
+          "bytes": 602
+        },
+        {
+          "path": "src/standalone_sg/config/__pycache__/schema.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/config/__pycache__/schema.cpython-312.pyc",
+          "bytes": 35140
+        }
+      ]
+    },
+    {
+      "kind": "regenerable_python_test_cache",
+      "target_path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/contracts/__pycache__",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/contracts/__pycache__",
+      "bytes": 34512,
+      "file_count": 5,
+      "action": "candidate_after_separate_approval",
+      "dependencies": "No runtime import depends on cached bytecode; .pytest_cache stores pytest state only. Confirm no process is using the target before cleanup.",
+      "reason": "Generated Python bytecode or pytest cache; source and tests remain the authoritative inputs.",
+      "regenerate": "Run the relevant Python module or pytest command; no model/dataset download required.",
+      "contents": [
+        {
+          "path": "src/standalone_sg/contracts/__pycache__/__init__.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/contracts/__pycache__/__init__.cpython-312.pyc",
+          "bytes": 771
+        },
+        {
+          "path": "src/standalone_sg/contracts/__pycache__/errors.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/contracts/__pycache__/errors.cpython-312.pyc",
+          "bytes": 472
+        },
+        {
+          "path": "src/standalone_sg/contracts/__pycache__/frames.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/contracts/__pycache__/frames.cpython-312.pyc",
+          "bytes": 12022
+        },
+        {
+          "path": "src/standalone_sg/contracts/__pycache__/objects.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/contracts/__pycache__/objects.cpython-312.pyc",
+          "bytes": 9201
+        },
+        {
+          "path": "src/standalone_sg/contracts/__pycache__/regions.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/contracts/__pycache__/regions.cpython-312.pyc",
+          "bytes": 12046
+        }
+      ]
+    },
+    {
+      "kind": "regenerable_python_test_cache",
+      "target_path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/geometry/__pycache__",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/geometry/__pycache__",
+      "bytes": 15498,
+      "file_count": 5,
+      "action": "candidate_after_separate_approval",
+      "dependencies": "No runtime import depends on cached bytecode; .pytest_cache stores pytest state only. Confirm no process is using the target before cleanup.",
+      "reason": "Generated Python bytecode or pytest cache; source and tests remain the authoritative inputs.",
+      "regenerate": "Run the relevant Python module or pytest command; no model/dataset download required.",
+      "contents": [
+        {
+          "path": "src/standalone_sg/geometry/__pycache__/__init__.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/geometry/__pycache__/__init__.cpython-312.pyc",
+          "bytes": 708
+        },
+        {
+          "path": "src/standalone_sg/geometry/__pycache__/backproject.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/geometry/__pycache__/backproject.cpython-312.pyc",
+          "bytes": 7702
+        },
+        {
+          "path": "src/standalone_sg/geometry/__pycache__/grid.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/geometry/__pycache__/grid.cpython-312.pyc",
+          "bytes": 2097
+        },
+        {
+          "path": "src/standalone_sg/geometry/__pycache__/simulator_frames.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/geometry/__pycache__/simulator_frames.cpython-312.pyc",
+          "bytes": 2627
+        },
+        {
+          "path": "src/standalone_sg/geometry/__pycache__/transforms.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/geometry/__pycache__/transforms.cpython-312.pyc",
+          "bytes": 2364
+        }
+      ]
+    },
+    {
+      "kind": "regenerable_python_test_cache",
+      "target_path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/mapping/__pycache__",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/mapping/__pycache__",
+      "bytes": 73072,
+      "file_count": 5,
+      "action": "candidate_after_separate_approval",
+      "dependencies": "No runtime import depends on cached bytecode; .pytest_cache stores pytest state only. Confirm no process is using the target before cleanup.",
+      "reason": "Generated Python bytecode or pytest cache; source and tests remain the authoritative inputs.",
+      "regenerate": "Run the relevant Python module or pytest command; no model/dataset download required.",
+      "contents": [
+        {
+          "path": "src/standalone_sg/mapping/__pycache__/__init__.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/mapping/__pycache__/__init__.cpython-312.pyc",
+          "bytes": 582
+        },
+        {
+          "path": "src/standalone_sg/mapping/__pycache__/grid_artifacts.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/mapping/__pycache__/grid_artifacts.cpython-312.pyc",
+          "bytes": 12598
+        },
+        {
+          "path": "src/standalone_sg/mapping/__pycache__/native.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/mapping/__pycache__/native.cpython-312.pyc",
+          "bytes": 25783
+        },
+        {
+          "path": "src/standalone_sg/mapping/__pycache__/native_pipeline.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/mapping/__pycache__/native_pipeline.cpython-312.pyc",
+          "bytes": 14112
+        },
+        {
+          "path": "src/standalone_sg/mapping/__pycache__/projection.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/mapping/__pycache__/projection.cpython-312.pyc",
+          "bytes": 19997
+        }
+      ]
+    },
+    {
+      "kind": "regenerable_python_test_cache",
+      "target_path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/navigation/__pycache__",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/navigation/__pycache__",
+      "bytes": 12281,
+      "file_count": 2,
+      "action": "candidate_after_separate_approval",
+      "dependencies": "No runtime import depends on cached bytecode; .pytest_cache stores pytest state only. Confirm no process is using the target before cleanup.",
+      "reason": "Generated Python bytecode or pytest cache; source and tests remain the authoritative inputs.",
+      "regenerate": "Run the relevant Python module or pytest command; no model/dataset download required.",
+      "contents": [
+        {
+          "path": "src/standalone_sg/navigation/__pycache__/__init__.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/navigation/__pycache__/__init__.cpython-312.pyc",
+          "bytes": 401
+        },
+        {
+          "path": "src/standalone_sg/navigation/__pycache__/blocks.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/navigation/__pycache__/blocks.cpython-312.pyc",
+          "bytes": 11880
+        }
+      ]
+    },
+    {
+      "kind": "regenerable_python_test_cache",
+      "target_path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/objects/__pycache__",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/objects/__pycache__",
+      "bytes": 154514,
+      "file_count": 12,
+      "action": "candidate_after_separate_approval",
+      "dependencies": "No runtime import depends on cached bytecode; .pytest_cache stores pytest state only. Confirm no process is using the target before cleanup.",
+      "reason": "Generated Python bytecode or pytest cache; source and tests remain the authoritative inputs.",
+      "regenerate": "Run the relevant Python module or pytest command; no model/dataset download required.",
+      "contents": [
+        {
+          "path": "src/standalone_sg/objects/__pycache__/__init__.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/objects/__pycache__/__init__.cpython-312.pyc",
+          "bytes": 464
+        },
+        {
+          "path": "src/standalone_sg/objects/__pycache__/association.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/objects/__pycache__/association.cpython-312.pyc",
+          "bytes": 11177
+        },
+        {
+          "path": "src/standalone_sg/objects/__pycache__/duplicate_partition_review.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/objects/__pycache__/duplicate_partition_review.cpython-312.pyc",
+          "bytes": 7091
+        },
+        {
+          "path": "src/standalone_sg/objects/__pycache__/lifecycle.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/objects/__pycache__/lifecycle.cpython-312.pyc",
+          "bytes": 21071
+        },
+        {
+          "path": "src/standalone_sg/objects/__pycache__/object_geometry_fusion.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/objects/__pycache__/object_geometry_fusion.cpython-312.pyc",
+          "bytes": 14403
+        },
+        {
+          "path": "src/standalone_sg/objects/__pycache__/pixel_visibility.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/objects/__pycache__/pixel_visibility.cpython-312.pyc",
+          "bytes": 9048
+        },
+        {
+          "path": "src/standalone_sg/objects/__pycache__/profile_comparison.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/objects/__pycache__/profile_comparison.cpython-312.pyc",
+          "bytes": 9872
+        },
+        {
+          "path": "src/standalone_sg/objects/__pycache__/same_frame_duplicates.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/objects/__pycache__/same_frame_duplicates.cpython-312.pyc",
+          "bytes": 14289
+        },
+        {
+          "path": "src/standalone_sg/objects/__pycache__/same_frame_duplicates_v2.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/objects/__pycache__/same_frame_duplicates_v2.cpython-312.pyc",
+          "bytes": 8369
+        },
+        {
+          "path": "src/standalone_sg/objects/__pycache__/surface_support.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/objects/__pycache__/surface_support.cpython-312.pyc",
+          "bytes": 5774
+        },
+        {
+          "path": "src/standalone_sg/objects/__pycache__/u3_experimental.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/objects/__pycache__/u3_experimental.cpython-312.pyc",
+          "bytes": 29872
+        },
+        {
+          "path": "src/standalone_sg/objects/__pycache__/u5_backends.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/objects/__pycache__/u5_backends.cpython-312.pyc",
+          "bytes": 23084
+        }
+      ]
+    },
+    {
+      "kind": "regenerable_python_test_cache",
+      "target_path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/pipeline/__pycache__",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/pipeline/__pycache__",
+      "bytes": 64746,
+      "file_count": 5,
+      "action": "candidate_after_separate_approval",
+      "dependencies": "No runtime import depends on cached bytecode; .pytest_cache stores pytest state only. Confirm no process is using the target before cleanup.",
+      "reason": "Generated Python bytecode or pytest cache; source and tests remain the authoritative inputs.",
+      "regenerate": "Run the relevant Python module or pytest command; no model/dataset download required.",
+      "contents": [
+        {
+          "path": "src/standalone_sg/pipeline/__pycache__/__init__.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/pipeline/__pycache__/__init__.cpython-312.pyc",
+          "bytes": 659
+        },
+        {
+          "path": "src/standalone_sg/pipeline/__pycache__/builder.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/pipeline/__pycache__/builder.cpython-312.pyc",
+          "bytes": 41928
+        },
+        {
+          "path": "src/standalone_sg/pipeline/__pycache__/contracts.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/pipeline/__pycache__/contracts.cpython-312.pyc",
+          "bytes": 15180
+        },
+        {
+          "path": "src/standalone_sg/pipeline/__pycache__/scheduler.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/pipeline/__pycache__/scheduler.cpython-312.pyc",
+          "bytes": 3979
+        },
+        {
+          "path": "src/standalone_sg/pipeline/__pycache__/stages.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/pipeline/__pycache__/stages.cpython-312.pyc",
+          "bytes": 3000
+        }
+      ]
+    },
+    {
+      "kind": "regenerable_python_test_cache",
+      "target_path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/regions/__pycache__",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/regions/__pycache__",
+      "bytes": 43834,
+      "file_count": 5,
+      "action": "candidate_after_separate_approval",
+      "dependencies": "No runtime import depends on cached bytecode; .pytest_cache stores pytest state only. Confirm no process is using the target before cleanup.",
+      "reason": "Generated Python bytecode or pytest cache; source and tests remain the authoritative inputs.",
+      "regenerate": "Run the relevant Python module or pytest command; no model/dataset download required.",
+      "contents": [
+        {
+          "path": "src/standalone_sg/regions/__pycache__/__init__.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/regions/__pycache__/__init__.cpython-312.pyc",
+          "bytes": 480
+        },
+        {
+          "path": "src/standalone_sg/regions/__pycache__/dude_client.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/regions/__pycache__/dude_client.cpython-312.pyc",
+          "bytes": 23141
+        },
+        {
+          "path": "src/standalone_sg/regions/__pycache__/guard.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/regions/__pycache__/guard.cpython-312.pyc",
+          "bytes": 5905
+        },
+        {
+          "path": "src/standalone_sg/regions/__pycache__/pipeline.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/regions/__pycache__/pipeline.cpython-312.pyc",
+          "bytes": 3856
+        },
+        {
+          "path": "src/standalone_sg/regions/__pycache__/tracker.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/regions/__pycache__/tracker.cpython-312.pyc",
+          "bytes": 10452
+        }
+      ]
+    },
+    {
+      "kind": "regenerable_python_test_cache",
+      "target_path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/rooms/__pycache__",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/rooms/__pycache__",
+      "bytes": 42763,
+      "file_count": 5,
+      "action": "candidate_after_separate_approval",
+      "dependencies": "No runtime import depends on cached bytecode; .pytest_cache stores pytest state only. Confirm no process is using the target before cleanup.",
+      "reason": "Generated Python bytecode or pytest cache; source and tests remain the authoritative inputs.",
+      "regenerate": "Run the relevant Python module or pytest command; no model/dataset download required.",
+      "contents": [
+        {
+          "path": "src/standalone_sg/rooms/__pycache__/__init__.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/rooms/__pycache__/__init__.cpython-312.pyc",
+          "bytes": 608
+        },
+        {
+          "path": "src/standalone_sg/rooms/__pycache__/anchoring.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/rooms/__pycache__/anchoring.cpython-312.pyc",
+          "bytes": 15646
+        },
+        {
+          "path": "src/standalone_sg/rooms/__pycache__/geometry.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/rooms/__pycache__/geometry.cpython-312.pyc",
+          "bytes": 11798
+        },
+        {
+          "path": "src/standalone_sg/rooms/__pycache__/membership.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/rooms/__pycache__/membership.cpython-312.pyc",
+          "bytes": 11163
+        },
+        {
+          "path": "src/standalone_sg/rooms/__pycache__/relink.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/rooms/__pycache__/relink.cpython-312.pyc",
+          "bytes": 3548
+        }
+      ]
+    },
+    {
+      "kind": "regenerable_python_test_cache",
+      "target_path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/semantics/__pycache__",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/semantics/__pycache__",
+      "bytes": 66004,
+      "file_count": 5,
+      "action": "candidate_after_separate_approval",
+      "dependencies": "No runtime import depends on cached bytecode; .pytest_cache stores pytest state only. Confirm no process is using the target before cleanup.",
+      "reason": "Generated Python bytecode or pytest cache; source and tests remain the authoritative inputs.",
+      "regenerate": "Run the relevant Python module or pytest command; no model/dataset download required.",
+      "contents": [
+        {
+          "path": "src/standalone_sg/semantics/__pycache__/__init__.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/semantics/__pycache__/__init__.cpython-312.pyc",
+          "bytes": 606
+        },
+        {
+          "path": "src/standalone_sg/semantics/__pycache__/adapters.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/semantics/__pycache__/adapters.cpython-312.pyc",
+          "bytes": 12962
+        },
+        {
+          "path": "src/standalone_sg/semantics/__pycache__/evidence.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/semantics/__pycache__/evidence.cpython-312.pyc",
+          "bytes": 17797
+        },
+        {
+          "path": "src/standalone_sg/semantics/__pycache__/room_labeler.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/semantics/__pycache__/room_labeler.cpython-312.pyc",
+          "bytes": 20479
+        },
+        {
+          "path": "src/standalone_sg/semantics/__pycache__/u4_class_fusion.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/semantics/__pycache__/u4_class_fusion.cpython-312.pyc",
+          "bytes": 14160
+        }
+      ]
+    },
+    {
+      "kind": "regenerable_python_test_cache",
+      "target_path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/serialization/__pycache__",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/serialization/__pycache__",
+      "bytes": 38492,
+      "file_count": 2,
+      "action": "candidate_after_separate_approval",
+      "dependencies": "No runtime import depends on cached bytecode; .pytest_cache stores pytest state only. Confirm no process is using the target before cleanup.",
+      "reason": "Generated Python bytecode or pytest cache; source and tests remain the authoritative inputs.",
+      "regenerate": "Run the relevant Python module or pytest command; no model/dataset download required.",
+      "contents": [
+        {
+          "path": "src/standalone_sg/serialization/__pycache__/__init__.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/serialization/__pycache__/__init__.cpython-312.pyc",
+          "bytes": 794
+        },
+        {
+          "path": "src/standalone_sg/serialization/__pycache__/json_graph.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/serialization/__pycache__/json_graph.cpython-312.pyc",
+          "bytes": 37698
+        }
+      ]
+    },
+    {
+      "kind": "regenerable_python_test_cache",
+      "target_path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/visualization/__pycache__",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/visualization/__pycache__",
+      "bytes": 45084,
+      "file_count": 3,
+      "action": "candidate_after_separate_approval",
+      "dependencies": "No runtime import depends on cached bytecode; .pytest_cache stores pytest state only. Confirm no process is using the target before cleanup.",
+      "reason": "Generated Python bytecode or pytest cache; source and tests remain the authoritative inputs.",
+      "regenerate": "Run the relevant Python module or pytest command; no model/dataset download required.",
+      "contents": [
+        {
+          "path": "src/standalone_sg/visualization/__pycache__/__init__.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/visualization/__pycache__/__init__.cpython-312.pyc",
+          "bytes": 504
+        },
+        {
+          "path": "src/standalone_sg/visualization/__pycache__/live_overlay.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/visualization/__pycache__/live_overlay.cpython-312.pyc",
+          "bytes": 20489
+        },
+        {
+          "path": "src/standalone_sg/visualization/__pycache__/plots.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/src/standalone_sg/visualization/__pycache__/plots.cpython-312.pyc",
+          "bytes": 24091
+        }
+      ]
+    },
+    {
+      "kind": "regenerable_python_test_cache",
+      "target_path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__",
+      "bytes": 1564284,
+      "file_count": 85,
+      "action": "candidate_after_separate_approval",
+      "dependencies": "No runtime import depends on cached bytecode; .pytest_cache stores pytest state only. Confirm no process is using the target before cleanup.",
+      "reason": "Generated Python bytecode or pytest cache; source and tests remain the authoritative inputs.",
+      "regenerate": "Run the relevant Python module or pytest command; no model/dataset download required.",
+      "contents": [
+        {
+          "path": "tests/__pycache__/conftest.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/conftest.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 1662
+        },
+        {
+          "path": "tests/__pycache__/test_backproject.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_backproject.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 22319
+        },
+        {
+          "path": "tests/__pycache__/test_compare_habitat_evaluations.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_compare_habitat_evaluations.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 7661
+        },
+        {
+          "path": "tests/__pycache__/test_conceptgraphs_adapter.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_conceptgraphs_adapter.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 16323
+        },
+        {
+          "path": "tests/__pycache__/test_conceptgraphs_kaggle_runner.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_conceptgraphs_kaggle_runner.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 6295
+        },
+        {
+          "path": "tests/__pycache__/test_conceptgraphs_output_contract.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_conceptgraphs_output_contract.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 3274
+        },
+        {
+          "path": "tests/__pycache__/test_config.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_config.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 17818
+        },
+        {
+          "path": "tests/__pycache__/test_coordinates.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_coordinates.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 21016
+        },
+        {
+          "path": "tests/__pycache__/test_duplicate_partition_review.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_duplicate_partition_review.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 10068
+        },
+        {
+          "path": "tests/__pycache__/test_frames.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_frames.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 5818
+        },
+        {
+          "path": "tests/__pycache__/test_ground_truth_metrics.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_ground_truth_metrics.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 36731
+        },
+        {
+          "path": "tests/__pycache__/test_habitat_adapter.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_habitat_adapter.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 12886
+        },
+        {
+          "path": "tests/__pycache__/test_habitat_evaluation_bundle.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_habitat_evaluation_bundle.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 8491
+        },
+        {
+          "path": "tests/__pycache__/test_hm3d_object_gt_evaluator.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_hm3d_object_gt_evaluator.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 49612
+        },
+        {
+          "path": "tests/__pycache__/test_hm3d_preparation.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_hm3d_preparation.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 10665
+        },
+        {
+          "path": "tests/__pycache__/test_k4_review_builder.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_k4_review_builder.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 7217
+        },
+        {
+          "path": "tests/__pycache__/test_m10_serialization.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m10_serialization.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 30642
+        },
+        {
+          "path": "tests/__pycache__/test_m11_native_smoke.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m11_native_smoke.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 12501
+        },
+        {
+          "path": "tests/__pycache__/test_m11_rgbd_smoke.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m11_rgbd_smoke.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 21220
+        },
+        {
+          "path": "tests/__pycache__/test_m11_two_room_sequence.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m11_two_room_sequence.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 27927
+        },
+        {
+          "path": "tests/__pycache__/test_m12_live_overlay.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m12_live_overlay.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 25036
+        },
+        {
+          "path": "tests/__pycache__/test_m12_motor_contract.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m12_motor_contract.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 24504
+        },
+        {
+          "path": "tests/__pycache__/test_m12_replay_policy.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m12_replay_policy.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 5021
+        },
+        {
+          "path": "tests/__pycache__/test_m12_route_recording.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m12_route_recording.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 15523
+        },
+        {
+          "path": "tests/__pycache__/test_m12_webots_preflight.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m12_webots_preflight.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 3150
+        },
+        {
+          "path": "tests/__pycache__/test_m2_octomap.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m2_octomap.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 15403
+        },
+        {
+          "path": "tests/__pycache__/test_m2_worker.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m2_worker.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 19337
+        },
+        {
+          "path": "tests/__pycache__/test_m3_grid_artifacts.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m3_grid_artifacts.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 6604
+        },
+        {
+          "path": "tests/__pycache__/test_m3_native_integration.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m3_native_integration.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 35690
+        },
+        {
+          "path": "tests/__pycache__/test_m3_projection.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m3_projection.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 17489
+        },
+        {
+          "path": "tests/__pycache__/test_m3_source_parity.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m3_source_parity.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 20833
+        },
+        {
+          "path": "tests/__pycache__/test_m4_degenerate_resolution.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m4_degenerate_resolution.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 4450
+        },
+        {
+          "path": "tests/__pycache__/test_m4_dude.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m4_dude.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 23270
+        },
+        {
+          "path": "tests/__pycache__/test_m4_m5_m8_integration.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m4_m5_m8_integration.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 18088
+        },
+        {
+          "path": "tests/__pycache__/test_m4_source_parity.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m4_source_parity.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 23113
+        },
+        {
+          "path": "tests/__pycache__/test_m4_stateful_worker.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m4_stateful_worker.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 20033
+        },
+        {
+          "path": "tests/__pycache__/test_m4_worker_lifecycle.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m4_worker_lifecycle.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 3790
+        },
+        {
+          "path": "tests/__pycache__/test_m5_regions.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m5_regions.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 75082
+        },
+        {
+          "path": "tests/__pycache__/test_m6_object_association.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m6_object_association.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 52088
+        },
+        {
+          "path": "tests/__pycache__/test_m6_object_association.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m6_object_association.cpython-312.pyc",
+          "bytes": 17994
+        },
+        {
+          "path": "tests/__pycache__/test_m7_m8_contract.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m7_m8_contract.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 20435
+        },
+        {
+          "path": "tests/__pycache__/test_m7_navigation.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m7_navigation.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 41004
+        },
+        {
+          "path": "tests/__pycache__/test_m8_rooms.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m8_rooms.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 42158
+        },
+        {
+          "path": "tests/__pycache__/test_m9_builder.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m9_builder.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 82695
+        },
+        {
+          "path": "tests/__pycache__/test_m9_object_lifecycle.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_m9_object_lifecycle.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 21034
+        },
+        {
+          "path": "tests/__pycache__/test_object_fusion_launcher.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_object_fusion_launcher.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 39179
+        },
+        {
+          "path": "tests/__pycache__/test_object_geometry_fusion.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_object_geometry_fusion.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 18935
+        },
+        {
+          "path": "tests/__pycache__/test_p3_object_evidence_indices.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_p3_object_evidence_indices.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 4159
+        },
+        {
+          "path": "tests/__pycache__/test_perception_cache.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_perception_cache.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 5636
+        },
+        {
+          "path": "tests/__pycache__/test_perception_runtime_config.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_perception_runtime_config.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 4010
+        },
+        {
+          "path": "tests/__pycache__/test_pixel_visibility.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_pixel_visibility.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 26957
+        },
+        {
+          "path": "tests/__pycache__/test_pixel_visibility.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_pixel_visibility.cpython-312.pyc",
+          "bytes": 13189
+        },
+        {
+          "path": "tests/__pycache__/test_profile_comparison.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_profile_comparison.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 17169
+        },
+        {
+          "path": "tests/__pycache__/test_q1_reviewed_subset_scorer.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_q1_reviewed_subset_scorer.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 4841
+        },
+        {
+          "path": "tests/__pycache__/test_q4_semantic_evaluation.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_q4_semantic_evaluation.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 19631
+        },
+        {
+          "path": "tests/__pycache__/test_region_object_room_semantics.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_region_object_room_semantics.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 18038
+        },
+        {
+          "path": "tests/__pycache__/test_replica_cad_instance_capture.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_replica_cad_instance_capture.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 4542
+        },
+        {
+          "path": "tests/__pycache__/test_resource_binding.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_resource_binding.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 4382
+        },
+        {
+          "path": "tests/__pycache__/test_room_semantics.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_room_semantics.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 17569
+        },
+        {
+          "path": "tests/__pycache__/test_same_frame_duplicate_candidate.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_same_frame_duplicate_candidate.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 27060
+        },
+        {
+          "path": "tests/__pycache__/test_same_frame_duplicate_candidate_v2.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_same_frame_duplicate_candidate_v2.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 27272
+        },
+        {
+          "path": "tests/__pycache__/test_scene_launcher.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_scene_launcher.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 63940
+        },
+        {
+          "path": "tests/__pycache__/test_scene_launcher.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_scene_launcher.cpython-312.pyc",
+          "bytes": 27057
+        },
+        {
+          "path": "tests/__pycache__/test_scene_launcher_object_gt.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_scene_launcher_object_gt.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 26622
+        },
+        {
+          "path": "tests/__pycache__/test_surface_support_association.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_surface_support_association.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 27076
+        },
+        {
+          "path": "tests/__pycache__/test_surface_support_association.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_surface_support_association.cpython-312.pyc",
+          "bytes": 13416
+        },
+        {
+          "path": "tests/__pycache__/test_u3_experimental_association.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_u3_experimental_association.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 37996
+        },
+        {
+          "path": "tests/__pycache__/test_u3_experimental_association.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_u3_experimental_association.cpython-312.pyc",
+          "bytes": 7219
+        },
+        {
+          "path": "tests/__pycache__/test_u3_surface_candidate_report.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_u3_surface_candidate_report.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 3879
+        },
+        {
+          "path": "tests/__pycache__/test_u4_class_fusion.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_u4_class_fusion.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 10453
+        },
+        {
+          "path": "tests/__pycache__/test_u4_class_fusion.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_u4_class_fusion.cpython-312.pyc",
+          "bytes": 4617
+        },
+        {
+          "path": "tests/__pycache__/test_u4_ov_evaluation_core.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_u4_ov_evaluation_core.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 5438
+        },
+        {
+          "path": "tests/__pycache__/test_u4_ov_evaluation_core.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_u4_ov_evaluation_core.cpython-312.pyc",
+          "bytes": 5255
+        },
+        {
+          "path": "tests/__pycache__/test_u4ov_multiview_review_metrics.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_u4ov_multiview_review_metrics.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 6450
+        },
+        {
+          "path": "tests/__pycache__/test_u4ov_multiview_review_metrics.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_u4ov_multiview_review_metrics.cpython-312.pyc",
+          "bytes": 6337
+        },
+        {
+          "path": "tests/__pycache__/test_u5_backends.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_u5_backends.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 6921
+        },
+        {
+          "path": "tests/__pycache__/test_u5_duplicate_v2_backend.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_u5_duplicate_v2_backend.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 13183
+        },
+        {
+          "path": "tests/__pycache__/test_u5_duplicate_v2_backend.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_u5_duplicate_v2_backend.cpython-312.pyc",
+          "bytes": 13000
+        },
+        {
+          "path": "tests/__pycache__/test_u5_experimental_sidecar.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_u5_experimental_sidecar.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 3981
+        },
+        {
+          "path": "tests/__pycache__/test_u5_experimental_sidecar.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_u5_experimental_sidecar.cpython-312.pyc",
+          "bytes": 3798
+        },
+        {
+          "path": "tests/__pycache__/test_u6_diagnostic_review.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_u6_diagnostic_review.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 9302
+        },
+        {
+          "path": "tests/__pycache__/test_u6_human_diagnostic.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_u6_human_diagnostic.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 14759
+        },
+        {
+          "path": "tests/__pycache__/test_u6_scoring.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_u6_scoring.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 10036
+        },
+        {
+          "path": "tests/__pycache__/test_visualization_views.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_visualization_views.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 8102
+        },
+        {
+          "path": "tests/__pycache__/test_webots_adapter.cpython-312-pytest-7.4.4.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/tests/__pycache__/test_webots_adapter.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 18908
+        }
+      ]
+    },
+    {
+      "kind": "regenerable_python_test_cache",
+      "target_path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/webots/controllers/m12_motor_capture/__pycache__",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/webots/controllers/m12_motor_capture/__pycache__",
+      "bytes": 18886,
+      "file_count": 2,
+      "action": "candidate_after_separate_approval",
+      "dependencies": "No runtime import depends on cached bytecode; .pytest_cache stores pytest state only. Confirm no process is using the target before cleanup.",
+      "reason": "Generated Python bytecode or pytest cache; source and tests remain the authoritative inputs.",
+      "regenerate": "Run the relevant Python module or pytest command; no model/dataset download required.",
+      "contents": [
+        {
+          "path": "webots/controllers/m12_motor_capture/__pycache__/live_overlay_protocol.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/webots/controllers/m12_motor_capture/__pycache__/live_overlay_protocol.cpython-312.pyc",
+          "bytes": 6486
+        },
+        {
+          "path": "webots/controllers/m12_motor_capture/__pycache__/route_recording.cpython-312.pyc",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/webots/controllers/m12_motor_capture/__pycache__/route_recording.cpython-312.pyc",
+          "bytes": 12400
+        }
+      ]
+    },
+    {
+      "kind": "conditional_offline_wheel_cache",
+      "target_path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/cache/appearance_wheels/torch-2.6.0+cpu-cp312-cp312-linux_x86_64.whl",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/cache/appearance_wheels/torch-2.6.0+cpu-cp312-cp312-linux_x86_64.whl",
+      "bytes": 178578006,
+      "file_count": 1,
+      "sha256": "59e78aa0c690f70734e42670036d6b541930b8eabbaa18d94e090abf14cc4d91",
+      "locked_sha256": "59e78aa0c690f70734e42670036d6b541930b8eabbaa18d94e090abf14cc4d91",
+      "action": "conditional_candidate_after_explicit_approval",
+      "dependencies": "Not imported at runtime. It is an offline install source referenced by locks/appearance_dependencies.lock.json; deleting it removes local offline reinstall capability. The small metadata JSON and lock remain protected.",
+      "reason": "Exact wheel is reproducible from the recorded URL and SHA-256, but re-fetch requires network/access to the PyTorch wheel index.",
+      "regenerate": "python3 -m pip download --no-deps --only-binary=:all: --dest artifacts/cache/appearance_wheels 'torch==2.6.0+cpu' --index-url https://download.pytorch.org/whl/cpu ; verify SHA-256 against locks/appearance_dependencies.lock.json before reuse.",
+      "contents": [
+        {
+          "path": "artifacts/cache/appearance_wheels/torch-2.6.0+cpu-cp312-cp312-linux_x86_64.whl",
+          "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/cache/appearance_wheels/torch-2.6.0+cpu-cp312-cp312-linux_x86_64.whl",
+          "bytes": 178578006,
+          "sha256": "59e78aa0c690f70734e42670036d6b541930b8eabbaa18d94e090abf14cc4d91"
+        }
+      ]
+    }
+  ],
+  "protected_paths": [
+    {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/runs/q1_00808_20261011T160830Z/capture",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/runs/q1_00808_20261011T160830Z/capture",
+      "exists": true,
+      "status": "keep_protected",
+      "reason": "Locked Kaggle pilot input; proposal and package manifest reference its hashes."
+    },
+    {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/runs/hm3d_00802_20261011T033053.236654Z_086a73",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/runs/hm3d_00802_20261011T033053.236654Z_086a73",
+      "exists": true,
+      "status": "keep_protected",
+      "reason": "Development baseline/capture used by object graph experiments."
+    },
+    {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/runs/u5m9_20261011T035542.851355Z_b39b87",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/runs/u5m9_20261011T035542.851355Z_b39b87",
+      "exists": true,
+      "status": "keep_protected",
+      "reason": "Source replay reference."
+    },
+    {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/runs/u5m9_20261011T035821.873971Z_5aaaf1",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/runs/u5m9_20261011T035821.873971Z_5aaaf1",
+      "exists": true,
+      "status": "keep_protected",
+      "reason": "Dedup replay reference."
+    },
+    {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/audits",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/audits",
+      "exists": true,
+      "status": "keep_protected",
+      "reason": "Human annotation sources, evaluator ledgers, sidecars and experiment evidence; preserve all history."
+    },
+    {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/reviews",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/reviews",
+      "exists": true,
+      "status": "keep_protected",
+      "reason": "Human review inputs and provenance."
+    },
+    {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/gt_cache",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/gt_cache",
+      "exists": true,
+      "status": "keep_protected",
+      "reason": "Reusable evaluator cache; expensive to reconstruct."
+    },
+    {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/checkpoints/r0_20261012",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/checkpoints/r0_20261012",
+      "exists": true,
+      "status": "keep_protected",
+      "reason": "Recovery checkpoint for source/config/docs/locks."
+    },
+    {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/locks",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/locks",
+      "exists": true,
+      "status": "keep_protected",
+      "reason": "Resource, model, dependency, repository and experiment locks."
+    },
+    {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/models",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/models",
+      "exists": true,
+      "status": "keep_protected",
+      "reason": "Locked model/checkpoint material; not cleanup candidate."
+    },
+    {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/integration_v2",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/artifacts/integration_v2",
+      "exists": true,
+      "status": "keep_protected",
+      "reason": "Pilot package, code bundles and Kaggle handoff artifacts."
+    },
+    {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/notebooks/conceptgraphs_detect_q1_00808.ipynb",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/notebooks/conceptgraphs_detect_q1_00808.ipynb",
+      "exists": true,
+      "status": "keep_protected",
+      "reason": "Active R3 notebook."
+    },
+    {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/ref_ConceptGraph/concept-graphs",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/ref_ConceptGraph/concept-graphs",
+      "exists": true,
+      "status": "keep_protected",
+      "reason": "Pinned ConceptGraphs reference repository; read-only."
+    },
+    {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/ref_OccuSG/OccuSG",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/ref_OccuSG/OccuSG",
+      "exists": true,
+      "status": "keep_protected",
+      "reason": "Pinned OccuSG reference repository; read-only."
+    },
+    {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Rebuild_3DScene_OccuSG",
+      "exists": true,
+      "status": "keep_protected",
+      "reason": "External read-only baseline; outside cleanup scope."
+    },
+    {
+      "path": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/.venv-appearance",
+      "realpath": "/home/kiettran05/Desktop/test_Room_segmentation/Fusion_Concept_OccuSG/.venv-appearance",
+      "exists": true,
+      "status": "keep_protected",
+      "reason": "Legacy U2/U4-OV environment; preserve pending explicit retirement decision."
+    }
+  ],
+  "reclaimable_bytes_if_all_candidates_later_approved": 183864234,
+  "reclaimable_breakdown_bytes": {
+    "regenerable": 5286228,
+    "conditional": 178578006
+  },
+  "limitations": "Folder byte totals are current allocated file lengths, not filesystem block usage. Re-measure immediately before any approved cleanup; no deletion approval is implied."
+}

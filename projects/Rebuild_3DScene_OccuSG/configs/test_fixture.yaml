@@ -1,0 +1,85 @@
+schema_version: 1
+profile: test_fixture
+mode: reference
+reference_target: code
+parameter_profile: fixture
+
+source:
+  baseline: OccuSG
+  path: ref_OccuSG/OccuSG
+  commit: 2bca2fa06af87fd9dd0542957039be8f580f0dca
+  license_status: root_mit_third_party_review_required
+
+coordinate:
+  world_frame: world
+  camera_optical_frame: camera_optical
+  base_frame: base
+  world_up_axis: Z
+  grid_row_axis: +Y
+  grid_col_axis: +X
+  transform_convention: T_parent_child_column_vector
+
+backprojection:
+  stride: 1
+  min_depth_m: 0.1
+  max_depth_m: 10.0
+  depth_scale_by_encoding:
+    16UC1: 0.001
+    32FC1: 1.0
+
+native:
+  build_dir: build/native-probe
+  cxx_standard: 17
+  require_reference_backends: false
+
+occupancy:
+  resolution_m: 0.05
+  max_range_m: 8.0
+  prob_hit: 0.7
+  prob_miss: 0.4
+  clamping_min: 0.12
+  clamping_max: 0.97
+  occupancy_threshold: 0.5
+
+projection:
+  min_free_height_m: 0.3
+  minimum_occupancy: 5
+  interval_epsilon_fraction: 0.001
+
+regions:
+  tracker:
+    enabled: true
+    min_bbox_iou: 0.20
+    max_centroid_distance_m: 1.5
+    min_area_ratio: 0.25
+    max_area_ratio: 4.0
+    max_missed_updates: 3
+  guard:
+    preserve_previous_on_invalid_update: true
+    publish_stale_regions_on_reject: true
+    min_valid_region_count: 1
+    max_unknown_ratio_for_update: 0.98
+    max_region_area_drop_ratio: 0.85
+    max_region_count_drop_ratio: 0.85
+
+objects:
+  association:
+    same_class_radius_m: 0.75
+    same_pose_suppression_cap_m: 0.15
+
+navigation:
+  # Source default is 10/50; benchmark YAML audits use 15/25/8.
+  cell_stride_cells: 15
+  min_free_cell_count: 25
+  connectivity: 8
+  # OccuSG FreeSpaceNodeManager.process_occupancy_grid_update source threshold.
+  resolution_change_tolerance_m: 0.0001
+
+rooms:
+  boundary_epsilon_m: 0.15
+  nav_neighbor_tiebreak: true
+  maintenance_hz: 0.5
+  relink_min_old_overlap_ratio: 0.65
+  relink_min_member_support_ratio: 0.5
+  relink_min_score_margin: 0.15
+

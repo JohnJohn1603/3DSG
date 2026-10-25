@@ -1,0 +1,12 @@
+{
+  "schema": "3dsg-research-source-provenance/v1",
+  "snapshot_policy": "Current working-tree content including uncommitted fixes; originals preserved",
+  "reference_revisions": {
+    "ConceptGraphs": "93277a02bd89171f8121e84203121cf7af9ebb5d",
+    "OccuSG": "2bca2fa06af87fd9dd0542957039be8f580f0dca",
+    "MapConversion": "14b8cb9e6534ba21e84f624c94d20960f6613f3c",
+    "PyTorch3D": "297020a4b1d7492190cb4a909cafbd2c81a12cb5"
+  },
+  "included_assets": "One HM3D00802 basis scene/navmesh, YOLO11nseg ONNX, OpenCLIP ViTB32 OpenAI",
+  "excluded": "Run outputs, caches, virtualenvs, Git metadata, other datasets/models, two already-applied cross-repo maintenance patchers"
+}

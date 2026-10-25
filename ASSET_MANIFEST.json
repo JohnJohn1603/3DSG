@@ -1,0 +1,57 @@
+{
+  "schema": "3dsg-handoff-assets/v1",
+  "files": {
+    "assets/models/openclip/checkpoint_metadata.json": {
+      "bytes": 645,
+      "sha256": "f25cb4ac28807fc8734ab5d1db2764ead5a2db902c301d59eae6656bb9c1db04"
+    },
+    "assets/models/openclip/open_clip_model.safetensors": {
+      "bytes": 605143284,
+      "sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31"
+    },
+    "assets/models/yolo11n-seg.onnx": {
+      "bytes": 11763717,
+      "sha256": "0bc32bc92e985b881141ef9bd2216e2a746f70519d0d24da9fc85decc4428cf4"
+    },
+    "assets/scenes/hm3d-00802/demo.scene_dataset_config.json": {
+      "bytes": 503,
+      "sha256": "22d0485c749193e19e4ac0502610d51a9022183a3387f36395630ae6dd30a9f4"
+    },
+    "assets/scenes/hm3d-00802/wcojb4TFT35.basis.glb": {
+      "bytes": 46195688,
+      "sha256": "075e243b372458df4055a55e27c93885ba44ae8c36b4bc4446e0393c60c14540"
+    },
+    "assets/scenes/hm3d-00802/wcojb4TFT35.basis.navmesh": {
+      "bytes": 44728,
+      "sha256": "ae5ddd8ca77480eea3c401059844ae1ccc42d9cce75770a25b0d79b02d077232"
+    },
+    "prebuilt/linux-x86_64/SHA256SUMS.json": {
+      "bytes": 581,
+      "sha256": "9ca5d20519698ceaaf217207b68fcdd494db85d6b2f0b171f445a87e9c2a36cf"
+    },
+    "prebuilt/linux-x86_64/bin/occusg_dude_worker": {
+      "bytes": 787712,
+      "sha256": "e41f5824c70b968f65b71a448ff46dde47450cb4a3027892f31c569717a96125"
+    },
+    "prebuilt/linux-x86_64/bin/standalone_sg_octomap_fixture_runner": {
+      "bytes": 371064,
+      "sha256": "c132c842d42e0d4127dff0f34721dbfa703c688f66e7cf4f12d655137e3a62c1"
+    },
+    "prebuilt/linux-x86_64/lib/libgmp.so.10": {
+      "bytes": 534896,
+      "sha256": "0ccdfb6d6f5c039465f6d002cf7e4c072d48ac6a2cffc8dd6c748dec31592804"
+    },
+    "prebuilt/linux-x86_64/lib/libgmp.so.10.5.0": {
+      "bytes": 534896,
+      "sha256": "0ccdfb6d6f5c039465f6d002cf7e4c072d48ac6a2cffc8dd6c748dec31592804"
+    },
+    "prebuilt/linux-x86_64/lib/libmpfr.so.6": {
+      "bytes": 760464,
+      "sha256": "2156351fa3dedd04a7381c6ac7a8a26efa2d6fb08b80f8a2d644ccdd653710ae"
+    },
+    "prebuilt/linux-x86_64/lib/libmpfr.so.6.2.1": {
+      "bytes": 760464,
+      "sha256": "2156351fa3dedd04a7381c6ac7a8a26efa2d6fb08b80f8a2d644ccdd653710ae"
+    }
+  }
+}

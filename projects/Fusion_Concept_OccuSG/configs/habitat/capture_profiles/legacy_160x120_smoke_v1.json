@@ -1,0 +1,8 @@
+{
+  "schema": "habitat-capture-profile/v1",
+  "profile_id": "legacy_160x120_smoke_v1",
+  "resolution_px": [160, 120],
+  "calibration_id": "habitat-rgbd-stage-v1-160x120",
+  "intrinsics_adapter": "adapters.habitat.frames.habitat_camera_intrinsics",
+  "policy": "explicit low-resolution smoke profile; native capture; retain route HFOV, sensor extrinsics, depth range/convention and all detector preprocessing"
+}

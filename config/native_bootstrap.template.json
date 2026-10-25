@@ -1,0 +1,7 @@
+{
+  "schema": "3dsg-native-bootstrap/v1",
+  "purpose": "Configuration only, not a historical run or saved graph",
+  "pipeline_config": "projects/Fusion_Concept_OccuSG/configs/reference_code_mp3d.yaml",
+  "m2_binary": "prebuilt/linux-x86_64/bin/standalone_sg_octomap_fixture_runner",
+  "dude_binary": "prebuilt/linux-x86_64/bin/occusg_dude_worker"
+}

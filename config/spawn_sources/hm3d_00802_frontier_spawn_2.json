@@ -1,0 +1,14 @@
+{
+  "schema": "3dsg-portable-spawn-source/v1",
+  "scene_id": "00802-wcojb4TFT35",
+  "spawn": {
+    "position_habitat_m": [
+      2.7533261776,
+      0.124,
+      -5.162430286
+    ],
+    "yaw_habitat_rad": -0.8377571600948965
+  },
+  "origin_effective_config_sha256": "fef21191f9ba2fd6b1c219379289630748ea5876797947d61ba15b3e624fc377",
+  "scope": "Spawn/calibration provenance only; historical route omitted"
+}

@@ -1,0 +1,8 @@
+{
+  "bin/occusg_dude_worker": "e41f5824c70b968f65b71a448ff46dde47450cb4a3027892f31c569717a96125",
+  "bin/standalone_sg_octomap_fixture_runner": "c132c842d42e0d4127dff0f34721dbfa703c688f66e7cf4f12d655137e3a62c1",
+  "lib/libgmp.so.10": "0ccdfb6d6f5c039465f6d002cf7e4c072d48ac6a2cffc8dd6c748dec31592804",
+  "lib/libgmp.so.10.5.0": "0ccdfb6d6f5c039465f6d002cf7e4c072d48ac6a2cffc8dd6c748dec31592804",
+  "lib/libmpfr.so.6": "2156351fa3dedd04a7381c6ac7a8a26efa2d6fb08b80f8a2d644ccdd653710ae",
+  "lib/libmpfr.so.6.2.1": "2156351fa3dedd04a7381c6ac7a8a26efa2d6fb08b80f8a2d644ccdd653710ae"
+}
